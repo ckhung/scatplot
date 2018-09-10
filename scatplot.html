@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+
+  <title>csv 檔的 scatter plot</title>
+</head>
+
+<body>
+
+  <div>
+    <div style="float: left; width: 120px">
+      <p>框起一塊區域可以局部放大； 在任意地方點兩下可以還原到完整的視野；
+      拉 X 軸或 Y 軸的數字可以平移。 右上角有更多控制按鈕。 詳見 <a href=
+      "https://help.plot.ly/zoom-pan-hover-controls/">
+      Plotly 操作手冊</a></p>
+    </div>
+    <div id="main_canvas" style="margin-left: 120px"></div>
+  </div>
+
+
+  <table border=1 align="center" id="summary_table" class="display" width="100%"> </table>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"> </script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"> </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.19.1/URI.min.js"> </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.1.1/math.min.js"> </script>
+  <script src="https://cdn.plot.ly/plotly-basic-latest.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="scatplot.js"> </script>
+</body>
+</html>
