@@ -21,7 +21,7 @@ $.getJSON(G.urlConfig.c, function(data) {
   $.get(G.config.csv + rndsfx(), init);
 });
 
-function parseCSV(str, textcols=[]) {
+function parseCSV(str, textcols) {
   // it's amazing how difficult it is to find
   // a suitable csv lib that also runs on an android phone
   var table=[], ret=[], row, col, keys, i, krow;
