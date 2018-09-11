@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# 使用範例： ./scatplot.py -k 'radius>100' -t 'name planet' -X 'math.log(orbit_major,10)' -Y 'math.log(rev_cycle,10)' -T 'name[:3]' -A 'radius' satellites.csv
+# 使用範例： python3 scatplot.py -k 'radius>50' -t 'name planet' -X 'log(orbit_major,10)' -Y 'log(rev_cycle,10)' -T 'name[:3]' -A 'log(radius)*50' satellites.csv
 
 import argparse, re, codecs, math
 import matplotlib.pyplot as plt
@@ -33,6 +33,18 @@ def readcsv(fn, textcols=[]):
             table.append(row)
     return table
 
+def safe_eval(expr, localdict):
+    # https://www.geeksforgeeks.org/eval-in-python/
+    # safe_list = ['math']
+    # safe_dict = dict([(k, locals().get(k, None)) for k in safe_list])
+
+    # https://stackoverflow.com/questions/11419463/python-eval-not-working-within-a-function
+    safe_list = ['factorial', 'acos', 'asin', 'atan', 'atan2', 'ceil', 'cos', 'cosh', 'degrees', 'e', 'exp', 'fabs', 'floor', 'fmod', 'hypot', 'log', 'log10', 'modf', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh']
+    safe_dict = dict((k, getattr(math, k)) for k in safe_list)
+    rdict = safe_dict.copy()
+    safe_dict.update(localdict)
+    return eval(expr, {"__builtins__":None}, safe_dict)
+
 parser = argparse.ArgumentParser(
     description=u'csv 繪圖',
     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
@@ -62,21 +74,22 @@ plt.xlabel(args.xexpr)
 plt.ylabel(args.yexpr)
 xmin = ymin = INF
 xmax = ymax = -INF
+
 for row in data:
-    X = eval(args.xexpr, None, row)
-    Y = eval(args.yexpr, None, row)
-    if eval(args.keep, None, row):
+    X = safe_eval(args.xexpr, row)
+    Y = safe_eval(args.yexpr, row)
+    if safe_eval(args.keep, row):
         if X < xmin: xmin = X
         if X > xmax: xmax = X
         if Y < ymin: ymin = Y
         if Y > ymax: ymax = Y
         # print(X, Y, text)
         if args.aexpr:
-            Area = eval(args.aexpr, None, row)
+            Area = safe_eval(args.aexpr, row)
             plt.scatter(X, Y, s=Area, edgecolors='b', c='none')
             # https://matplotlib.org/api/_as_gen/matplotlib.pyplot.scatter.html
         if args.texpr:
-            text = eval(args.texpr, None, row)
+            text = safe_eval(args.texpr, row)
             plt.text(X, Y, text, ha='center', va='center',  size=8)
 plt.plot([xmin, xmax], [ymin, ymax], linestyle='')
 # https://github.com/matplotlib/matplotlib/issues/10497
