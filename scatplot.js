@@ -4,6 +4,10 @@
 // eval using mathjs : http://mathjs.org/examples/basic_usage.js.html
 
 var G = {
+  'config': {
+    'keep': [ 'true' ],
+  },
+  'table': {},
 };
 
 function rndsfx() {
@@ -14,11 +18,11 @@ G.url = new URI(location.href);
 G.urlConfig = G.url.search(true);
 if (! G.urlConfig.c) { G.urlConfig.c='config.json'; }
 
-$.getJSON(G.urlConfig.c, function(data) {
-  G.config = data;
+$.getJSON(G.urlConfig.c, function(cfgdata) {
+  $.extend(G.config, cfgdata);
   $.extend(G.config, G.urlConfig);
-  G.table = [];
   $.get(G.config.csv + rndsfx(), init);
+  if (! Array.isArray(G.config.keep)) { G.config.keep = [ G.config.keep ]; }
 });
 
 function parseCSV(str, textcols) {
@@ -42,31 +46,93 @@ function parseCSV(str, textcols) {
   return ret;
 }
 
-function gentrace(data, plotlyconf) {
-  // generate a plotlyconf trace
-  var textlist = data.map(function (row) {
-    return plotlyconf.text.replace(
-      /\b(\w+)\b/g, function (m) {
-	return m in row ? row[m] : m;
+function u8varMathEval(expr, dict, u2adict) {
+  var k, anDict = {};	// alphanumeric expr and alpha numeric dict
+  for (k in u2adict) {
+    var re = new RegExp(k, 'g');
+    expr = expr.replace(re, u2adict[k]);
+    anDict[u2adict[k]] = dict[k];
+  }
+  return math.eval(expr, anDict);
+}
+
+function cn2val(text, dict) {
+  // substitute column names in a text string with dict values
+  for (var cn in dict) {
+    var re = new RegExp(cn, 'g');
+    text = text.replace(re, dict[cn]);
+  }
+  return text;
+}
+
+function redraw() {
+
+  var // aliases for global variables
+    tableContent,
+    filteredData,
+    plotlyconf = G.config.plotly;
+
+  $.fn.dataTable.ext.search = [
+    function(settings, row, index) {
+      // https://stackoverflow.com/questions/21407017/jquery-val-not-working-for-input-fields
+      var keepExpr = $('#keep_expr').val();
+      var u8dict = {};
+      for (var i=0; i<G.table.colnames.length; ++i) {
+	u8dict[G.table.colnames[i]] = row[i];
       }
-    );
-  } );
-  return {
-    'name': plotlyconf.xaxis.expr + ' / ' + plotlyconf.yaxis.expr,
+      return u8varMathEval(keepExpr, u8dict, G.table.invd);
+  } ];
+  G.table.dtobj.draw();
+
+  // 太奇怪了， DataTables 傳回來的 .data() 竟然是 object 而不是 array，
+  // 而且夾雜著其他函數等等。
+  // https://stackoverflow.com/questions/33169649/how-to-get-filtered-data-result-set-from-jquery-datatable
+  filteredData = G.table.dtobj.rows({ filter : 'applied'}).data();
+  tableContent = Object.keys(filteredData).filter(function (k) {
+    return k.match(/^\d+$/);
+  });
+  tableContent = tableContent.map(function (k) {
+    var row = {};
+    for (var i=0; i<G.table.colnames.length; ++i) {
+      row[G.table.colnames[i]] = filteredData[k][i];
+    }
+    return(row);
+  });
+
+  plotlyconf.xaxis.expr = $('#X_expr').val();
+  plotlyconf.xaxis.title = { 'text': plotlyconf.xaxis.expr };
+  plotlyconf.yaxis.expr = $('#Y_expr').val();
+  plotlyconf.yaxis.title = { 'text': plotlyconf.yaxis.expr };
+  // plotlyconf.zaxis.expr = $('#Z_expr').val();
+  // plotlyconf.zaxis.title = { 'text': plotlyconf.zaxis.expr };
+  plotlyconf.size.expr = $('#Size_expr').val();
+
+  // first generate a plotlyconf trace
+  var maintext = tableContent.map(function (row) {
+    return cn2val(plotlyconf.maintext, row);
+  });
+  var hovertext = tableContent.map(function (row) {
+    return cn2val(plotlyconf.hovertext, row);
+  });
+  var trace = {
     // https://plot.ly/javascript/bubble-charts/
     // https://plot.ly/javascript/reference/
-    'type': 'scatter',
-    'x': data.map(function (row) { return math.eval(plotlyconf.xaxis.expr, row); } ),
-    'y': data.map(function (row) { return math.eval(plotlyconf.yaxis.expr, row); } ),
-    'mode': 'markers',
+    'type': 'scatter3d',
+    'x': tableContent.map(function (row) { return u8varMathEval(plotlyconf.xaxis.expr, row, G.table.invd); } ),
+    'y': tableContent.map(function (row) { return u8varMathEval(plotlyconf.yaxis.expr, row, G.table.invd); } ),
+    'name': plotlyconf.xaxis.expr + ' / ' + plotlyconf.yaxis.expr,
+    'text': maintext,
+    'hoverinfo': 'x+y+text',
+    'hovertext': hovertext,
+    'mode': plotlyconf.maintext ? 'markers+text' : 'markers',
     'marker': {
       'symbol': 'circle',
-      'size': data.map(function (row) { return ('size' in plotlyconf && 'expr' in plotlyconf.size ? math.eval(plotlyconf.size.expr, row) : 10); } ),
+      'size': tableContent.map(function (row) { return ('size' in plotlyconf && 'expr' in plotlyconf.size ? u8varMathEval(plotlyconf.size.expr, row, G.table.invd) : 10); } ),
       'color': 'rgba(255,255,255,0.3)',
       'line': {
 	// https://plot.ly/~alex/455/four-ways-to-change-opacity-of-scatter-markers.embed
         'color': 'color' in plotlyconf && 'palette' in plotlyconf.color ?
-	  data.map(function (row) {
+	  tableContent.map(function (row) {
 	    var pal = plotlyconf.color.palette;
 	    if (typeof(pal) == 'number') {
 	      return '#00f';
@@ -80,38 +146,77 @@ function gentrace(data, plotlyconf) {
       }
     },
     // https://plot.ly/python/hover-text-and-formatting/
-    'hoverinfo': 'x+y+text',
-    'hovertext': textlist,
 
     // https://plot.ly/javascript/text-and-annotations/
     // 'mode': 'markers+text',
     // 'text': textlist,
   };
+
+  Plotly.react($('#main_canvas')[0], [trace], plotlyconf);
 }
 
 function init(data) {
-  G.table = parseCSV(data, G.config.textcols).filter(function (row) {
-    return math.eval(G.config.keep, row);
-  });
-  Plotly.plot(
-    $('#main_canvas')[0],
-    [gentrace(G.table, G.config.plotly)],
-    G.config.plotly
-  );
-
-  var keys = Object.keys(G.table[0]);
+  var tableContent = parseCSV(data, G.config.textcols);
+  G.table = {
+    'content': tableContent,
+    'colnames': Object.keys(tableContent[0]),
+    'invd': {}, // internal numerical variable dictionary
+	        // for mapping utf8 strings to alphanumeric names
+	        // for math evaluation
+  };
   var dtConfig = {
     'paging': false,
-    'data': G.table.map(function (row) {
-      return keys.map(function (k) { return row[k]; });
+    'dom': 'lift',
+    // https://stackoverflow.com/questions/23724076/how-to-customize-bootstrap-datatable-search-box-and-records-view-position/33617575
+    'data': G.table.content.map(function (row) {
+      return G.table.colnames.map(function (cn) { return row[cn]; });
     }),
-    'columns': keys.map(function (k) {
-      return { 'title': k };
+    'columns': G.table.colnames.map(function (cn) {
+      return {
+	'title': cn,
+	'name': cn,
+	'type': G.config.textcols.includes(cn) ? 'string' : 'num'
+      };
     })
     // browsers on android do not support Object.values()
     // https://stackoverflow.com/questions/38748445/uncaught-typeerror-object-values-is-not-a-function-javascript
   };
-  $('#summary_table').DataTable(dtConfig);
+  G.table.dtobj = $('#summary_table').DataTable(dtConfig);
+
+  var i=1000;
+  G.table.colnames.forEach(function (cn) {
+    if (! G.config.textcols.includes(cn)) {
+      G.table.invd[cn] = 'inv4me' + i.toString().substr(1);
+      ++i;
+    }
+  });
+
+  var allColnameOptions = Object.keys(G.table.invd).map(function (cn) {
+    return '<option>' + cn + '\n';
+  }).join('');
+  $('#X_expr_options').html(allColnameOptions);
+  $('#Y_expr_options').html(allColnameOptions);
+  // $('#Z_expr_options').html(allColnameOptions);
+  $('#Size_expr_options').html(allColnameOptions);
+  $('#keep_expr_options').html(G.config.keep.map(function (kc) {
+    return '<option>' + kc + '\n';
+  }));
+
+  $('.expr_select').change(function () {
+    var nv = $(this).children('option:selected').val();
+    var target = $(this).parent().find('.expr_entry');
+    target.val( nv.trim() );
+  });
+
+  $('#redraw').click(redraw);
+
+  $('#keep_expr').val( G.config.keep[0] );
+  $('#X_expr').val( G.config.plotly.xaxis.expr );
+  $('#Y_expr').val( G.config.plotly.yaxis.expr );
+  // $('#Z_expr').val( G.config.plotly.zaxis.expr );
+  $('#Size_expr').val( G.config.plotly.size.expr );
+  redraw();
+
 }
 
 

@@ -1,0 +1,82 @@
+body {
+    background: #ffffe0;
+}
+
+h1 {
+    text-align: center;
+}
+
+div#content {
+    position: relative;
+    padding: 2ex;
+}
+
+div#main_canvas {
+    display: inline-block;
+    width: 95%;
+    height: 600px;
+    border: 2px solid #c0c080;
+    margin: 1ex;
+}
+
+/* https://css-tricks.com/the-checkbox-hack/ */
+.hidden { display: none; }
+
+label#setup_form_disp_label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #c0e0ff;
+    padding: 1ex 1ex;
+}
+
+form#setup_form {
+    position: absolute;
+    opacity: 0.7;
+    width: 90%;
+    top: 5ex;
+    right: 0;
+    background: #e0e0e0;
+    border: 2px solid #c0c0c0;
+    border-radius: 1ex;
+}
+
+#setup_form_disp_switch:checked ~ #setup_form {
+    transition: width 0.1s, height 0.1s;
+    width: 5ex;
+    height: 40ex;
+    overflow: hidden;
+}
+
+#summary_table_info, #summary_table_filter {
+    padding: 10px;
+}
+
+/* https://www.tutorialrepublic.com/faq/show-hide-dropdown-menu-on-mouse-hover-using-css.php */
+div.dd_wrapper {
+    padding: 0;
+    margin: 1ex;
+    display: inline-block;
+    z-index: 9;
+}
+div.dd_wrapper li {
+    display: block;
+    position: relative;
+}
+div.dd_wrapper li:hover {
+    background: #80ffff;
+}
+div.dd_wrapper ul.dropdown{
+    display: none;
+    position: relative;
+    z-index: 999;
+    left: 0;
+}
+div.dd_wrapper:hover ul.dropdown{
+    display: block;
+}
+
+input.expr_entry {
+    width: 50ex;
+}
+

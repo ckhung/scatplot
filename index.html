@@ -8,29 +8,68 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content=
   "width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous" />
   <link type="text/css" rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
-
-  <title>csv 檔的 scatter plot</title>
+  <link type="text/css" rel="stylesheet" href="scatplot.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>一張試算表， 散點圖畫到飽</title>
 </head>
 
 <body>
 
-  <div>
-    <div style="float: left; width: 120px">
-      <ol>
-      <li>框起一塊區域可以局部放大； 在任意地方點兩下可以還原到完整的視野；
-      拉 X 軸或 Y 軸的數字可以平移。 右上角有更多控制按鈕。 詳見 <a href=
-      "https://help.plot.ly/zoom-pan-hover-controls/">
-      Plotly 操作手冊</a>
-      <li><a href="https://newtoypia.blogspot.com/2018/09/scatter-plot-bubble-chart.html">三種方式產生 scatter plot / bubble chart</a>
-      <li><a href="https://github.com/ckhung/scatplot">原始碼</a>
-      </ol>
-    </div>
-    <div id="main_canvas" style="margin-left: 120px"></div>
-  </div>
+  <h1>一張試算表， 散點圖畫到飽</h1>
 
+  <div id="content">
 
-  <table border=1 align="center" id="summary_table" class="display" width="100%"> </table>
+    <div id="main_canvas"></div>
+
+    <!-- https://css-tricks.com/the-checkbox-hack/ -->
+    <label id="setup_form_disp_label" for="setup_form_disp_switch">設定</label>
+    <input type="checkbox" id="setup_form_disp_switch" class="hidden" checked />
+    <form id="setup_form" class="pure-form pure-form-aligned">
+      <fieldset>
+	<div class="pure-control-group">
+	  <label for="keep_expr">Keep:</label>
+	  <input id="keep_expr" type="text" class="expr_entry" />
+	  <label for="keep_expr_options"></label>
+	  <select id="keep_expr_options" type="text" class="expr_select" > </select>
+	</div>
+	<div class="pure-control-group">
+	  <label for="X_expr">X:</label>
+	  <input id="X_expr" type="text" class="expr_entry" />
+	  <label for="X_expr_options"></label>
+	  <select id="X_expr_options" type="text" class="expr_select" > </select>
+	</div>
+	<div class="pure-control-group">
+	  <label for="Y_expr">Y:</label>
+	  <input id="Y_expr" type="text" class="expr_entry" />
+	  <label for="Y_expr_options"></label>
+	  <select id="Y_expr_options" type="text" class="expr_select" > </select>
+	</div>
+	<div class="pure-control-group">
+	  <label for="Size_expr">Size:</label>
+	  <input id="Size_expr" type="text" class="expr_entry" />
+	  <label for="Size_expr_options" class="expr_select" ></label>
+	  <select id="Size_expr_options" type="text" class="expr_select" > </select>
+	</div>
+	<div class="pure-controls">
+	  <button type="button" id="redraw" class="pure-button pure-button-primary">重畫</button>
+	  <!-- https://stackoverflow.com/questions/932653/how-to-prevent-buttons-from-submitting-forms -->
+        </div>
+      </fieldset>
+    </form>
+
+    <table border=1 align="center" id="summary_table" class="display" width="100%"> </table>
+
+    <ol>
+    <li>詳見 <a href=
+    "https://help.plot.ly/zoom-pan-hover-controls/">
+    Plotly 操作手冊</a>
+    <li><a href="https://newtoypia.blogspot.com/2018/09/scatter-plot-bubble-chart.html">三種方式產生 scatter plot / bubble chart</a>
+    <li><a href="https://github.com/ckhung/scatplot">原始碼</a>
+    </ol>
+
+  </div> <!-- id="content" -->
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"> </script>
   <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"> </script>
