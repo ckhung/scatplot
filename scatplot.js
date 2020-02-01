@@ -1,7 +1,7 @@
 /* jshint esversion: 6, loopfunc: true */
 /* global console, window, alert, location, $, URI, Plotly, math */
 
-// eval using mathjs : http://mathjs.org/examples/basic_usage.js.html
+// eval using mathjs : https://mathjs.org/examples/basic_usage.js.html
 
 var G = {
   'config': {
@@ -70,7 +70,7 @@ function redraw() {
   var // aliases for global variables
     tableContent,
     filteredData,
-    plotlyconf = G.config.plotly;
+    plotlyLayout = G.config.plotly;
 
   $.fn.dataTable.ext.search = [
     function(settings, row, index) {
@@ -99,50 +99,50 @@ function redraw() {
     return(row);
   });
 
-  plotlyconf.xaxis.expr = $('#X_expr').val();
-  plotlyconf.xaxis.title = { 'text': plotlyconf.xaxis.expr };
-  plotlyconf.yaxis.expr = $('#Y_expr').val();
-  plotlyconf.yaxis.title = { 'text': plotlyconf.yaxis.expr };
-  // plotlyconf.zaxis.expr = $('#Z_expr').val();
-  // plotlyconf.zaxis.title = { 'text': plotlyconf.zaxis.expr };
-  plotlyconf.size.expr = $('#Size_expr').val();
+  plotlyLayout.xaxis.expr = $('#X_expr').val();
+  plotlyLayout.xaxis.title = { 'text': plotlyLayout.xaxis.expr };
+  plotlyLayout.yaxis.expr = $('#Y_expr').val();
+  plotlyLayout.yaxis.title = { 'text': plotlyLayout.yaxis.expr };
+  // plotlyLayout.zaxis.expr = $('#Z_expr').val();
+  // plotlyLayout.zaxis.title = { 'text': plotlyLayout.zaxis.expr };
+  plotlyLayout.size.expr = $('#Size_expr').val();
 
-  // first generate a plotlyconf trace
+  // first generate a plotlyLayout trace
   var maintext = tableContent.map(function (row) {
-    return cn2val(plotlyconf.maintext, row);
+    return cn2val(plotlyLayout.maintext, row);
   });
   var hovertext = tableContent.map(function (row) {
-    return cn2val(plotlyconf.hovertext, row);
+    return cn2val(plotlyLayout.hovertext, row);
   });
   var trace = {
     // https://plot.ly/javascript/bubble-charts/
     // https://plot.ly/javascript/reference/
     'type': 'scatter3d',
-    'x': tableContent.map(function (row) { return u8varMathEval(plotlyconf.xaxis.expr, row, G.table.invd); } ),
-    'y': tableContent.map(function (row) { return u8varMathEval(plotlyconf.yaxis.expr, row, G.table.invd); } ),
-    'name': plotlyconf.xaxis.expr + ' / ' + plotlyconf.yaxis.expr,
+    'x': tableContent.map(function (row) { return u8varMathEval(plotlyLayout.xaxis.expr, row, G.table.invd); } ),
+    'y': tableContent.map(function (row) { return u8varMathEval(plotlyLayout.yaxis.expr, row, G.table.invd); } ),
+    'name': plotlyLayout.xaxis.expr + ' / ' + plotlyLayout.yaxis.expr,
     'text': maintext,
     'hoverinfo': 'x+y+text',
     'hovertext': hovertext,
-    'mode': plotlyconf.maintext ? 'markers+text' : 'markers',
+    'mode': plotlyLayout.maintext ? 'markers+text' : 'markers',
     'marker': {
       'symbol': 'circle',
-      'size': tableContent.map(function (row) { return ('size' in plotlyconf && 'expr' in plotlyconf.size ? u8varMathEval(plotlyconf.size.expr, row, G.table.invd) : 10); } ),
+      'size': tableContent.map(function (row) { return ('size' in plotlyLayout && 'expr' in plotlyLayout.size ? u8varMathEval(plotlyLayout.size.expr, row, G.table.invd) : 10); } ),
       'color': 'rgba(255,255,255,0.3)',
       'line': {
 	// https://plot.ly/~alex/455/four-ways-to-change-opacity-of-scatter-markers.embed
-        'color': 'color' in plotlyconf && 'palette' in plotlyconf.color ?
+        'color': 'color' in plotlyLayout && 'palette' in plotlyLayout.color ?
 	  tableContent.map(function (row) {
-	    var pal = plotlyconf.color.palette;
+	    var pal = plotlyLayout.color.palette;
 	    if (typeof(pal) == 'number') {
 	      return '#00f';
 	    } else if (typeof(pal) == 'object') {
-	      var k = plotlyconf.color.column;
-	      return row[k] in pal ? pal[row[k]] : plotlyconf.color.default;
+	      var k = plotlyLayout.color.column;
+	      return row[k] in pal ? pal[row[k]] : plotlyLayout.color.default;
 	    } else {
-	      return plotlyconf.color.default;
+	      return plotlyLayout.color.default;
 	    }
-          }) : plotlyconf.color.default
+          }) : plotlyLayout.color.default
       }
     },
     // https://plot.ly/python/hover-text-and-formatting/
@@ -152,7 +152,15 @@ function redraw() {
     // 'text': textlist,
   };
 
-  Plotly.react($('#main_canvas')[0], [trace], plotlyconf);
+  // https://plot.ly/javascript/configuration-options/
+  var cfg = {
+    toImageButtonOptions: {
+      format: 'svg',
+      scale: 1.2
+    }
+};
+
+  Plotly.react($('#main_canvas')[0], [trace], plotlyLayout, cfg);
 }
 
 function init(data) {
