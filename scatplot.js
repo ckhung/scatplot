@@ -174,6 +174,7 @@ function init(data) {
   };
   var dtConfig = {
     'paging': false,
+    'fixedHeader': true,
     'dom': 'lift',
     // https://stackoverflow.com/questions/23724076/how-to-customize-bootstrap-datatable-search-box-and-records-view-position/33617575
     'data': G.table.content.map(function (row) {
