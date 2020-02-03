@@ -1,30 +1,30 @@
 {
-  "csv": "elec20/leg_at_large.csv",
-  "textcols": ["縣市"],
-  "keep": [
-    "選舉人數>150000",
-    "有效票比例>70"
-  ],
+  "source": {
+    "csv": "elec20/leg_at_large.csv",
+    "textcols": ["縣市"],
+    "keep": [
+      "選舉人數>150000",
+      "有效票比例>70"
+    ]
+  },
   "plotly": {
-    "title": "兩政黨各縣市得票比例對照圖",
-    "font": {
-      "size": 16,
-      "color": "#008"
+    "layout": {
+      "title": "兩政黨各縣市得票比例對照圖"
     },
-    "xaxis": {
-      "expr": "中國國民黨"
-    },
-    "yaxis": {
-      "expr": "民主進步黨"
-    },
-    "size": {
-      "expr": "sqrt(選舉人數)*0.05"
-    },
-    "color": {
-      "default": "#008"
-    },
-    "maintext": "縣市",
-    "hovertext": "縣市",
-    "hovermode": "closest"
+    "maintrace": {
+      "font": {
+        "size": 16,
+        "color": "#008"
+      },
+      "xaxis": { "expr": "中國國民黨" },
+      "yaxis": { "expr": "民主進步黨" },
+      "size": { "expr": "sqrt(選舉人數)*0.05" },
+      "color": {
+        "default": "#008"
+      },
+      "maintext": "縣市",
+      "hovertext": "縣市",
+      "hovermode": "closest"
+    }
   }
 }

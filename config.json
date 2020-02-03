@@ -1,33 +1,32 @@
 {
-  "csv": "satellites.csv",
-  "textcols": ["name", "planet"],
-  "keep": "radius > 100",
-
+  "source": {
+    "csv": "satellites.csv",
+    "textcols": ["name", "planet"],
+    "keep": "radius > 100"
+  },
   "plotly": {
-    "title": "太陽系天然衛星軌道常數",
-    "xaxis": {
-      "type": "log",
-      "expr": "orbit_major"
+    "layout": {
+      "title": "太陽系天然衛星軌道常數",
+      "xaxis": { "type": "log" },
+      "yaxis": { "type": "log" }
     },
-    "yaxis": {
-      "type": "log",
-      "expr": "rev_cycle"
-    },
-    "size": {
-      "expr": "sqrt(radius)"
-    },
-    "maintext": "name",
-    "hovertext": "name 繞 planet",
-    "color": {
-      "default": "#000",
-      "column": "planet",
-      "palette": {
-	"Jupiter": "#4c0",
-	"Saturn": "#f00",
-	"Uranus": "#40f",
-	"Neptune": "#04f"
-      }
-    },
-    "hovermode": "closest"
+    "maintrace": {
+      "xaxis": { "expr": "orbit_major" },
+      "yaxis": { "expr": "rev_cycle" },
+      "size": { "expr": "sqrt(radius)" },
+      "maintext": "name",
+      "hovertext": "name 繞 planet",
+      "color": {
+        "default": "#000",
+        "column": "planet",
+        "palette": {
+  	"Jupiter": "#4c0",
+  	"Saturn": "#f00",
+  	"Uranus": "#40f",
+  	"Neptune": "#04f"
+        }
+      },
+      "hovermode": "closest"
+    }
   }
 }

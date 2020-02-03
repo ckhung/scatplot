@@ -1,34 +1,61 @@
 {
-  "csv": ["stock/greg.csv", "stock/divhist.csv", "https://v.im.cyut.edu.tw/~ckhung/saas/stock/price.csv"],
-  "textcols": ["代號", "名稱"],
-  "pkey": "代號",
-  "examplekey": "1301",
-  "extracols": [
-    "便宜價=divavg*16",
-    "昂貴程度=收盤價/divavg/20*100"
-  ],
+  "source": {
+    "csv": [
+      "stock/greg.csv",
+      "stock/divhist.csv",
+      "https://v.im.cyut.edu.tw/~ckhung/saas/stock/price.csv"
+    ],
+    "textcols": [
+      "代號",
+      "名稱"
+    ],
+    "pkey": "代號",
+    "samplekey": "1301",
+    "extracols": [
+      "便宜價=divavg*16",
+      "昂貴程度=收盤價/divavg/20*100"
+    ]
+  },
   "plotly": {
-    "title": "股票財報指標圖",
-    "font": {
-      "size": 16,
-      "color": "#008"
+    "layout": {
+      "title": "股票財報指標圖",
+      "xaxis": { "type": "log" },
+      "yaxis": { "type": "log" }
     },
-    "xaxis": {
-      "type": "log",
-      "expr": "收盤價"
+    "maintrace": {
+      "font": {
+        "size": 16,
+        "color": "#008"
+      },
+      "xaxis": {
+        "type": "log",
+        "expr": "收盤價"
+      },
+      "yaxis": {
+        "type": "log",
+        "expr": "divavg"
+      },
+      "size": {
+        "expr": "3000/昂貴程度"
+      },
+      "color": {
+        "default": "#008"
+      },
+      "maintext": "名稱",
+      "hovertext": "代號\n名稱",
+      "hovermode": "closest"
     },
-    "yaxis": {
-      "type": "log",
-      "expr": "divavg"
-    },
-    "size": {
-      "expr": "3000/昂貴程度"
-    },
-    "color": {
-      "default": "#008"
-    },
-    "maintext": "名稱",
-    "hovertext": "代號\n名稱",
-    "hovermode": "closest"
+    "statictraces": [
+      {
+        "type": "scatter",
+        "x": [ 10, 100 ],
+        "y": [ 0.6, 6 ],
+        "line": {
+          "color": "#800000",
+          "width": 0.8,
+          "dash": "dashdot"
+        }
+      }
+    ]
   }
 }
