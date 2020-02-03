@@ -1,0 +1,34 @@
+{
+  "csv": ["stock/greg.csv", "stock/divhist.csv", "https://v.im.cyut.edu.tw/~ckhung/saas/stock/price.csv"],
+  "textcols": ["代號", "名稱"],
+  "pkey": "代號",
+  "examplekey": "1301",
+  "extracols": [
+    "便宜價=divavg*16",
+    "昂貴程度=收盤價/divavg/20*100"
+  ],
+  "plotly": {
+    "title": "股票財報指標圖",
+    "font": {
+      "size": 16,
+      "color": "#008"
+    },
+    "xaxis": {
+      "type": "log",
+      "expr": "收盤價"
+    },
+    "yaxis": {
+      "type": "log",
+      "expr": "divavg"
+    },
+    "size": {
+      "expr": "3000/昂貴程度"
+    },
+    "color": {
+      "default": "#008"
+    },
+    "maintext": "名稱",
+    "hovertext": "代號\n名稱",
+    "hovermode": "closest"
+  }
+}

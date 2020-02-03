@@ -6,9 +6,18 @@
 var G = {
   'config': {
     'keep': [ 'true' ],
+    'extracols': [],
   },
-  'table': {},
+  'table': {
+    'invd': {}, // internal numerical variable dictionary
+	        // for mapping utf8 strings to alphanumeric names
+	        // for math evaluation
+  }
 };
+
+const pKeyPrefix='k';
+// 當 pkey 的內容是數字時， 用 String(...) 也沒用。
+// 一定要在前面加個非數字的字元， 才能強迫表格成為 dict 而非很糟糕的 sparse array
 
 function rndsfx() {
   return '?' + Math.floor(Math.random() * 1000);
@@ -18,11 +27,31 @@ G.url = new URI(location.href);
 G.urlConfig = G.url.search(true);
 if (! G.urlConfig.c) { G.urlConfig.c='config.json'; }
 
+// 出處： https://stackoverflow.com/questions/41440945/handling-dynamic-arguments-from-when-in-jquery 超重要！
+$.whenAll = function(promises) {
+  var d = $.Deferred(), results = [], counter = promises.length;
+  promises.forEach(function(promise, index) {
+    promise.done(function(result) {
+      results[index] = result;
+      if (--counter == 0) { d.resolve(results); }
+    }).fail(function() {
+      d.reject(Array.prototype.slice.call(arguments));
+    });
+  });
+  return d.promise();
+};
+
 $.getJSON(G.urlConfig.c, function(cfgdata) {
+  // set up config
   $.extend(G.config, cfgdata);
   $.extend(G.config, G.urlConfig);
-  $.get(G.config.csv + rndsfx(), init);
   if (! Array.isArray(G.config.keep)) { G.config.keep = [ G.config.keep ]; }
+  if (! Array.isArray(G.config.csv)) { G.config.csv = [ G.config.csv ]; }
+  var csvReq = G.config.csv.map(function (url) { return $.get(url+rndsfx()); });
+  $.whenAll(csvReq).then(initB);
+  // 最有用： https://stackoverflow.com/questions/41440945/handling-dynamic-arguments-from-when-in-jquery 超級讚！
+  // https://stackoverflow.com/questions/14352139/multiple-ajax-calls-from-array-and-handle-callback-when-completed
+  // https://stackoverflow.com/questions/4878887/how-do-you-work-with-an-array-of-jquery-deferreds
 });
 
 function parseCSV(str, textcols) {
@@ -88,15 +117,14 @@ function redraw() {
   // 而且夾雜著其他函數等等。
   // https://stackoverflow.com/questions/33169649/how-to-get-filtered-data-result-set-from-jquery-datatable
   filteredData = G.table.dtobj.rows({ filter : 'applied'}).data();
-  tableContent = Object.keys(filteredData).filter(function (k) {
-    return k.match(/^\d+$/);
-  });
-  tableContent = tableContent.map(function (k) {
-    var row = {};
-    for (var i=0; i<G.table.colnames.length; ++i) {
-      row[G.table.colnames[i]] = filteredData[k][i];
+  // console.log(Object.keys(filteredData));
+  // tableContent = [];
+  tableContent = Array.from(filteredData).map(function (row) {
+    var newrow = {};
+    for (var j=0; j<G.table.colnames.length; ++j) {
+      newrow[G.table.colnames[j]] = row[j];
     }
-    return(row);
+    return newrow;
   });
 
   plotlyLayout.xaxis.expr = $('#X_expr').val();
@@ -163,42 +191,103 @@ function redraw() {
   Plotly.react($('#main_canvas')[0], [trace], plotlyLayout, cfg);
 }
 
-function init(data) {
-  var tableContent = parseCSV(data, G.config.textcols);
-  G.table = {
-    'content': tableContent,
-    'colnames': Object.keys(tableContent[0]),
-    'invd': {}, // internal numerical variable dictionary
-	        // for mapping utf8 strings to alphanumeric names
-	        // for math evaluation
-  };
+function parseJoin(mainTable, csvText) {
+  var t2 = parseCSV(csvText, G.config.textcols);
+  // convert t2 array into a dict
+  var row, dict2 = {}; 
+  for (row of t2) {
+    dict2[row[G.config.pkey]] = row;
+  }
+  var exRow = G.config.examplekey ? dict2[G.config.examplekey] : t2[0];
+  for (row of mainTable) {
+    var cns = Object.keys(exRow);
+    for (var cn of cns) {
+      if (! (cn in row)) {
+	row[cn] = dict2[row[G.config.pkey]][cn];
+      }
+    }
+  }
+}
+
+function initB(lotab) {
+  // lotab: list of csv tables
+  var i, pk, cn, Ntab = lotab.length;
+  G.table.content = parseCSV(lotab[0], G.config.textcols);
+  var exampleRow;
+  if (G.config.pkey && G.config.examplekey) {
+    for (i=0; i<G.table.content.length; ++i) {
+      if (G.table.content[i][G.config.pkey] == G.config.examplekey) {
+	exampleRow = G.table.content[i];
+      }
+    }
+  } else {
+    exampleRow = G.table.content[0];
+  }
+  var visibleCols = Object.keys(exampleRow);
+  if (Ntab > 1) {
+    pk = G.config.pkey;
+    if (pk == undefined) {
+      alert('You have more than 1 csv files.\nPlease define "pkey" in .json.');
+      return;
+    }
+    for (i=1; i<Ntab; ++i) {
+      parseJoin(G.table.content, lotab[i]);
+    }
+  }
+  G.table.colnames = Object.keys(exampleRow);
+  var colDefs = G.table.colnames.map(function (cn) {
+      return {
+	'title': cn,
+	'type': G.config.textcols.includes(cn) ? 'string' : 'num',
+	'visible': visibleCols.includes(cn),
+      };
+  } );
+  var invdIndex = 1000;
+  G.table.colnames.forEach(function (cn) {
+    if (! G.config.textcols.includes(cn)) {
+      G.table.invd[cn] = 'inv4me' + invdIndex.toString().substr(1);
+      ++invdIndex;
+    }
+  });
+
+  for (var coldef of G.config.extracols) {
+    if (! coldef.includes('=')) { coldef += '=' + coldef; }
+    var m = coldef.match(/(.+?)=(.*)/);
+    var colname=m[1], expr=m[2];
+    G.table.invd[colname] = 'inv4me' + invdIndex.toString().substr(1);
+    ++invdIndex;
+    G.table.colnames.push(colname);
+    colDefs.push({
+      'title': colname,
+      'type': 'num',
+      'visible': true,
+    });
+    for (var row of G.table.content) {
+      row[colname] = u8varMathEval(expr, row, G.table.invd).toFixed(2);
+    }
+  }
+  colDefs.forEach(function (col) {
+    if (! G.config.textcols.includes(col.title)) {
+      col.orderSequence = [ "desc", "asc" ];
+    }
+  });
+console.log(G);
+
   var dtConfig = {
     'paging': false,
     'fixedHeader': true,
-    'dom': 'lift',
+    'dom': 'Bflit',
     // https://stackoverflow.com/questions/23724076/how-to-customize-bootstrap-datatable-search-box-and-records-view-position/33617575
+    'buttons': [ 'colvis' ],
+    // https://datatables.net/extensions/buttons/examples/column_visibility/simple.html
     'data': G.table.content.map(function (row) {
       return G.table.colnames.map(function (cn) { return row[cn]; });
     }),
-    'columns': G.table.colnames.map(function (cn) {
-      return {
-	'title': cn,
-	'name': cn,
-	'type': G.config.textcols.includes(cn) ? 'string' : 'num'
-      };
-    })
+    'columns': colDefs,
     // browsers on android do not support Object.values()
     // https://stackoverflow.com/questions/38748445/uncaught-typeerror-object-values-is-not-a-function-javascript
   };
   G.table.dtobj = $('#summary_table').DataTable(dtConfig);
-
-  var i=1000;
-  G.table.colnames.forEach(function (cn) {
-    if (! G.config.textcols.includes(cn)) {
-      G.table.invd[cn] = 'inv4me' + i.toString().substr(1);
-      ++i;
-    }
-  });
 
   var allColnameOptions = Object.keys(G.table.invd).map(function (cn) {
     return '<option>' + cn + '\n';
