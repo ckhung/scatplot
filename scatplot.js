@@ -19,7 +19,15 @@ var G = {
         scale: 1.2
       }
     },
-    'layout': { 'hovermode': 'closest'}
+    'layout': {
+      'hovermode': 'closest',
+      'xaxis': {
+	'title': { 'text': '' }
+      },
+      'yaxis': {
+	'title': { 'text': '' }
+      }
+    }
     // https://community.plot.ly/t/disable-x-axis-hover-text/28970
   },
 };
@@ -126,11 +134,9 @@ function redraw() {
   });
 
   pltMainTrace.xaxis.expr = $('#X_expr').val();
-  pltMainTrace.xaxis.title = { 'text': pltMainTrace.xaxis.expr };
+  G.plotly.layout.xaxis.title.text = pltMainTrace.xaxis.expr;
   pltMainTrace.yaxis.expr = $('#Y_expr').val();
-  pltMainTrace.yaxis.title = { 'text': pltMainTrace.yaxis.expr };
-  // pltMainTrace.zaxis.expr = $('#Z_expr').val();
-  // pltMainTrace.zaxis.title = { 'text': pltMainTrace.zaxis.expr };
+  G.plotly.layout.yaxis.title.text = pltMainTrace.yaxis.expr;
   pltMainTrace.size.expr = $('#Size_expr').val();
 
   var maintext = tableContent.map(function (row) {

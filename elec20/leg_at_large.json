@@ -9,7 +9,33 @@
   },
   "plotly": {
     "layout": {
-      "title": "兩政黨各縣市得票比例對照圖"
+      "title": {
+	"text": "兩政黨各縣市得票比例對照圖",
+	"font": {
+	  "size": 30,
+	  "color": "#000000"
+	}
+      },
+      "font": {
+        "size": 16,
+        "color": "#0000ff"
+      },
+      "xaxis": {
+	"title": {
+	  "font": {
+	    "size": 20,
+	    "color": "#000000"
+	  }
+	}
+      },
+      "yaxis": {
+	"title": {
+	  "font": {
+	    "size": 20,
+	    "color": "#000000"
+	  }
+	}
+      }
     },
     "maintrace": {
       "font": {

@@ -21,7 +21,8 @@
     "layout": {
       "title": "股票財報指標圖",
       "xaxis": { "type": "log" },
-      "yaxis": { "type": "log" }
+      "yaxis": { "type": "log" },
+      "font": { "size": 16 }
     },
     "maintrace": {
       "font": {
