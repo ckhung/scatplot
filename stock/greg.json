@@ -12,8 +12,9 @@
     "pkey": "代號",
     "samplekey": "1301",
     "extracols": [
-      "便宜價=divavg*16",
-      "昂貴程度=收盤價/divavg/20*100"
+      "五年均息=(y14+y15+y16+y17+y18)/5",
+      "便宜價=五年均息*16",
+      "昂貴程度=收盤價/便宜價*100"
     ]
   },
   "plotly": {
@@ -33,7 +34,7 @@
       },
       "yaxis": {
         "type": "log",
-        "expr": "divavg"
+        "expr": "五年均息"
       },
       "size": {
         "expr": "3000/昂貴程度"
@@ -42,14 +43,36 @@
         "default": "#008"
       },
       "maintext": "名稱",
-      "hovertext": "代號\n名稱",
-      "hovermode": "closest"
+      "hovertext": "代號 名稱"
     },
     "statictraces": [
       {
         "type": "scatter",
-        "x": [ 10, 100 ],
-        "y": [ 0.6, 6 ],
+        "x": [ 16, 80 ],
+        "y": [ 1, 5 ],
+	"name": "便宜價",
+        "line": {
+          "color": "#008000",
+          "width": 0.8,
+          "dash": "dashdot"
+        }
+      },
+      {
+        "type": "scatter",
+        "x": [ 20, 100 ],
+        "y": [ 1, 5 ],
+	"name": "合理價",
+        "line": {
+          "color": "#808000",
+          "width": 0.8,
+          "dash": "dashdot"
+        }
+      },
+      {
+        "type": "scatter",
+        "x": [ 32, 160 ],
+        "y": [ 1, 5 ],
+	"name": "昂貴價",
         "line": {
           "color": "#800000",
           "width": 0.8,

@@ -23,8 +23,7 @@
         "default": "#008"
       },
       "maintext": "縣市",
-      "hovertext": "縣市",
-      "hovermode": "closest"
+      "hovertext": "縣市"
     }
   }
 }

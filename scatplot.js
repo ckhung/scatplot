@@ -19,6 +19,8 @@ var G = {
         scale: 1.2
       }
     },
+    'layout': { 'hovermode': 'closest'}
+    // https://community.plot.ly/t/disable-x-axis-hover-text/28970
   },
 };
 
@@ -40,13 +42,18 @@ function cn2val(text, dict) {
 }
 
 function u8varMathEval(expr, dict, u2adict) {
-  var k, anDict = {};	// alphanumeric expr and alpha numeric dict
+  var anexpr=expr, anDict={}, k;	// alphanumeric expr/dict/variable
   for (k in u2adict) {
     var re = new RegExp(k, 'g');
-    expr = expr.replace(re, u2adict[k]);
+    anexpr = anexpr.replace(re, u2adict[k]);
     anDict[u2adict[k]] = dict[k];
   }
-  return math.eval(expr, anDict);
+  try {
+    return math.eval(anexpr, anDict);
+  } catch (e) {
+    console.log('eval exception: expr="'+expr+'"', dict);
+    return NaN;
+  }
 }
 
 // 出處： https://stackoverflow.com/questions/41440945/handling-dynamic-arguments-from-when-in-jquery 超重要！
@@ -57,6 +64,7 @@ $.whenAll = function(promises) {
       results[index] = result;
       if (--counter == 0) { d.resolve(results); }
     }).fail(function() {
+      alert('failed to read ' + this.url.replace(/\?.*/, ''));
       d.reject(Array.prototype.slice.call(arguments));
     });
   });
@@ -139,7 +147,8 @@ function redraw() {
     'y': tableContent.map(function (row) { return u8varMathEval(pltMainTrace.yaxis.expr, row, G.table.invd); } ),
     'name': pltMainTrace.xaxis.expr + ' / ' + pltMainTrace.yaxis.expr,
     'text': maintext,
-    'hoverinfo': 'x+y+text',
+    // 'hoverinfo': 'text+x+y',
+    'hovertemplate': '%{hovertext}<br />(%{x}, %{y})',
     'hovertext': hovertext,
     'mode': pltMainTrace.maintext ? 'markers+text' : 'markers',
     'marker': {
@@ -189,7 +198,7 @@ function parseJoin(mainTable, csvText) {
     var cns = Object.keys(exRow);
     for (var cn of cns) {
       if (! (cn in row)) {
-	row[cn] = dict2[row[G.source.pkey]][cn];
+	row[cn] = row[G.source.pkey] in dict2 ? dict2[row[G.source.pkey]][cn] : NaN;
       }
     }
   }
@@ -257,10 +266,10 @@ function init(lotab) {
   }
   colDefs.forEach(function (col) {
     if (! G.source.textcols.includes(col.title)) {
-      col.orderSequence = [ "desc", "asc" ];
+      col.orderSequence = [ 'desc', 'asc' ];
     }
   });
-console.log(G);
+console.log('global variables: ', G);
 
   var dtConfig = {
     'paging': false,
@@ -309,18 +318,22 @@ console.log(G);
 
 G.url = new URI(location.href);
 G.urlConfig = G.url.search(true);
+console.log('urlConfig: ', G.urlConfig);
 if (! G.urlConfig.c) { G.urlConfig.c='config.json'; }
 
 $.getJSON(G.urlConfig.c, function(cfgdata) {
   // set up config
   $.extend(true, G, cfgdata);
-  $.extend(true, G, G.urlConfig);
+  // $.extend(true, G, G.urlConfig);
   if (! Array.isArray(G.source.csv)) { G.source.csv = [ G.source.csv ]; }
   if (! Array.isArray(G.source.keep)) { G.source.keep = [ G.source.keep ]; }
-  var csvReq = G.source.csv.map(function (url) { return $.get(url+rndsfx()); });
+  var csvReq = G.source.csv.map(function (url) {
+    return $.get(url+rndsfx());
+  });
   $.whenAll(csvReq).then(init);
   // 最有用： https://stackoverflow.com/questions/41440945/handling-dynamic-arguments-from-when-in-jquery 超級讚！
   // https://stackoverflow.com/questions/14352139/multiple-ajax-calls-from-array-and-handle-callback-when-completed
   // https://stackoverflow.com/questions/4878887/how-do-you-work-with-an-array-of-jquery-deferreds
+}).fail(function( jqxhr, textStatus, error ) {
+  alert('failed to read ' + this.url);
 });
-
