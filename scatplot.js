@@ -52,14 +52,18 @@ function cn2val(text, dict) {
 function u8varMathEval(expr, dict, u2adict) {
   var anexpr=expr, anDict={}, k;	// alphanumeric expr/dict/variable
   for (k in u2adict) {
-    var re = new RegExp(k, 'g');
+    var re = new RegExp(
+      k.match(/^\w+$/) ? '\\b'+k+'\\b' : k,
+      'g'
+    );
     anexpr = anexpr.replace(re, u2adict[k]);
     anDict[u2adict[k]] = dict[k];
   }
   try {
     return math.eval(anexpr, anDict);
   } catch (e) {
-    console.log('eval exception: expr="'+expr+'"', dict);
+    console.log('eval exception: ' + expr + ' => '+ anexpr);
+    console.log(dict);
     return NaN;
   }
 }
