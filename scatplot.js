@@ -324,17 +324,42 @@ console.log('global variables: ', G);
   redraw();
 }
 
+// setAttr(G, k, G.urlConfig[k]);
+function ucExtend() {
+  // { 's.csv[0]':'abc.csv' } => G.source.csv[0] = 'abc.csv'
+  var attname, obj, rest, match;
+  for (attname in G.urlConfig) {
+    match = attname.match(/(\w+)(.+)/);
+    if (! match) {
+      console.log('ignoring urlConfig: ' + attname + '=' + G.urlConfig[attname]);
+      continue;
+    }
+    obj = match[1];
+    match = match[2].match(/\.\w+|\[\d+\]/g);
+    rest = match.map(function (attr) {
+      var m = attr.match(/\[(\d+)\]/);
+      return m ? parseInt(m[1]) : attr.slice(1);
+    });
+    if (obj = 's') { obj = 'source'; }
+    obj = G[obj];
+    for (var i=0; i<rest.length-1; ++i) {
+      obj = obj[rest[i]];
+    }
+    obj[rest[rest.length-1]] = G.urlConfig[attname];
+  }
+}
+
 ////////////////////////////////////////////////////////////
 
 G.url = new URI(location.href);
 G.urlConfig = G.url.search(true);
-console.log('urlConfig: ', G.urlConfig);
 if (! G.urlConfig.c) { G.urlConfig.c='config.json'; }
 
 $.getJSON(G.urlConfig.c, function(cfgdata) {
   // set up config
   $.extend(true, G, cfgdata);
-  // $.extend(true, G, G.urlConfig);
+  ucExtend();
+console.log('urlConfig: ', G.urlConfig);
   if (! Array.isArray(G.source.csv)) { G.source.csv = [ G.source.csv ]; }
   if (! Array.isArray(G.source.keep)) { G.source.keep = [ G.source.keep ]; }
   var csvReq = G.source.csv.map(function (url) {
