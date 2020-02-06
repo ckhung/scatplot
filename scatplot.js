@@ -271,7 +271,13 @@ function init(lotab) {
       'visible': true,
     });
     for (var row of G.table.content) {
-      row[colname] = u8varMathEval(expr, row, G.table.invd).toFixed(2);
+      var val = u8varMathEval(expr, row, G.table.invd);
+      if (typeof(val) == 'number') {
+        row[colname] = val.toFixed(2);
+      } else {
+        row[colname] = NaN;
+	console.log('eval error: col '+ colname + ' row ' + row[G.source.pkey] + ' val ' + val);
+      }
     }
   }
   colDefs.forEach(function (col) {
