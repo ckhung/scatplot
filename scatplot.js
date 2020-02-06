@@ -340,7 +340,10 @@ function ucExtend() {
       var m = attr.match(/\[(\d+)\]/);
       return m ? parseInt(m[1]) : attr.slice(1);
     });
-    if (obj = 's') { obj = 'source'; }
+    for (var k in G) {
+      // allow shorthand for 1st level attribute names
+      if (k.indexOf(obj) == 0) { obj = k; }
+    }
     obj = G[obj];
     for (var i=0; i<rest.length-1; ++i) {
       obj = obj[rest[i]];
