@@ -12,6 +12,11 @@ var G = {
     'invd': {},
   },
   'plotly': {
+    'maintrace' : {
+      'color' : {
+	'default': '#000'
+      }
+    },
     'statictraces': [],
     'config': {
       toImageButtonOptions: {
@@ -149,6 +154,31 @@ function redraw() {
   var hovertext = tableContent.map(function (row) {
     return cn2val(pltMainTrace.hovertext, row);
   });
+
+  var markerSize = [], markerLineColor = [];
+  for (var i in tableContent) {
+    var row = tableContent[i];
+    markerSize[i] = 'size' in pltMainTrace && 'expr' in pltMainTrace.size ?
+      u8varMathEval(pltMainTrace.size.expr, row, G.table.invd) : 0;
+    // https://plot.ly/~alex/455/four-ways-to-change-opacity-of-scatter-markers.embed
+    if ('palette' in pltMainTrace.color) {
+      var pal = pltMainTrace.color.palette;
+      if (typeof(pal) == 'number') {
+        markerLineColor[i] = '#00f';
+	continue;
+      } else if (typeof(pal) == 'object') {
+        var k = pltMainTrace.color.column;
+        markerLineColor[i] = row[k] in pal ? pal[row[k]] : pltMainTrace.color.default;
+	continue;
+      } else {
+      }
+    }
+    markerLineColor[i] = pltMainTrace.color.default;
+    if ('negative' in pltMainTrace.color && markerSize[i] < 0) {
+      markerLineColor[i] = pltMainTrace.color.negative;
+      markerSize[i] = - markerSize[i];
+    }
+  }
   var mainTrace = {
     // https://plot.ly/javascript/bubble-charts/
     // https://plot.ly/javascript/reference/
@@ -157,29 +187,16 @@ function redraw() {
     'y': tableContent.map(function (row) { return u8varMathEval(pltMainTrace.yaxis.expr, row, G.table.invd); } ),
     'name': pltMainTrace.xaxis.expr + ' / ' + pltMainTrace.yaxis.expr,
     'text': maintext,
+    'textfont': pltMainTrace.textfont,
     // 'hoverinfo': 'text+x+y',
     'hovertemplate': '%{hovertext}<br />(%{x}, %{y})',
     'hovertext': hovertext,
     'mode': pltMainTrace.maintext ? 'markers+text' : 'markers',
     'marker': {
       'symbol': 'circle',
-      'size': tableContent.map(function (row) { return ('size' in pltMainTrace && 'expr' in pltMainTrace.size ? u8varMathEval(pltMainTrace.size.expr, row, G.table.invd) : 10); } ),
+      'size': markerSize,
       'color': 'rgba(255,255,255,0.3)',
-      'line': {
-	// https://plot.ly/~alex/455/four-ways-to-change-opacity-of-scatter-markers.embed
-        'color': 'color' in pltMainTrace && 'palette' in pltMainTrace.color ?
-	  tableContent.map(function (row) {
-	    var pal = pltMainTrace.color.palette;
-	    if (typeof(pal) == 'number') {
-	      return '#00f';
-	    } else if (typeof(pal) == 'object') {
-	      var k = pltMainTrace.color.column;
-	      return row[k] in pal ? pal[row[k]] : pltMainTrace.color.default;
-	    } else {
-	      return pltMainTrace.color.default;
-	    }
-          }) : pltMainTrace.color.default
-      }
+      'line': { 'color': markerLineColor },
     },
     // https://plot.ly/python/hover-text-and-formatting/
 
@@ -187,7 +204,6 @@ function redraw() {
     // 'mode': 'markers+text',
     // 'text': textlist,
   };
-
   // https://plot.ly/javascript/configuration-options/
 
   var traces = G.plotly.statictraces.slice();

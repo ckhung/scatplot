@@ -22,7 +22,80 @@
       "title": "股票財報指標圖",
       "xaxis": { "type": "log" },
       "yaxis": { "type": "log" },
-      "font": { "size": 16 }
+      "font": { "size": 16 },
+      "shapes": [
+	{
+	  "type": "line",
+	  "x0": 16,
+	  "y0": 1,
+	  "x1": 80,
+	  "y1": 5,
+          "line": {
+            "color": "#008000",
+            "width": 0.8,
+            "dash": "dashdot"
+          }
+	},
+	{
+	  "type": "line",
+	  "x0": 20,
+	  "y0": 1,
+	  "x1": 100,
+	  "y1": 5,
+          "line": {
+            "color": "#808000",
+            "width": 0.8,
+            "dash": "dashdot"
+          }
+	},
+	{
+	  "type": "line",
+	  "x0": 32,
+	  "y0": 1,
+	  "x1": 160,
+	  "y1": 5,
+          "line": {
+            "color": "#800000",
+            "width": 0.8,
+            "dash": "dashdot"
+          }
+	}
+      ],
+      "annotations": [
+        {
+          "text": "便宜價",
+          "x": 1.9,
+          "y": 0.7,
+	  "font": {
+	    "size": 12,
+	    "color": "#008000",
+	    "opacity": 0.5
+	  },
+          "showarrow": false
+        },
+        {
+          "text": "合理價",
+          "x": 2.0,
+          "y": 0.7,
+	  "font": {
+	    "size": 12,
+	    "color": "#808000",
+	    "opacity": 0.5
+	  },
+          "showarrow": false
+        },
+        {
+          "text": "昂貴價",
+          "x": 2.2,
+          "y": 0.7,
+	  "font": {
+	    "size": 12,
+	    "color": "#800000",
+	    "opacity": 0.5
+	  },
+          "showarrow": false
+        }
+      ]
     },
     "maintrace": {
       "font": {
@@ -45,41 +118,6 @@
       },
       "maintext": "名稱",
       "hovertext": "代號 名稱"
-    },
-    "statictraces": [
-      {
-        "type": "scatter",
-        "x": [ 16, 80 ],
-        "y": [ 1, 5 ],
-	"name": "便宜價",
-        "line": {
-          "color": "#008000",
-          "width": 0.8,
-          "dash": "dashdot"
-        }
-      },
-      {
-        "type": "scatter",
-        "x": [ 20, 100 ],
-        "y": [ 1, 5 ],
-	"name": "合理價",
-        "line": {
-          "color": "#808000",
-          "width": 0.8,
-          "dash": "dashdot"
-        }
-      },
-      {
-        "type": "scatter",
-        "x": [ 32, 160 ],
-        "y": [ 1, 5 ],
-	"name": "昂貴價",
-        "line": {
-          "color": "#800000",
-          "width": 0.8,
-          "dash": "dashdot"
-        }
-      }
-    ]
+    }
   }
 }
