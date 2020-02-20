@@ -37,10 +37,6 @@ var G = {
   },
 };
 
-const pKeyPrefix='k';
-// 當 pkey 的內容是數字時， 用 String(...) 也沒用。
-// 一定要在前面加個非數字的字元， 才能強迫表格成為 dict 而非很糟糕的 sparse array
-
 function rndsfx() {
   return '?' + Math.floor(Math.random() * 1000);
 }
@@ -216,6 +212,8 @@ function parseJoin(mainTable, csvText) {
   var t2 = parseCSV(csvText, G.source.textcols);
   // convert t2 array into a dict
   var row, dict2 = {}; 
+  // dict2 的初始化千萬不可寫成 dict2 = [];
+  // https://stackoverflow.com/questions/2002923/javascript-using-integer-as-key-in-associative-array
   for (row of t2) {
     dict2[row[G.source.pkey]] = row;
   }
