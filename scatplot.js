@@ -3,40 +3,9 @@
 
 // eval using mathjs : https://mathjs.org/examples/basic_usage.js.html
 
-var G = {
-  'source': {
-    'keep': [ 'true' ],
-    'extracols': [],
-  },
-  'table': {
-    'invd': {},
-  },
-  'plotly': {
-    'maintrace' : {
-      'color' : {
-	'default': '#000'
-      }
-    },
-    'statictraces': [],
-    'config': {
-      toImageButtonOptions: {
-        format: 'svg',
-        scale: 1.2
-      }
-    },
-    'layout': {
-      'hovermode': 'closest',
-      'xaxis': {
-	'title': { 'text': '' }
-      },
-      'yaxis': {
-	'title': { 'text': '' }
-      }
-    }
-    // https://community.plot.ly/t/disable-x-axis-hover-text/28970
-  },
-};
+var G = {};	// global variables
 
+// https://community.plot.ly/t/disable-x-axis-hover-text/28970
 function rndsfx() {
   return '?' + Math.floor(Math.random() * 1000);
 }
@@ -64,7 +33,7 @@ function u8varMathEval(expr, dict, u2adict) {
     return math.eval(anexpr, anDict);
   } catch (e) {
     console.log('eval exception: ' + expr + ' => '+ anexpr);
-    console.log(dict);
+    console.log(dict, anDict);
     return NaN;
   }
 }
@@ -98,7 +67,7 @@ function parseCSV(str, textcols) {
     for (i=0; i<keys.length; ++i) {
       // parse all cols into numbers except
       // those explicitly specified in textcols
-      krow[keys[i]] = textcols.indexOf(keys[i])>=0 ? row[i] : parseFloat(row[i]);
+      krow[keys[i]] = textcols.includes(keys[i]) ? row[i] : parseFloat(row[i]);
     }
     ret.push(krow);
   }
@@ -108,7 +77,7 @@ function parseCSV(str, textcols) {
 function redraw() {
 
   var // aliases for global variables
-    tableContent,
+    keptKeys,
     filteredData,
     pltMainTrace = G.plotly.maintrace;
 
@@ -124,19 +93,13 @@ function redraw() {
   } ];
   G.table.dtobj.draw();
 
-  // 太奇怪了， DataTables 傳回來的 .data() 竟然是 object 而不是 array，
-  // 而且夾雜著其他函數等等。
   // https://stackoverflow.com/questions/33169649/how-to-get-filtered-data-result-set-from-jquery-datatable
   filteredData = G.table.dtobj.rows({ filter : 'applied'}).data();
   // console.log(Object.keys(filteredData));
-  // tableContent = [];
-  tableContent = Array.from(filteredData).map(function (row) {
-    var newrow = {};
-    for (var j=0; j<G.table.colnames.length; ++j) {
-      newrow[G.table.colnames[j]] = row[j];
-    }
-    return newrow;
-  });
+  // keptKeys = [];
+  // 但是注意： DataTables 傳回來的 .data() 是 object 而不是 array， 裡面夾雜著其他函數等等。
+  var pkidx = G.table.colnames.indexOf(G.source.pkey);
+  keptKeys = Array.from(filteredData).map(function (row) { return row[pkidx]; });
 
   pltMainTrace.xaxis.expr = $('#X_expr').val();
   G.plotly.layout.xaxis.title.text = pltMainTrace.xaxis.expr;
@@ -144,85 +107,132 @@ function redraw() {
   G.plotly.layout.yaxis.title.text = pltMainTrace.yaxis.expr;
   pltMainTrace.size.expr = $('#Size_expr').val();
 
-  var maintext = tableContent.map(function (row) {
-    return cn2val(pltMainTrace.maintext, row);
-  });
-  var hovertext = tableContent.map(function (row) {
-    return cn2val(pltMainTrace.hovertext, row);
-  });
-
-  var markerSize = [], markerLineColor = [];
-  for (var i in tableContent) {
-    var row = tableContent[i];
-    markerSize[i] = 'size' in pltMainTrace && 'expr' in pltMainTrace.size ?
-      u8varMathEval(pltMainTrace.size.expr, row, G.table.invd) : 0;
-    // https://plot.ly/~alex/455/four-ways-to-change-opacity-of-scatter-markers.embed
-    if ('palette' in pltMainTrace.color) {
-      var pal = pltMainTrace.color.palette;
-      if (typeof(pal) == 'number') {
-        markerLineColor[i] = '#00f';
-	continue;
-      } else if (typeof(pal) == 'object') {
-        var k = pltMainTrace.color.column;
-        markerLineColor[i] = row[k] in pal ? pal[row[k]] : pltMainTrace.color.default;
-	continue;
-      } else {
-      }
-    }
-    markerLineColor[i] = pltMainTrace.color.default;
-    if ('negative' in pltMainTrace.color && markerSize[i] < 0) {
-      markerLineColor[i] = pltMainTrace.color.negative;
-      markerSize[i] = - markerSize[i];
-    }
+  var frAsDict = {};
+  for (var tk of G.table.timekeys) {
+    frAsDict[tk] = { 'name': tk, data: [ { x:[], y:[] } ] };
   }
-  var mainTrace = {
+  var mt = {
     // https://plot.ly/javascript/bubble-charts/
     // https://plot.ly/javascript/reference/
     'type': 'scatter',
-    'x': tableContent.map(function (row) { return u8varMathEval(pltMainTrace.xaxis.expr, row, G.table.invd); } ),
-    'y': tableContent.map(function (row) { return u8varMathEval(pltMainTrace.yaxis.expr, row, G.table.invd); } ),
+    'x': [],
+    'y': [],
     'name': pltMainTrace.xaxis.expr + ' / ' + pltMainTrace.yaxis.expr,
-    'text': maintext,
+    'text': [],
+    'ids': [],
     'textfont': pltMainTrace.textfont,
     // 'hoverinfo': 'text+x+y',
     'hovertemplate': '%{hovertext}<br />(%{x}, %{y})',
-    'hovertext': hovertext,
+    'hovertext': [],
     'mode': pltMainTrace.maintext ? 'markers+text' : 'markers',
     'marker': {
       'symbol': 'circle',
-      'size': markerSize,
+      'size': [],
       'color': 'rgba(255,255,255,0.3)',
-      'line': { 'color': markerLineColor },
+      'line': { 'color': [] },
     },
     // https://plot.ly/python/hover-text-and-formatting/
-
-    // https://plot.ly/javascript/text-and-annotations/
-    // 'mode': 'markers+text',
-    // 'text': textlist,
   };
-  // https://plot.ly/javascript/configuration-options/
+
+  for (var idx in keptKeys) {
+    var pk = keptKeys[idx];
+    var row = G.table.asDict[pk];
+    mt.ids[idx] = pk;
+    mt.x[idx] = u8varMathEval(pltMainTrace.xaxis.expr, row, G.table.invd);
+    mt.y[idx] = u8varMathEval(pltMainTrace.yaxis.expr, row, G.table.invd);
+    // https://plot.ly/python/hover-text-and-formatting/
+    mt.text[idx] = cn2val(pltMainTrace.maintext, row);
+    mt.hovertext[idx] = cn2val(pltMainTrace.hovertext, row);
+    mt.marker.size[idx] = 'size' in pltMainTrace && 'expr' in pltMainTrace.size ?
+      u8varMathEval(pltMainTrace.size.expr, row, G.table.invd) : 0;
+    var xvals = [], yvals = [], snapshot = G.table.history[tk];
+    for (tk of G.table.timekeys) {
+      var xval, yval, dict = $.extend({}, row);	// make a copy
+      $.extend(dict, G.table.history[tk][pk]);
+      xval = u8varMathEval(pltMainTrace.xaxis.expr, dict, G.table.invd);
+      frAsDict[tk].data[0].x[idx] = typeof(xval) == 'number' ? xval.toFixed(2) : NaN;
+      frAsDict[tk].data[0].x[idx] = xval;
+      yval = u8varMathEval(pltMainTrace.yaxis.expr, dict, G.table.invd);
+      frAsDict[tk].data[0].y[idx] = typeof(yval) == 'number' ? yval.toFixed(2) : NaN;
+      frAsDict[tk].data[0].y[idx] = yval;
+    }
+
+    // https://plot.ly/~alex/455/four-ways-to-change-opacity-of-scatter-markers.embed
+    var pal = pltMainTrace.color.palette;
+    if (typeof(pal) == 'object') {
+      var k = pltMainTrace.color.colname;
+      mt.marker.line.color[idx] = row[k] in pal ?
+        pal[row[k]] : pltMainTrace.color.default;
+    } else {
+      mt.marker.line.color[idx] = pltMainTrace.color.default;
+      if ('negative' in pltMainTrace.color && mt.marker.size[idx] < 0) {
+        mt.marker.line.color[idx] = pltMainTrace.color.negative;
+        mt.marker.size[idx] = - mt.marker.size[idx];
+      }
+    }
+  }
+
+  var frames = G.table.timekeys.map(function (tk) { return frAsDict[tk]; });
+console.log('frames: ', frames);
 
   var traces = G.plotly.statictraces.slice();
   // shallow copy is good enough since this part is never changed
-  traces.unshift(mainTrace);
-  Plotly.react($('#main_canvas')[0], traces, G.plotly.layout, G.plotly.config);
+  traces.unshift(mt);
+
+  if (G.plotly.maintrace.timeaxis.colname) {
+    G.plotly.layout.sliders[0].steps = G.table.timekeys.map(function (tk) {
+      return {
+	'method': 'animate',
+	'label': tk,
+	'args': [
+	  [tk], {
+	    'mode': 'immediate',
+	    'transition': {'duration': 300},
+	    'frame': {'duration': 300, 'redraw': false},
+	  }
+	]
+      };
+    });
+  }
+
+
+  // https://plot.ly/javascript/gapminder-example/ (animation)
+  Plotly.react($('#main_canvas')[0], {
+    'data':traces, 'layout':G.plotly.layout, 'config':G.plotly.config, 'frames': frames
+  });
 }
 
-function parseJoin(mainTable, csvText) {
-  var t2 = parseCSV(csvText, G.source.textcols);
-  // convert t2 array into a dict
-  var row, dict2 = {}; 
+function saveHistory(csvRows) {
+  var exRow = csvRows[0], timeCN = G.plotly.maintrace.timeaxis.colname;
+  if (! (timeCN && timeCN in exRow)) { return; }
+  for (var row of csvRows) {
+    if (! G.table.allpkeys.includes(row[G.source.pkey])) { continue; }
+    if (! (row[timeCN] in G.table.history)) {
+      G.table.history[row[timeCN]] = {};
+    }
+    G.table.history[row[timeCN]][row[G.source.pkey]] = row;
+  }
+}
+
+function toDictJoin(csvRows) {
+  // convert csvRows array into a dict, then join it into G.table.asDict
+  var row, dict2 = {}, mainDict = G.table.asDict;
   // dict2 的初始化千萬不可寫成 dict2 = [];
   // https://stackoverflow.com/questions/2002923/javascript-using-integer-as-key-in-associative-array
-  for (row of t2) {
+  for (row of csvRows) {
+    if (!  G.table.allpkeys.includes(row[G.source.pkey])) { continue; }
+    // pkey 若重複出現 (有 timeaxis 時)， 後來的覆蓋舊的
     dict2[row[G.source.pkey]] = row;
   }
-  var exRow = G.source.samplekey ? dict2[G.source.samplekey] : t2[0];
-  for (row of mainTable) {
-    var cns = Object.keys(exRow);
-    for (var cn of cns) {
+  var exRow = dict2[G.source.samplekey];
+  for (var pk of G.table.allpkeys) {
+    if (! (pk in G.table.asDict)) { G.table.asDict[pk] = {}; }
+    row = G.table.asDict[pk];
+    var colnames = Object.keys(exRow);
+    for (var cn of colnames) {
       if (! (cn in row)) {
-	row[cn] = row[G.source.pkey] in dict2 ? dict2[row[G.source.pkey]][cn] : NaN;
+	row[cn] = pk in dict2 ? dict2[pk][cn] :
+	  G.source.textcols.includes(cn) ? '' : NaN;
       }
     }
   }
@@ -230,37 +240,66 @@ function parseJoin(mainTable, csvText) {
 
 function init(lotab) {
   // lotab: list of csv tables
-  var i, pk, cn, Ntab = lotab.length;
-  G.table.content = parseCSV(lotab[0], G.source.textcols);
-  var sampleRow;
-  if (G.source.pkey && G.source.samplekey) {
-    for (i=0; i<G.table.content.length; ++i) {
-      if (G.table.content[i][G.source.pkey] == G.source.samplekey) {
-	sampleRow = G.table.content[i];
-      }
-    }
-  } else {
-    sampleRow = G.table.content[0];
+
+  var i, apk, cn, sampleRow, Ntab = lotab.length, csvRows;
+
+  ////////////////////////////////////////////////////////////
+  // read csv file, build asDict and history dict, get keys along 3 dimensions
+
+  // Special processing for 0-th csv file
+  csvRows = parseCSV(lotab[0], G.source.textcols);
+  if (! G.source.pkey) {
+    G.source.pkey = G.source.textcols[0];
+    alert('No pkey defined.\nUsing "' + G.source.pkey + '" as primary key');
   }
+  var pkname = G.source.pkey;
+  apk = {};	// all primary keys
+  for (var row of csvRows) { apk[row[pkname]] = 1; }
+  // get all keys of the 1st (row-wise) dimension
+  G.table.allpkeys = Object.keys(apk);
+  G.table.allpkeys.sort();
+  if (! G.source.samplekey) {
+    G.source.samplekey = G.table.allpkeys[0];
+  }
+  saveHistory(csvRows);
+  toDictJoin(csvRows);
+
+  sampleRow = G.table.asDict[G.source.samplekey];
   var visibleCols = Object.keys(sampleRow);
-  if (Ntab > 1) {
-    pk = G.source.pkey;
-    if (pk == undefined) {
-      alert('You have more than 1 csv files.\nPlease define "pkey" in .json.');
-      return;
-    }
-    for (i=1; i<Ntab; ++i) {
-      parseJoin(G.table.content, lotab[i]);
+  // all columns in the 0-th csv file are visible
+
+  // remaining csv files
+  for (i=1; i<Ntab; ++i) {
+    csvRows = parseCSV(lotab[i], G.source.textcols);
+    saveHistory(csvRows);
+    toDictJoin(csvRows);
+  }
+
+  // get all keys of the 2nd (column-wise) dimension
+  G.table.colnames = Object.keys(sampleRow);
+
+  G.table.asArray = G.table.allpkeys.map(function (pk) { return G.table.asDict[pk]; });
+  // more columns may be added later, but it's ok since each row is a reference
+
+  // get all keys of the 3rd (time) dimension
+  G.table.timekeys = Object.keys(G.table.history);
+
+  // G.table.timecols = []
+  if (G.plotly.maintrace.timeaxis.colname) {
+    // for time-dependent columns, use data from
+    // the last snapshot of history in the (main) G.table.asDict
+    var lastSnapshot = G.table.history[G.table.timekeys[G.table.timekeys.length-1]];
+//    G.table.timecols = Object.keys(lastSnapshot[G.source.samplekey]);
+//    G.table.timecols = G.table.timecols.filter(function (cn) {
+//      return ! G.source.textcols.includes(cn);
+//    });
+    for (var k of G.table.allpkeys) {
+      $.extend(true, G.table.asDict[k], lastSnapshot[k]);
     }
   }
-  G.table.colnames = Object.keys(sampleRow);
-  var colDefs = G.table.colnames.map(function (cn) {
-      return {
-	'title': cn,
-	'type': G.source.textcols.includes(cn) ? 'string' : 'num',
-	'visible': visibleCols.includes(cn),
-      };
-  } );
+
+  ////////////////////////////////////////////////////////////
+  // eval extracols expressions
 
   // G.table.invd: internal numerical variable dictionary
   // for mapping utf8 strings to alphanumeric names for math evaluation
@@ -279,27 +318,40 @@ function init(lotab) {
     G.table.invd[colname] = 'inv4me' + invdIndex.toString().substr(1);
     ++invdIndex;
     G.table.colnames.push(colname);
-    colDefs.push({
-      'title': colname,
-      'type': 'num',
-      'visible': true,
-    });
-    for (var row of G.table.content) {
+    visibleCols.push(colname);
+    for (var pk of G.table.allpkeys) {
+      row = G.table.asDict[pk];
       var val = u8varMathEval(expr, row, G.table.invd);
       if (typeof(val) == 'number') {
         row[colname] = val.toFixed(2);
       } else {
         row[colname] = NaN;
-	console.log('eval error: col '+ colname + ' row ' + row[G.source.pkey] + ' val ' + val);
+	console.log(row);
+	console.log('eval error: col '+ colname + ' row ' + pk + ' val ' + val);
+      }
+      for (var tk in G.table.history) {
+	var dict = $.extend({}, row);	// make a copy
+	$.extend(dict, G.table.history[tk][pk]);
+	var val2 = u8varMathEval(expr, dict, G.table.invd);
+	G.table.history[tk][pk][colname] = typeof(val2) == 'number' ? val2.toFixed(2) : NaN;
       }
     }
   }
-  colDefs.forEach(function (col) {
-    if (! G.source.textcols.includes(col.title)) {
-      col.orderSequence = [ 'desc', 'asc' ];
-    }
-  });
-console.log('global variables: ', G);
+
+  ////////////////////////////////////////////////////////////
+  // build args for datatables
+
+  var colDefs = G.table.colnames.map(function (cn) {
+      var cd = {
+	'title': cn,
+	'type': G.source.textcols.includes(cn) ? 'string' : 'num',
+	'visible': visibleCols.includes(cn),
+      };
+      if (! G.source.textcols.includes(cn)) {
+        cd.orderSequence = [ 'desc', 'asc' ];
+      }
+      return cd;
+  } );
 
   var dtConfig = {
     'paging': false,
@@ -308,7 +360,7 @@ console.log('global variables: ', G);
     // https://stackoverflow.com/questions/23724076/how-to-customize-bootstrap-datatable-search-box-and-records-view-position/33617575
     'buttons': [ 'colvis' ],
     // https://datatables.net/extensions/buttons/examples/column_visibility/simple.html
-    'data': G.table.content.map(function (row) {
+    'data': G.table.asArray.map(function (row) {
       return G.table.colnames.map(function (cn) { return row[cn]; });
     }),
     'columns': colDefs,
@@ -316,6 +368,15 @@ console.log('global variables: ', G);
     // https://stackoverflow.com/questions/38748445/uncaught-typeerror-object-values-is-not-a-function-javascript
   };
   G.table.dtobj = $('#summary_table').DataTable(dtConfig);
+
+  ////////////////////////////////////////////////////////////
+  // build scatplot-specific UI
+
+  if (G.plotly.maintrace.timeaxis.colname) {
+    // enable animation menu
+    G.plotly.layout.updatemenus = G.plotly.layout._updatemenus;
+    G.plotly.layout.sliders = G.plotly.layout._sliders;
+  }
 
   var allColnameOptions = Object.keys(G.table.invd).map(function (cn) {
     return '<option>' + cn + '\n';
@@ -336,6 +397,9 @@ console.log('global variables: ', G);
 
   $('#redraw').click(redraw);
 
+  ////////////////////////////////////////////////////////////
+  // finally, render table and scatter plot
+
   $('#keep_expr').val( G.source.keep[0] );
   $('#X_expr').val( G.plotly.maintrace.xaxis.expr );
   $('#Y_expr').val( G.plotly.maintrace.yaxis.expr );
@@ -345,13 +409,13 @@ console.log('global variables: ', G);
 }
 
 // setAttr(G, k, G.urlConfig[k]);
-function ucExtend() {
+function ucExtend(urlConfig) {
   // { 's.csv[0]':'abc.csv' } => G.source.csv[0] = 'abc.csv'
   var attname, obj, rest, match;
-  for (attname in G.urlConfig) {
+  for (attname in urlConfig) {
     match = attname.match(/(\w+)(.+)/);
     if (! match) {
-      console.log('ignoring urlConfig: ' + attname + '=' + G.urlConfig[attname]);
+      console.log('ignoring urlConfig: ' + attname + '=' + urlConfig[attname]);
       continue;
     }
     obj = match[1];
@@ -368,30 +432,33 @@ function ucExtend() {
     for (var i=0; i<rest.length-1; ++i) {
       obj = obj[rest[i]];
     }
-    obj[rest[rest.length-1]] = G.urlConfig[attname];
+    obj[rest[rest.length-1]] = urlConfig[attname];
   }
 }
 
 ////////////////////////////////////////////////////////////
 
-G.url = new URI(location.href);
-G.urlConfig = G.url.search(true);
-if (! G.urlConfig.c) { G.urlConfig.c='config.json'; }
 
-$.getJSON(G.urlConfig.c, function(cfgdata) {
-  // set up config
-  $.extend(true, G, cfgdata);
-  ucExtend();
-console.log('urlConfig: ', G.urlConfig);
-  if (! Array.isArray(G.source.csv)) { G.source.csv = [ G.source.csv ]; }
-  if (! Array.isArray(G.source.keep)) { G.source.keep = [ G.source.keep ]; }
-  var csvReq = G.source.csv.map(function (url) {
-    return $.get(url+rndsfx());
+console.log('global variables: ', G);
+
+$.getJSON('default.json'+rndsfx(), function(defG) {
+  $.extend(true, G, defG);
+  var urlConfig = new URI(location.href).search(true);
+  $.getJSON(urlConfig.c || 'config.json'+rndsfx(), function(cfgdata) {
+    // set up config
+    $.extend(true, G, cfgdata);
+    ucExtend(urlConfig);
+    if (! Array.isArray(G.source.csv)) { G.source.csv = [ G.source.csv ]; }
+    if (! Array.isArray(G.source.keep)) { G.source.keep = [ G.source.keep ]; }
+    var csvReq = G.source.csv.map(function (url) {
+      return $.get(url+rndsfx());
+    });
+    $.whenAll(csvReq).then(init);
+    // 最有用： https://stackoverflow.com/questions/41440945/handling-dynamic-arguments-from-when-in-jquery 超級讚！
+    // https://stackoverflow.com/questions/14352139/multiple-ajax-calls-from-array-and-handle-callback-when-completed
+    // https://stackoverflow.com/questions/4878887/how-do-you-work-with-an-array-of-jquery-deferreds
+  }).fail(function( jqxhr, textStatus, error ) {
+    alert('failed to read ' + this.url);
   });
-  $.whenAll(csvReq).then(init);
-  // 最有用： https://stackoverflow.com/questions/41440945/handling-dynamic-arguments-from-when-in-jquery 超級讚！
-  // https://stackoverflow.com/questions/14352139/multiple-ajax-calls-from-array-and-handle-callback-when-completed
-  // https://stackoverflow.com/questions/4878887/how-do-you-work-with-an-array-of-jquery-deferreds
-}).fail(function( jqxhr, textStatus, error ) {
-  alert('failed to read ' + this.url);
 });
+

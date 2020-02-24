@@ -2,6 +2,7 @@
   "source": {
     "csv": "satellites.csv",
     "textcols": ["name", "planet"],
+    "pkey": "name",
     "keep": "radius > 100"
   },
   "plotly": {
@@ -18,7 +19,7 @@
       "hovertext": "name 繞 planet",
       "color": {
         "default": "#000",
-        "column": "planet",
+        "colname": "planet",
         "palette": {
   	"Jupiter": "#4c0",
   	"Saturn": "#f00",

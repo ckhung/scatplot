@@ -2,6 +2,7 @@
   "source": {
     "csv": "elec20/leg_at_large.csv",
     "textcols": ["縣市"],
+    "pkey": "縣市",
     "keep": [
       "選舉人數>150000",
       "有效票比例>70"

@@ -1,0 +1,109 @@
+{
+  "source": {
+    "keep": [
+      "true"
+    ],
+    "extracols": []
+  },
+  "table": {
+    "history": {},
+    "asDict": {},
+    "asArray": [],
+    "invd": {}
+  },
+  "plotly": {
+    "maintrace": {
+      "timeaxis": {},
+      "color": {
+        "default": "#000"
+      }
+    },
+    "statictraces": [],
+    "config": {
+      "toImageButtonOptions": {
+        "format": "svg",
+        "scale": 1.2
+      }
+    },
+    "layout": {
+      "xaxis": {
+        "title": { "text": "" }
+      },
+      "yaxis": {
+        "title": { "text": "" }
+      },
+      "hovermode": "closest",
+      "_updatemenus": [
+        {
+          "x": 0,
+          "y": 0,
+          "yanchor": "top",
+          "xanchor": "left",
+          "showactive": false,
+          "direction": "left",
+          "type": "buttons",
+          "pad": {
+            "t": 87,
+            "r": 10
+          },
+          "buttons": [
+            {
+              "method": "animate",
+              "args": [
+                null,
+                {
+                  "mode": "immediate",
+                  "fromcurrent": true,
+                  "transition": {
+                    "duration": 300
+                  },
+                  "frame": {
+                    "duration": 500,
+                    "redraw": false
+                  }
+                }
+              ],
+              "label": "Play"
+            },
+            {
+              "method": "animate",
+              "args": [
+                [
+                  null
+                ],
+                {
+                  "mode": "immediate",
+                  "transition": {
+                    "duration": 0
+                  },
+                  "frame": {
+                    "duration": 0,
+                    "redraw": false
+                  }
+                }
+              ],
+              "label": "Pause"
+            }
+          ]
+        }
+      ],
+      "_sliders": [
+        {
+          "pad": {
+            "l": 130,
+            "t": 55
+          },
+          "currentvalue": {
+            "visible": true,
+            "prefix": "Time:",
+            "xanchor": "right",
+            "font": {
+              "size": 20,
+              "color": "#666"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
