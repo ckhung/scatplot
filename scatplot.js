@@ -261,6 +261,10 @@ function init(lotab) {
   if (! G.source.samplekey) {
     G.source.samplekey = G.table.allpkeys[0];
   }
+  if (! G.table.allpkeys.includes(G.source.samplekey)) {
+    alert('samplekey "' + G.source.samplekey + '" not found,\nusing "' + G.table.allpkeys[0] + '" instead');
+    G.source.samplekey = G.table.allpkeys[0];
+  }
   saveHistory(csvRows);
   toDictJoin(csvRows);
 
@@ -273,6 +277,11 @@ function init(lotab) {
     csvRows = parseCSV(lotab[i], G.source.textcols);
     saveHistory(csvRows);
     toDictJoin(csvRows);
+  }
+  if (G.plotly.maintrace.timeaxis.colname && Object.keys(G.table.history).length<=0) {
+    alert('timeaxis.colname "' + G.plotly.maintrace.timeaxis.colname +
+      '" not found in any csv files,\nignoring time dimension');
+    G.plotly.maintrace.timeaxis.colname = undefined;
   }
 
   // get all keys of the 2nd (column-wise) dimension
@@ -415,7 +424,9 @@ function ucExtend(urlConfig) {
   for (attname in urlConfig) {
     match = attname.match(/(\w+)(.+)/);
     if (! match) {
-      console.log('ignoring urlConfig: ' + attname + '=' + urlConfig[attname]);
+      if (attname != 'c') {
+        console.log('ignoring urlConfig: ' + attname + '=' + urlConfig[attname]);
+      }
       continue;
     }
     obj = match[1];
