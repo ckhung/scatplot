@@ -1,0 +1,50 @@
+{
+  "source": {
+    "csv": [
+      "https://raw.githubusercontent.com/plotly/datasets/master/gapminderDataFiveYear.csv"
+    ],
+    "textcols": [
+      "country",
+      "year",
+      "continent"
+    ],
+    "pkey": "country"
+  },
+  "plotly": {
+    "layout": {
+      "title": "Gap Minder Example",
+      "xaxis": { "type": "log" },
+      "yaxis": { "type": "log" }
+    },
+    "maintrace": {
+      "font": {
+        "size": 16,
+        "color": "#008"
+      },
+      "timeaxis": {
+        "colname": "year"
+      },
+      "xaxis": {
+        "expr": "lifeExp"
+      },
+      "yaxis": {
+        "expr": "gdpPercap"
+      },
+      "size": {
+        "expr": "sqrt(pop)/400"
+      },
+      "color": {
+        "colname": "continent",
+        "palette": {
+  	  "Asia": "#619fca",
+  	  "Europe": "#ffa555",
+  	  "Africa": "#6abc6a",
+  	  "Americas": "#e26768",
+  	  "Oceania": "#b494d0"
+	}
+      },
+      "maintext": "",
+      "hovertext": "country"
+    }
+  }
+}

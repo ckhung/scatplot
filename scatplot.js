@@ -56,10 +56,19 @@ $.whenAll = function(promises) {
 function parseCSV(str, textcols) {
   // it's amazing how difficult it is to find
   // a suitable csv lib that also runs on an android phone
-  var table=[], ret=[], row, col, keys, i, krow;
-  for (row of str.split('\n')) {
-    if (row.match(/^\s*#|^\s*$/)) { continue; }
-    table.push(row.split(',').map(function (s) { return s.trim(); }));
+  var table=[], ret=[], rowstring, row, col, keys, i, krow;
+  for (rowstring of str.split('\n')) {
+    if (rowstring.match(/^\s*#|^\s*$/)) { continue; }
+    var m = rowstring.match(/"(.*?)"/g), marker='##QUOTED##';
+    if (m) { rowstring = rowstring.replace(/"(.*?)"/g, marker); }
+    row = rowstring.split(',').map(function (s) { return s.trim(); });
+    if (m) {
+      var k=0;
+      for (i=0; i<row.length; ++i) {
+	if (row[i] == marker) { row[i] = m[k]; ++k; }
+      }
+    }
+    table.push(row);
   }
   keys = table[0];
   for (row of table.slice(1)) {
@@ -109,7 +118,7 @@ function redraw() {
 
   var frAsDict = {};
   for (var tk of G.table.timekeys) {
-    frAsDict[tk] = { 'name': tk, data: [ { x:[], y:[] } ] };
+    frAsDict[tk] = { 'name': tk, data: [ { x:[], y:[], marker:{size:[]} } ] };
   }
   var mt = {
     // https://plot.ly/javascript/bubble-charts/
@@ -155,6 +164,9 @@ function redraw() {
       yval = u8varMathEval(pltMainTrace.yaxis.expr, dict, G.table.invd);
       frAsDict[tk].data[0].y[idx] = typeof(yval) == 'number' ? yval.toFixed(2) : NaN;
       frAsDict[tk].data[0].y[idx] = yval;
+      frAsDict[tk].data[0].marker.size[idx] =
+	'size' in pltMainTrace && 'expr' in pltMainTrace.size ?
+	u8varMathEval(pltMainTrace.size.expr, dict, G.table.invd) : 0;
     }
 
     // https://plot.ly/~alex/455/four-ways-to-change-opacity-of-scatter-markers.embed
@@ -168,6 +180,7 @@ function redraw() {
       if ('negative' in pltMainTrace.color && mt.marker.size[idx] < 0) {
         mt.marker.line.color[idx] = pltMainTrace.color.negative;
         mt.marker.size[idx] = - mt.marker.size[idx];
+	// bug! what about marker.size in frAsDict?
       }
     }
   }
@@ -210,6 +223,9 @@ function saveHistory(csvRows) {
     if (! (row[timeCN] in G.table.history)) {
       G.table.history[row[timeCN]] = {};
     }
+if (! row[timeCN].match(/^\d+$/)) {
+console.log('!! ', row[G.source.pkey], row[timeCN], row);
+}
     G.table.history[row[timeCN]][row[G.source.pkey]] = row;
   }
 }
