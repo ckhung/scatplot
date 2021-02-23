@@ -26,13 +26,15 @@ function u8varMathEval(expr, dict, u2adict) {
       k.match(/^\w+$/) ? '\\b'+k+'\\b' : k,
       'g'
     );
+    // FIX ME: this crude substitution will fail
+    // when one var name is a substring of another!
     anexpr = anexpr.replace(re, u2adict[k]);
     anDict[u2adict[k]] = dict[k];
   }
   try {
     return math.eval(anexpr, anDict);
   } catch (e) {
-    console.log('eval exception: ' + expr + ' => '+ anexpr);
+    console.log('eval exception: ' + expr + ' => '+ anexpr + ' was it caused by one var name being a substring of another?');
     console.log(dict, anDict);
     return NaN;
   }
