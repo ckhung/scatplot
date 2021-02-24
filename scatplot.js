@@ -21,13 +21,12 @@ function cn2val(text, dict) {
 
 function u8varMathEval(expr, dict, u2adict) {
   var anexpr=expr, anDict={}, k;	// alphanumeric expr/dict/variable
-  for (k in u2adict) {
+  keys = Object.keys(u2adict).sort(function(a,b) { return b.length - a.length});
+  for (k of keys) {
     var re = new RegExp(
       k.match(/^\w+$/) ? '\\b'+k+'\\b' : k,
       'g'
     );
-    // FIX ME: this crude substitution will fail
-    // when one var name is a substring of another!
     anexpr = anexpr.replace(re, u2adict[k]);
     anDict[u2adict[k]] = dict[k];
   }
