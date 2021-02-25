@@ -22,6 +22,9 @@ function cn2val(text, dict) {
 function u8varMathEval(expr, dict, u2adict) {
   var anexpr=expr, anDict={}, k;	// alphanumeric expr/dict/variable
   keys = Object.keys(u2adict).sort(function(a,b) { return b.length - a.length});
+  // start substituion from longer strings so that
+  // every longer name is correctly processed before its substring,
+  // e.g. "AvgSpeed" should be processed before "Speed".
   for (k of keys) {
     var re = new RegExp(
       k.match(/^\w+$/) ? '\\b'+k+'\\b' : k,
