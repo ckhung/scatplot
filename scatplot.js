@@ -268,6 +268,10 @@ function init(lotab) {
 
   // Special processing for 0-th csv file
   csvRows = parseCSV(lotab[0], G.source.textcols);
+  if (csvRows.length <= 0) {
+    alert('main csv file "' + G.source.csv[0] + '" is empty!');
+    return;
+  }
   if (! G.source.pkey) {
     G.source.pkey = G.source.textcols[0];
     alert('No pkey defined.\nUsing "' + G.source.pkey + '" as primary key');
