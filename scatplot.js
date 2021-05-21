@@ -278,7 +278,13 @@ function init(lotab) {
   }
   var pkname = G.source.pkey;
   apk = {};	// all primary keys
-  for (var row of csvRows) { apk[row[pkname]] = 1; }
+  for (var row of csvRows) {
+    if (row[pkname]) {
+      apk[row[pkname]] = 1;
+    } else {
+      console.log('warning: ignoring row with null primary key: ', row);
+    }
+  }
   // get all keys of the 1st (row-wise) dimension
   G.table.allpkeys = Object.keys(apk);
   G.table.allpkeys.sort();
