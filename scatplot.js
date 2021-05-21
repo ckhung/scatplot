@@ -12,7 +12,9 @@ function rndsfx() {
 
 function cn2val(text, dict) {
   // substitute column names in a text string with dict values
-  for (var cn in dict) {
+  keys = Object.keys(dict).sort(function(a,b) { return b.length - a.length});
+  // start substituion from longer strings ... (see u8varMathEval)
+  for (var cn of keys) {
     var re = new RegExp(cn, 'g');
     text = text.replace(re, dict[cn]);
   }
