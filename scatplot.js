@@ -92,7 +92,7 @@ function parseCSV(str, textcols) {
 function redraw() {
 
   var // aliases for global variables
-    keptKeys,
+    keptEntries,
     filteredData,
     pltMainTrace = G.plotly.maintrace;
 
@@ -111,10 +111,10 @@ function redraw() {
   // https://stackoverflow.com/questions/33169649/how-to-get-filtered-data-result-set-from-jquery-datatable
   filteredData = G.table.dtobj.rows({ filter : 'applied'}).data();
   // console.log(Object.keys(filteredData));
-  // keptKeys = [];
+  // keptEntries = [];
   // 但是注意： DataTables 傳回來的 .data() 是 object 而不是 array， 裡面夾雜著其他函數等等。
   var pkidx = G.table.colnames.indexOf(G.source.pkey);
-  keptKeys = Array.from(filteredData).map(function (row) { return row[pkidx]; });
+  keptEntries = Array.from(filteredData).map(function (row) { return row[pkidx]; });
 
   pltMainTrace.xaxis.expr = $('#X_expr').val();
   G.plotly.layout.xaxis.title.text = pltMainTrace.xaxis.expr;
@@ -149,8 +149,11 @@ function redraw() {
     // https://plot.ly/python/hover-text-and-formatting/
   };
 
-  for (var idx in keptKeys) {
-    var pk = keptKeys[idx];
+  if (! pltMainTrace.hovertext)  {
+    pltMainTrace.hovertext = pltMainTrace.maintext;
+  }
+  for (var idx in keptEntries) {
+    var pk = keptEntries[idx];
     var row = G.table.asDict[pk];
     mt.ids[idx] = pk;
     mt.x[idx] = u8varMathEval(pltMainTrace.xaxis.expr, row, G.table.invd);
@@ -160,7 +163,7 @@ function redraw() {
     mt.hovertext[idx] = cn2val(pltMainTrace.hovertext, row);
     mt.marker.size[idx] = 'size' in pltMainTrace && 'expr' in pltMainTrace.size ?
       u8varMathEval(pltMainTrace.size.expr, row, G.table.invd) : 0;
-    var xvals = [], yvals = [], snapshot = G.table.history[tk];
+    // var xvals = [], yvals = [], snapshot = G.table.history[tk];
     for (tk of G.table.timekeys) {
       var xval, yval, dict = $.extend({}, row);	// make a copy
       $.extend(dict, G.table.history[tk][pk]);

@@ -1,8 +1,8 @@
 {
   "source": {
     "csv": "vac/vaccine.csv",
-    "textcols": ["日期", "縣市別"],
-    "pkey": "縣市別",
+    "textcols": ["日期", "縣市"],
+    "pkey": "縣市",
     "extracols": [
     ]
   },
@@ -25,12 +25,11 @@
       ]
     },
     "maintrace": {
-      "xaxis": { "expr": "累計配送劑數/總人口數*100" },
-      "yaxis": { "expr": "累計接種人數/累計配送劑數*100" },
+      "xaxis": { "expr": "配送/人口*100" },
+      "yaxis": { "expr": "已接種/配送*100" },
       "timeaxis": { "colname": "日期" },
-      "size": { "expr": "sqrt(總人口數)/30" },
-      "maintext": "縣市別",
-      "hovertext": "縣市別"
+      "size": { "expr": "sqrt(人口)/30" },
+      "maintext": "縣市"
     }
   }
 }
