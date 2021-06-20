@@ -1,0 +1,36 @@
+{
+  "source": {
+    "csv": "vac/vaccine.csv",
+    "textcols": ["日期", "縣市別"],
+    "pkey": "縣市別",
+    "extracols": [
+    ]
+  },
+  "plotly": {
+    "layout": {
+      "title": "各縣市接種狀況",
+      "shapes": [
+	{
+	  "type": "line",
+	  "x0": 0,
+	  "y0": 100,
+	  "x1": 15,
+	  "y1": 100,
+          "line": {
+            "color": "#800000",
+            "width": 0.8,
+            "dash": "dash"
+          }
+	}
+      ]
+    },
+    "maintrace": {
+      "xaxis": { "expr": "累計配送劑數/總人口數*100" },
+      "yaxis": { "expr": "累計接種人數/累計配送劑數*100" },
+      "timeaxis": { "colname": "日期" },
+      "size": { "expr": "sqrt(總人口數)/30" },
+      "maintext": "縣市別",
+      "hovertext": "縣市別"
+    }
+  }
+}

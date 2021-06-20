@@ -1,0 +1,47 @@
+         App,         Data,        Cache, Name        , FullName
+    16228352,        94208,        32768, voicerecorder, com.simplemobiletools.voicerecorder
+    35106816,       106496,        32768, keychain    , com.android.keychain
+    35106816,       106496,        32768, mtp         , com.android.mtp
+    35102720,       114688,        32768, downloads   , com.android.providers.downloads
+    35102720,       122880,        32768, blockednumber, com.android.providers.blockednumber
+    35110912,       131072,        32768, networkstack, com.android.networkstack
+   286605312,       147456,        32768, partnersetup, com.google.android.partnersetup
+    35106816,       147456,        32768, lineagesettings, org.lineageos.lineagesettings
+    12791808,       151552,        32768, webview     , com.android.webview
+    20508672,       208896,        32768, davdroid    , at.bitfire.davdroid
+    15142912,       311296,       204800, primftpd    , org.primftpd
+    39387136,       339968,       229376, klik        , com.essential.klik
+    13414400,       430080,       249856, barcodescanner, com.example.barcodescanner
+    11165696,       454656,       364544, binaryeye   , de.markusfisch.android.binaryeye
+    15818752,       491520,       409600, etar        , ws.xsoh.etar
+    35106816,       548864,        32768, gsf         , com.google.android.gsf
+    35110912,       573440,       491520, phone       , com.android.phone
+     5586944,       745472,       438272, mather      , org.icasdri.mather
+    35110912,       778240,       274432, lineageparts, org.lineageos.lineageparts
+    35127296,       909312,       720896, settings    , com.android.settings
+    33632256,      1052672,       458752, v1          , com.nhiApp.v1
+    35102720,      2105344,       286720, media       , com.android.providers.media
+    97189888,      2158592,       688128, rnbeta      , com.mattermost.rnbeta
+    96903168,      2646016,       622592, vlc         , org.videolan.vlc
+    34234368,      3063808,        32768, wellbeing   , com.google.android.apps.wellbeing
+    35102720,      3403776,        32768, telephony   , com.android.providers.telephony
+    13070336,      4194304,      4120576, pro         , com.simplemobiletools.filemanager.pro
+    35102720,      5111808,        32768, contacts    , com.android.providers.contacts
+    28725248,      6098944,       253952, alarm       , org.blokada.alarm
+    38899712,      6148096,       593920, zhuyin      , com.google.android.apps.inputmethod.zhuyin
+    46358528,     15806464,     15446016, act         , tw.edu.cyut.act
+    91009024,     21655552,       585728, meet        , org.jitsi.meet
+    23752704,     39018496,       356352, viewer      , org.sufficientlysecure.viewer
+    40804352,     52502528,     48676864, bustaiwan   , nexti.android.bustaiwan
+    79355904,     52641792,     45060096, vending     , com.android.vending
+     7651328,     55250944,     54374400, jumpgo      , com.jtechme.jumpgo
+    90443776,     76779520,      3403776, sheets      , com.google.android.apps.docs.editors.sheets
+   355024896,     89653248,     76046336, googlequicksearchbox, com.google.android.googlequicksearchbox
+    33038336,    110620672,    109883392, pro         , com.simplemobiletools.gallery.pro
+   425824256,    150663168,      8601600, gms         , com.google.android.gms
+    49782784,    164503552,        32768, tts         , com.google.android.tts
+    20373504,    350638080,    333344768, fdroid      , org.fdroid.fdroid
+     7987200,    405770240,       507904, quickdic    , de.reimardoeffinger.quickdic
+   131416064,    659558400,       806912, plus        , net.osmand.plus
+   136790016,    668602368,    634273792, icecat      , org.gnu.icecat
+   250060800,    748380160,    262569984, line     , jp.naver.line.android

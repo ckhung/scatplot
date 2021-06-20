@@ -1,0 +1,21 @@
+{
+  "source": {
+    "csv": "aasize/aasize.csv",
+    "textcols": ["Name", "FullName"],
+    "pkey": "FullName"
+  },
+  "plotly": {
+    "layout": {
+      "title": "sizes of android apps",
+      "xaxis": { "type": "log" },
+      "yaxis": { "type": "log" }
+    },
+    "maintrace": {
+      "xaxis": { "expr": "App" },
+      "yaxis": { "expr": "Data" },
+      "size": { "expr": "sqrt(sqrt(Cache))/2" },
+      "maintext": "Name",
+      "hovertext": "FullName"
+    }
+  }
+}
