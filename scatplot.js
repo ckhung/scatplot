@@ -12,7 +12,7 @@ function rndsfx() {
 
 function cn2val(text, dict) {
   // substitute column names in a text string with dict values
-  keys = Object.keys(dict).sort(function(a,b) { return b.length - a.length});
+  var keys = Object.keys(dict).sort(function(a,b) { return b.length - a.length; });
   // start substituion from longer strings ... (see u8varMathEval)
   for (var cn of keys) {
     var re = new RegExp(cn, 'g');
@@ -23,7 +23,7 @@ function cn2val(text, dict) {
 
 function u8varMathEval(expr, dict, u2adict) {
   var anexpr=expr, anDict={}, k;	// alphanumeric expr/dict/variable
-  keys = Object.keys(u2adict).sort(function(a,b) { return b.length - a.length});
+  var keys = Object.keys(u2adict).sort(function(a,b) { return b.length - a.length; });
   // start substituion from longer strings so that
   // every longer name is correctly processed before its substring,
   // e.g. "AvgSpeed" should be processed before "Speed".
@@ -239,7 +239,7 @@ console.log('!! ', row[G.source.pkey], row[timeCN], row);
   }
 }
 
-function toDictJoin(csvRows) {
+function toDictJoin(csvRows, index=-1) {
   // convert csvRows array into a dict, then join it into G.table.asDict
   var row, dict2 = {}, mainDict = G.table.asDict;
   // dict2 的初始化千萬不可寫成 dict2 = [];
@@ -250,6 +250,9 @@ function toDictJoin(csvRows) {
     dict2[row[G.source.pkey]] = row;
   }
   var exRow = dict2[G.source.samplekey];
+  if (typeof(exRow) != 'object') {
+      alert('samplekey "' + G.source.samplekey + '" not in ' + G.source.csv[index]);
+  }
   for (var pk of G.table.allpkeys) {
     if (! (pk in G.table.asDict)) { G.table.asDict[pk] = {}; }
     row = G.table.asDict[pk];
@@ -311,7 +314,7 @@ function init(lotab) {
   for (i=1; i<Ntab; ++i) {
     csvRows = parseCSV(lotab[i], G.source.textcols);
     saveHistory(csvRows);
-    toDictJoin(csvRows);
+    toDictJoin(csvRows, i);
   }
   if (G.plotly.maintrace.timeaxis.colname && Object.keys(G.table.history).length<=0) {
     alert('timeaxis.colname "' + G.plotly.maintrace.timeaxis.colname +
