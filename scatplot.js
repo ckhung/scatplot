@@ -394,18 +394,12 @@ function init(lotab) {
 	'type': G.source.textcols.includes(cn) ? 'string' : 'num',
 	'visible': visibleCols.includes(cn),
 	// https://github.com/bokeh/bokeh/issues/10251
-	// Somehow NaN is still not sorted correctly as of 1.10.25
+	// Somehow NaN is still not sorted correctly as of Datatables 1.10.25
 	// so treat it as -Infinity instead when sorting.
 	'render': function(data, type, row) {
-	  if (type == 'sort') {
-	    if (data < 9e99 && data > -9e99) {
-	      return data;
-	    } else {
-	      return -Infinity;
-	    }
-	  } else {
-	    return data;
-	  }
+	  if (type != 'sort') return data;
+	  if (data > -9e99) return data;
+	  return -Infinity;
 	}
       };
       if (! G.source.textcols.includes(cn)) {
