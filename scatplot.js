@@ -476,17 +476,26 @@ function ucExtend(urlConfig) {
       continue;
     }
     obj = match[1];
-    match = match[2].match(/\.\w+|\[\d+\]/g);
+    match = match[2].match(/\.\w+|\[\d*\]/g);
     rest = match.map(function (attr) {
-      var m = attr.match(/\[(\d+)\]/);
-      return m ? parseInt(m[1]) : attr.slice(1);
+      // look deep into many levels of object or array
+      var m = attr.match(/\[(\d*)\]/);
+      if (m) { // array
+	return m[1].length>0 ? parseInt(m[1]) : -1;
+	// -1 means append one element at the end
+      } else // object
+        return attr.slice(1);
     });
     for (var k in G) {
       // allow shorthand for 1st level attribute names
       if (k.indexOf(obj) == 0) { obj = k; }
     }
     obj = G[obj];
-    for (var i=0; i<rest.length-1; ++i) {
+    for (var i=0; i<rest.length; ++i) {
+      // descend one level deeper
+      if (typeof(rest[i]) == 'number' && rest[i] < 0)
+	rest[i] = obj.length;
+      if (i>=rest.length-1) break;
       obj = obj[rest[i]];
     }
     obj[rest[rest.length-1]] = urlConfig[attname];
