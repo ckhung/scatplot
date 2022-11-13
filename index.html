@@ -8,7 +8,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content=
   "width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.25/b-1.7.1/b-colvis-1.7.1/fh-3.1.9/datatables.min.css"/>
   <link type="text/css" rel="stylesheet" href="scatplot.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,31 +26,27 @@
     <!-- https://css-tricks.com/the-checkbox-hack/ -->
     <label id="setup_form_disp_label" for="setup_form_disp_switch">設定</label>
     <input type="checkbox" id="setup_form_disp_switch" class="hidden" checked />
-    <form id="setup_form" class="pure-form pure-form-aligned">
+    <form id="setup_form" class="pure-form">
       <fieldset>
-	<div class="pure-control-group">
-	  <label for="keep_expr">Keep:</label>
-	  <input id="keep_expr" type="text" class="expr_entry" />
-	  <label for="keep_expr_options"></label>
-	  <select id="keep_expr_options" type="text" class="expr_select" > </select>
+	<div class="pure-control-group pure-g">
+	  <div class="pure-u-1-12"> <label for="keep_expr">keep:</label> </div>
+	  <div class="pure-u-5-12"> <select id="keep_expr_options" type="text" class="expr_select pure-input-1" > </select> </div>
+	  <div class="pure-u-1-2"> <input id="keep_expr" type="text" class="expr_entry pure-input-1" /> </div>
 	</div>
-	<div class="pure-control-group">
-	  <label for="X_expr">X:</label>
-	  <input id="X_expr" type="text" class="expr_entry" />
-	  <label for="X_expr_options"></label>
-	  <select id="X_expr_options" type="text" class="expr_select" > </select>
+	<div class="pure-control-group pure-g">
+	  <div class="pure-u-1-12"> <label for="X_expr">X:</label> </div>
+	  <div class="pure-u-5-12"> <select id="X_expr_options" type="text" class="expr_select pure-input-1" > </select> </div>
+	  <div class="pure-u-1-2"> <input id="X_expr" type="text" class="expr_entry pure-input-1" /> </div>
 	</div>
-	<div class="pure-control-group">
-	  <label for="Y_expr">Y:</label>
-	  <input id="Y_expr" type="text" class="expr_entry" />
-	  <label for="Y_expr_options"></label>
-	  <select id="Y_expr_options" type="text" class="expr_select" > </select>
+	<div class="pure-control-group pure-g">
+	  <div class="pure-u-1-12"> <label for="Y_expr">Y:</label> </div>
+	  <div class="pure-u-5-12"> <select id="Y_expr_options" type="text" class="expr_select pure-input-1" > </select> </div>
+	  <div class="pure-u-1-2"> <input id="Y_expr" type="text" class="expr_entry pure-input-1" /> </div>
 	</div>
-	<div class="pure-control-group">
-	  <label for="Size_expr">Size:</label>
-	  <input id="Size_expr" type="text" class="expr_entry" />
-	  <label for="Size_expr_options" class="expr_select" ></label>
-	  <select id="Size_expr_options" type="text" class="expr_select" > </select>
+	<div class="pure-control-group pure-g">
+	  <div class="pure-u-1-12"> <label for="Size_expr">Size:</label> </div>
+	  <div class="pure-u-5-12"> <select id="Size_expr_options" type="text" class="expr_select pure-input-1" > </select> </div>
+	  <div class="pure-u-1-2"> <input id="Size_expr" type="text" class="expr_entry pure-input-1" /> </div>
 	</div>
 	<div class="pure-controls">
 	  <button type="button" id="redraw" class="pure-button pure-button-primary">重畫</button>

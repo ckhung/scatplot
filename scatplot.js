@@ -446,7 +446,7 @@ function init(lotab) {
 
   $('.expr_select').change(function () {
     var nv = $(this).children('option:selected').val();
-    var target = $(this).parent().find('.expr_entry');
+    var target = $(this).parent().parent().find('.expr_entry');
     target.val( nv.trim() );
   });
 
