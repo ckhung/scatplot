@@ -1,0 +1,20 @@
+{
+  "source": {
+    "csv": "c19/dense.csv",
+    "textcols": ["code3", "name"],
+    "pkey": "code3",
+    "keep": "true"
+  },
+  "plotly": {
+    "layout": {
+      "title": "武肺瘟疫"
+    },
+    "maintrace": {
+      "xaxis": { "expr": "stringency_index" },
+      "yaxis": { "expr": "tndpm" },
+      "size": { "expr": "sqrt(density)" },
+      "maintext": "code3",
+      "hovertext": "name"
+    }
+  }
+}

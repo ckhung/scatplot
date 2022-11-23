@@ -1,0 +1,96 @@
+{
+  "source": {
+    "csv": [
+      "covid/g20.csv",
+      "covid/covid.csv"
+    ],
+    "textcols": [
+      "code3",
+      "name"
+    ],
+    "pkey": "code3",
+    "keep": "true"
+  },
+  "plotly": {
+    "layout": {
+      "title": "covid 19 各國防疫措施嚴格度 vs 高峰時期每百萬人日均死亡數",
+      "annotations": [
+	{
+          "text": "",
+	  "xref": "paper",
+          "yref": "paper",
+	  "axref": "paper",
+          "ayref": "paper",
+	  "x": 0.3,
+	  "y": 0.9,
+          "ax": 0.7,
+          "ay": 0.9,
+	  "arrowcolor": "#c00000",
+          "showarrow": true
+        },
+	{
+          "text": "防疫措施寬鬆",
+	  "xref": "paper",
+          "yref": "paper",
+	  "x": 0.3,
+	  "y": 0.9,
+          "font": {
+            "size": 18,
+            "color": "#c00000"
+          },
+          "showarrow": false
+        },
+	{
+          "text": "",
+	  "xref": "paper",
+          "yref": "paper",
+	  "axref": "paper",
+          "ayref": "paper",
+	  "x": 0.9,
+	  "y": 0.3,
+          "ax": 0.9,
+          "ay": 0.7,
+	  "arrowcolor": "#c00000",
+          "showarrow": true
+        },
+	{
+          "text": "高峰期間",
+	  "xref": "paper",
+          "yref": "paper",
+	  "x": 0.9,
+	  "y": 0.4,
+          "font": {
+            "size": 18,
+            "color": "#c00000"
+          },
+          "showarrow": false
+        },
+	{
+          "text": "低日均死亡",
+	  "xref": "paper",
+          "yref": "paper",
+	  "x": 0.9,
+	  "y": 0.3,
+          "font": {
+            "size": 18,
+            "color": "#c00000"
+          },
+          "showarrow": false
+        }
+      ]
+    },
+    "maintrace": {
+      "xaxis": {
+        "expr": "stringency_index"
+      },
+      "yaxis": {
+        "expr": "tndpm"
+      },
+      "size": {
+        "expr": "sqrt(density)"
+      },
+      "maintext": "code3",
+      "hovertext": "name"
+    }
+  }
+}
