@@ -1,6 +1,6 @@
 {
   "source": {
-    "csv": "satellites.csv",
+    "csv": "satellites/satellites.csv",
     "textcols": ["name", "planet"],
     "pkey": "name",
     "keep": "radius > 100"
