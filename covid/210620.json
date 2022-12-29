@@ -1,0 +1,29 @@
+{
+  "source": {
+    "csv": "covid/210620.csv",
+    "textcols": [
+      "Country",
+      "Continent"
+    ],
+    "pkey": "Country",
+    "keep": "true"
+  },
+  "plotly": {
+    "layout": {
+      "title": "武肺瘟疫各國案例/死亡數"
+    },
+    "maintrace": {
+      "xaxis": {
+        "expr": "TotCases/1M"
+      },
+      "yaxis": {
+        "expr": "Deaths/1M"
+      },
+      "size": {
+        "expr": "sqrt(Population)/300"
+      },
+      "maintext": "Country",
+      "hovertext": "Country"
+    }
+  }
+}
