@@ -1,0 +1,31 @@
+{
+  "source": {
+    "csv": "inc-ec/inc-ec.csv",
+    "textcols": ["iso3", "continent", "country"],
+    "pkey": "iso3"
+  },
+  "plotly": {
+    "layout": {
+      "title": "電價 vs 收入中位數"
+    },
+    "maintrace": {
+      "xaxis": { "expr": "medianIncome" },
+      "yaxis": { "expr": "CostOfElectricityMarch2023" },
+      "size": { "expr": "5" },
+      "maintext": "iso3",
+      "hovertext": "country",
+      "color": {
+        "default": "#000",
+        "colname": "continent",
+        "palette": {
+  	  "Africa": "#400",
+  	  "Asia": "#440",
+  	  "Europe": "#040",
+  	  "North America": "#048",
+  	  "Oceana": "#008",
+  	  "South America": "#408"
+        }
+      }
+    }
+  }
+}
