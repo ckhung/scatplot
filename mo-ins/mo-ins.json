@@ -1,6 +1,6 @@
 {
   "source": {
-    "csv": "mo-ins/motorcycle-insurance.csv",
+    "csv": "mo-ins/motercycle-insurance.csv",
     "textcols": ["company"],
     "pkey": "company"
   },
