@@ -1,0 +1,204 @@
+Model,Creator,ContextWin,Intelligence,Price,Speed,Latency
+Gemini 2.5 Pro (Jun '25),Google,1048576,70,3.44,145.9,30.52
+o3,OpenAI,131072,70,17.50,142.1,19.16
+o4-mini (high),OpenAI,204800,70,1.93,143.2,36.18
+Gemini 2.5 Pro (Mar '25),Google,1048576,69,3.44,150.3,36.62
+DeepSeek R1 0528 (May '25),DeepSeek,131072,68,0.96,24.7,3.69
+Gemini 2.5 Pro (May' 25),Google,1048576,68,3.44,145.8,34.21
+Grok 3 mini Reasoning (high),xAI,1048576,67,0.35,205.6,0.31
+o3-mini (high),OpenAI,204800,66,1.93,164.8,50.52
+Gemini 2.5 Flash (Reasoning),Google,1048576,65,0.99,346.4,15.31
+Claude 4 Opus Thinking,Anthropic,204800,64,30.00,58.7,2.60
+o3-mini,OpenAI,204800,63,1.93,146.7,17.49
+Qwen3 235B (Reasoning),Alibaba,131072,62,2.63,70.2,1.13
+o1,OpenAI,204800,62,26.25,139.2,21.66
+Llama Nemotron Ultra Reasoning,NVIDIA,131072,61,0.90,41.8,0.64
+Claude 4 Sonnet Thinking,Anthropic,204800,61,6.00,63.2,1.40
+Gemini 2.5 Flash (April '25) (Reasoning),Google,1048576,60,0.99,406.1,8.03
+DeepSeek R1 (Jan '25),DeepSeek,131072,60,2.36,,
+o1-preview,OpenAI,131072,60,26.25,163.4,20.46
+Qwen3 32B (Reasoning),Alibaba,131072,59,2.63,61.8,1.13
+QwQ-32B,Alibaba,134144,58,0.63,98.5,0.40
+Claude 4 Opus,Anthropic,204800,58,30.00,58.4,2.88
+Claude 3.7 Sonnet Thinking,Anthropic,204800,57,6.00,88.6,1.69
+o1-pro,OpenAI,204800,56,262.50,,
+Grok 3 Reasoning Beta,xAI,1048576,56,0.00,,
+Qwen3 14B (Reasoning),Alibaba,131072,56,1.31,65.6,1.02
+Qwen3 30B A3B (Reasoning),Alibaba,131072,56,0.75,91.8,1.03
+o1-mini,OpenAI,131072,54,1.93,248.4,8.98
+Gemini 2.5 Flash,Google,1048576,53,0.26,276.3,0.33
+DeepSeek V3 0324 (Mar '25),DeepSeek,131072,53,0.48,25.6,3.59
+Claude 4 Sonnet,Anthropic,204800,53,6.00,65.0,1.59
+GPT-4.5 (Preview),OpenAI,131072,53,93.75,87.8,0.93
+GPT-4.1 mini,OpenAI,1048576,53,0.70,81.5,0.52
+GPT-4.1,OpenAI,1048576,53,3.50,128.8,0.49
+Gemini 2.0 Flash Thinking exp. (Jan '25),Google,1048576,52,0.00,,
+DeepSeek R1 0528 Qwen3 8B,DeepSeek,131072,52,0.07,64.5,0.72
+DeepSeek R1 Distill Qwen 32B,DeepSeek,131072,52,0.30,26.3,1.24
+Qwen3 8B (Reasoning),Alibaba,131072,51,0.66,98.6,0.97
+Llama 3.3 Nemotron Super 49B Reasoning,NVIDIA,131072,51,0.00,,
+Grok 3,xAI,1048576,51,6.00,97.1,0.42
+Llama 4 Maverick,Meta,1048576,51,0.39,166.3,0.34
+GPT-4o (March 2025),OpenAI,131072,50,7.50,168.6,0.46
+Gemini 2.0 Pro Experimental,Google,2097152,49,0.00,68.1,17.27
+DeepSeek R1 Distill Qwen 14B,DeepSeek,131072,49,0.20,82.3,0.65
+Mistral Medium 3,Mistral,131072,49,0.80,75.1,0.37
+Sonar Reasoning,Perplexity,130048,49,2.00,82.2,0.67
+Gemini 2.5 Flash,Google,1048576,49,0.26,322.3,0.32
+DeepSeek R1 Distill Llama 70B,DeepSeek,131072,48,0.80,66.6,0.47
+Claude 3.7 Sonnet,Anthropic,204800,48,6.00,78.6,1.38
+Gemini 2.0 Flash,Google,1048576,48,0.17,237.4,0.40
+Qwen3 4B (Reasoning),Alibaba,32768,47,0.40,104.7,0.99
+Reka Flash 3,RekaAI                ,131072,47,0.35,56.4,0.95
+Qwen3 235B,Alibaba,131072,47,1.23,71.7,1.12
+Gemini 2.0 Flash (exp),Google,1048576,46,0.00,232.6,0.25
+DeepSeek V3 (Dec '24),DeepSeek,131072,46,0.48,,
+Qwen2.5 Max,Alibaba,32768,45,2.80,43.2,1.25
+Llama 3.1 Nemotron Nano 4B v1.1 (Reasoning),NVIDIA,131072,45,0.00,,
+Gemini 1.5 Pro (Sep),Google,2097152,45,2.19,91.6,0.64
+Claude 3.5 Sonnet (Oct),Anthropic,204800,44,6.00,80.4,1.59
+Qwen3 32B,Alibaba,131072,44,1.23,62.8,1.08
+Sonar,Perplexity,130048,43,1.00,152.2,0.80
+Llama 4 Scout,Meta,10485760,43,0.26,128.3,0.37
+Sonar Pro,Perplexity,204800,43,6.00,81.8,2.31
+QwQ 32B-Preview,Alibaba,33792,43,0.20,72.0,0.52
+Nova Premier,Amazon,1048576,43,5.00,80.7,0.78
+Qwen3 30B A3B,Alibaba,131072,43,0.35,92.7,1.10
+GPT-4o (Nov '24),OpenAI,131072,41,4.38,144.8,0.43
+Gemini 2.0 Flash-Lite (Feb '25),Google,1048576,41,0.13,229.2,0.29
+Llama 3.3 70B,Meta,131072,41,0.59,112.7,0.44
+GPT-4.1 nano,OpenAI,1048576,41,0.17,96.3,0.39
+Qwen3 14B,Alibaba,131072,41,0.61,66.4,1.03
+GPT-4o (May '24),OpenAI,131072,41,7.50,82.0,0.74
+Gemini 2.0 Flash-Lite (Preview),Google,1048576,41,0.13,229.2,0.28
+GPT-4o (Aug '24),OpenAI,131072,41,4.38,87.1,0.72
+Llama 3.1 405B,Meta,131072,40,3.50,33.2,0.74
+Qwen2.5 72B,Alibaba,134144,40,0.00,44.6,1.22
+MiniMax-Text-01,MiniMax,4194304,40,0.42,37.3,0.93
+Phi-4,MicrosoftAzure        ,16384,40,0.22,38.1,0.45
+Claude 3.5 Sonnet (June),Anthropic,204800,40,6.00,79.5,1.87
+Command A,Cohere,262144,40,4.38,97.2,0.20
+Tulu3 405B,AllenInstitute for AI ,131072,40,0.00,,
+GPT-4o (ChatGPT),OpenAI,131072,40,7.50,,
+Llama 3.3 Nemotron Super 49B v1,NVIDIA,131072,39,0.00,,
+Grok 2,xAI,134144,39,0.00,,
+Gemini 1.5 Flash (Sep),Google,1048576,39,0.13,188.4,0.19
+GPT-4 Turbo,OpenAI,131072,39,15.00,45.7,0.76
+Mistral Large 2 (Nov '24),Mistral,131072,38,3.00,91.8,0.39
+Qwen3 1.7B (Reasoning),Alibaba,32768,38,0.40,137.7,0.92
+Gemma 3 27B,Google,131072,38,0.00,46.2,0.64
+Grok Beta,xAI,131072,38,7.50,67.4,0.30
+Pixtral Large,Mistral,131072,37,3.00,81.3,0.37
+Qwen2.5 Instruct 32B,Alibaba,131072,37,0.15,,
+Llama 3.1 Nemotron 70B,NVIDIA,131072,37,0.17,44.3,0.28
+Nova Pro,Amazon,307200,37,1.40,,
+Qwen3 8B,Alibaba,131072,37,0.31,100.2,0.99
+Mistral Large 2 (Jul '24),Mistral,131072,37,3.00,85.5,0.42
+Qwen2.5 Coder 32B,Alibaba,134144,36,0.15,50.7,0.42
+GPT-4,OpenAI,8192,36,37.50,26.5,0.87
+GPT-4o mini,OpenAI,131072,36,0.26,67.9,0.50
+Llama 3.1 70B,Meta,131072,35,0.72,53.9,0.42
+Mistral Small 3.1,Mistral,131072,35,0.15,136.4,0.27
+Mistral Small 3,Mistral,32768,35,0.15,174.0,0.26
+DeepSeek-V2.5 (Dec '24),DeepSeek,131072,35,0.17,,
+Qwen3 4B,Alibaba,32768,35,0.19,106.8,1.11
+Claude 3 Opus,Anthropic,204800,35,30.00,28.0,1.19
+Claude 3.5 Haiku,Anthropic,204800,35,1.60,67.0,1.45
+Gemini 2.0 Flash Thinking exp. (Dec '24),Google,2097152,35,0.00,,
+DeepSeek-V2.5,DeepSeek,131072,35,0.17,,
+Devstral,Mistral,262144,34,0.15,143.0,0.31
+Mistral Saba,Mistral,32768,34,0.30,84.0,0.29
+DeepSeek R1 Distill Llama 8B,DeepSeek,131072,34,0.04,55.1,0.70
+Reka Core,RekaAI                ,131072,34,2.00,27.9,0.88
+Gemma 3 12B,Google,131072,34,0.06,26.0,0.69
+Gemini 1.5 Pro (May),Google,2097152,34,2.19,,
+R1 1776,Perplexity,131072,34,3.50,,
+Qwen2.5 Turbo,Alibaba,1048576,34,0.09,105.4,1.12
+Reka Flash,RekaAI                ,131072,34,0.35,46.0,0.87
+Gemma 3 1B,Google,32768,33,0.00,,
+Llama 3.2 90B (Vision),Meta,131072,33,0.72,32.7,0.38
+Solar Mini,Upstage,4096,33,0.15,90.9,1.07
+Reka Flash (Feb '24),RekaAI                ,131072,33,0.35,46.2,0.86
+Reka Edge,RekaAI                ,131072,33,0.10,86.3,0.77
+Qwen2 72B,Alibaba,134144,33,0.00,31.0,1.26
+Nova Lite,Amazon,307200,33,0.10,277.4,0.32
+Gemini 1.5 Flash-8B,Google,1048576,31,0.07,289.5,0.18
+DeepHermes 3 - Mistral 24B,NousResearch          ,32768,30,0.00,,
+Jamba 1.5 Large,AI21Labs              ,262144,29,3.50,,
+Hermes 3 - Llama-3.1 70B,NousResearch          ,131072,29,0.00,,
+DeepSeek-Coder-V2,DeepSeek,131072,29,0.17,,
+Jamba 1.6 Large,AI21Labs              ,262144,29,3.50,55.6,0.59
+Gemini 1.5 Flash (May),Google,1048576,28,0.13,,
+Nova Micro,Amazon,133120,28,0.06,315.0,0.31
+Yi-Large,01.AI,32768,28,3.00,74.3,0.38
+Claude 3 Sonnet,Anthropic,204800,28,6.00,61.0,0.75
+Codestral (Jan '25),Mistral,262144,28,0.45,173.1,0.27
+Llama 3 70B,Meta,8192,27,0.84,47.1,0.42
+Mistral Small (Sep '24),Mistral,33792,27,0.30,83.8,0.29
+Gemini 1.0 Ultra,Google,33792,27,0.00,,
+Phi-4 Multimodal,MicrosoftAzure        ,131072,27,0.00,21.2,0.33
+Qwen2.5 Coder 7B,Alibaba,134144,27,0.00,,
+Mistral Large (Feb '24),Mistral,33792,26,6.00,29.3,0.48
+Jamba Instruct,AI21Labs              ,262144,26,0.00,,
+Mixtral 8x22B,Mistral,66560,26,3.00,59.4,0.33
+Phi-4 Mini,MicrosoftAzure        ,131072,26,0.00,56.6,0.32
+Gemma 2 27B,Google,8192,26,0.80,,
+Llama 3.2 11B (Vision),Meta,131072,25,0.16,119.3,0.43
+Qwen3 1.7B,Alibaba,32768,25,0.19,141.0,1.02
+Qwen1.5 Chat 110B,Alibaba,32768,25,0.00,23.7,1.57
+Phi-3 Medium 14B,MicrosoftAzure        ,131072,25,0.30,51.3,0.40
+Gemma 3 4B,Google,131072,24,0.03,84.9,0.24
+Claude 2.1,Anthropic,204800,24,12.00,13.8,0.96
+Claude 3 Haiku,Anthropic,204800,24,0.50,139.1,0.56
+Llama 3.1 8B,Meta,131072,24,0.10,249.2,0.29
+Pixtral 12B,Mistral,131072,23,0.15,87.9,0.30
+Qwen3 0.6B (Reasoning),Alibaba,32768,23,0.40,228.6,0.98
+Claude 2.0,Anthropic,102400,23,12.00,31.1,0.93
+DeepSeek-V2,DeepSeek,131072,23,0.17,,
+Mistral Small (Feb '24),Mistral,33792,23,1.50,143.9,0.26
+Mistral Medium,Mistral,33792,23,4.09,78.9,0.37
+GPT-3.5 Turbo,OpenAI,4096,23,0.75,145.8,0.47
+Ministral 8B,Mistral,131072,22,0.10,191.9,0.28
+Gemma 2 9B,Google,8192,22,0.12,,
+Phi-3 Mini,MicrosoftAzure        ,4096,22,0.00,,
+Arctic,Snowflake,4096,22,0.00,,
+Qwen Chat 72B,Alibaba,34816,22,1.00,,
+LFM 40B,LiquidAI              ,32768,22,0.15,162.8,0.16
+Command-R+,Cohere,131072,21,4.38,47.9,0.28
+Llama 3 8B,Meta,8192,21,0.09,103.6,0.35
+PALM-2,Google,8192,21,0.00,,
+Gemini 1.0 Pro,Google,33792,21,0.75,,
+DeepSeek Coder V2 Lite,DeepSeek,131072,20,0.00,,
+Codestral (May '24),Mistral,33792,20,0.30,113.1,0.31
+Aya Expanse 32B,Cohere,131072,20,0.75,124.5,0.17
+Llama 2 Chat 70B,Meta,4096,20,0.00,,
+DeepSeek LLM 67B (V1),DeepSeek,4096,20,0.00,,
+Llama 2 Chat 13B,Meta,4096,20,0.00,,
+Command-R+ (Apr '24),Cohere,131072,20,6.00,56.4,0.24
+OpenChat 3.5,OpenChat,8192,20,0.05,52.5,0.51
+DBRX,Databricks,33792,20,0.00,,
+Ministral 3B,Mistral,131072,20,0.04,253.8,0.27
+Mistral NeMo,Mistral,131072,20,0.15,153.4,0.27
+Llama 3.2 3B,Meta,131072,20,0.05,121.5,0.41
+DeepSeek R1 Distill Qwen 1.5B,DeepSeek,131072,19,0.18,384.2,0.21
+Jamba 1.5 Mini,AI21Labs              ,262144,18,0.25,,
+Jamba 1.6 Mini,AI21Labs              ,262144,18,0.25,174.7,0.35
+Mixtral 8x7B,Mistral,33792,17,0.70,73.1,0.30
+Qwen3 0.6B,Alibaba,32768,17,0.19,232.6,0.91
+DeepHermes 3 - Llama-3.1 8B,NousResearch          ,131072,16,0.00,,
+Aya Expanse 8B,Cohere,8192,16,0.75,169.8,0.14
+Command-R,Cohere,131072,15,0.26,69.7,0.20
+Command-R (Mar '24),Cohere,131072,15,0.75,165.8,0.16
+Qwen Chat 14B,Alibaba,8192,14,0.00,,
+Claude Instant,Anthropic,102400,14,1.20,59.5,0.58
+Codestral-Mamba,Mistral,262144,14,0.25,,
+Llama 65B,Meta,2048,11,0.00,,
+Mistral 7B,Mistral,8192,10,0.25,99.7,0.28
+Llama 3.2 1B,Meta,131072,10,0.05,130.7,0.34
+Llama 2 Chat 7B,Meta,4096,8,0.10,130.3,0.55
+GPT-4o mini Realtime (Dec '24),OpenAI,131072,,0.00,,
+GPT-4o Realtime (Dec '24),OpenAI,131072,,0.00,,
+Sonar Reasoning Pro,Perplexity,130048,,0.00,,
+Grok 3 mini Reasoning (low),xAI,1048576,,0.35,157.2,0.29
+GPT-3.5 Turbo (0613),OpenAI,4096,,0.00,,
+# https://artificialanalysis.ai/leaderboards/models

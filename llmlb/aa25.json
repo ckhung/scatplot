@@ -1,0 +1,32 @@
+{
+  "source": {
+    "csv": "llmlb/aa25.csv",
+    "textcols": ["Model","Creator"],
+    "pkey": "Model"
+  },
+  "plotly": {
+    "layout": {
+      "title": "LLM 比較 (資料取自 Artificial Analysis)"
+    },
+    "maintrace": {
+      "xaxis": { "expr": "log(Price)" },
+      "yaxis": { "expr": "Intelligence" },
+      "size": { "expr": "log(ContextWin)*2" },
+      "maintext": "Model",
+      "hovertext": "Model\nCreator",
+      "color": {
+        "default": "#000",
+        "colname": "Creator",
+        "palette": {
+  	  "Google": "#0f0",
+  	  "Alibaba": "#f04",
+  	  "OpenAI": "#00f",
+  	  "Mistral": "#cc0",
+  	  "Meta": "#c0c",
+  	  "DeepSeek": "#f40",
+  	  "Anthropic": "#0cc"
+        }
+      }
+    }
+  }
+}

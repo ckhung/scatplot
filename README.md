@@ -4,6 +4,7 @@ Scatplot is a flexible scatter plot javascript web app
 that can be configured using a json file.
 See the blog post [scatplot: 一張試算表， 散點圖畫到飽](https://newtoypia.blogspot.com/2020/02/scatplot.html)
 for details and play with the following demo pages:
+- [LLM leaderboard](https://ckhung.github.io/scatplot/?c=llmlb/aa25.json)
 - [median income vs electricity cost](https://ckhung.github.io/scatplot/?c=inc-ec/inc-ec.json)
 - [covid 19 country comparisons](https://ckhung.github.io/scatplot/?c=covid/covid.json)
 - [bloated android apps](https://ckhung.github.io/scatplot/?c=aasize/aasize.json)
