@@ -1,0 +1,44 @@
+Model,Creator,ContextWin,Intelligence,Price,Speed,Latency
+Gemini 2.5 Pro (Jun '25),Google,1048576,70,3.44,145.9,30.52
+Gemini 2.5 Pro (Mar '25),Google,1048576,69,3.44,150.3,36.62
+Gemini 2.5 Pro (May' 25),Google,1048576,68,3.44,145.8,34.21
+Gemini 2.5 Flash (Reasoning),Google,1048576,65,0.99,346.4,15.31
+Claude 4 Opus Thinking,Anthropic,204800,64,30.00,58.7,2.60
+Claude 4 Sonnet Thinking,Anthropic,204800,61,6.00,63.2,1.40
+Gemini 2.5 Flash (April '25) (Reasoning),Google,1048576,60,0.99,406.1,8.03
+Claude 4 Opus,Anthropic,204800,58,30.00,58.4,2.88
+Claude 3.7 Sonnet Thinking,Anthropic,204800,57,6.00,88.6,1.69
+Gemini 2.5 Flash,Google,1048576,53,0.26,276.3,0.33
+Claude 4 Sonnet,Anthropic,204800,53,6.00,65.0,1.59
+Gemini 2.0 Flash Thinking exp. (Jan '25),Google,1048576,52,0.00,,
+Gemini 2.0 Pro Experimental,Google,2097152,49,0.00,68.1,17.27
+Gemini 2.5 Flash,Google,1048576,49,0.26,322.3,0.32
+Claude 3.7 Sonnet,Anthropic,204800,48,6.00,78.6,1.38
+Gemini 2.0 Flash,Google,1048576,48,0.17,237.4,0.40
+Gemini 2.0 Flash (exp),Google,1048576,46,0.00,232.6,0.25
+Gemini 1.5 Pro (Sep),Google,2097152,45,2.19,91.6,0.64
+Claude 3.5 Sonnet (Oct),Anthropic,204800,44,6.00,80.4,1.59
+Gemini 2.0 Flash-Lite (Feb '25),Google,1048576,41,0.13,229.2,0.29
+Gemini 2.0 Flash-Lite (Preview),Google,1048576,41,0.13,229.2,0.28
+Claude 3.5 Sonnet (June),Anthropic,204800,40,6.00,79.5,1.87
+Gemini 1.5 Flash (Sep),Google,1048576,39,0.13,188.4,0.19
+Gemma 3 27B,Google,131072,38,0.00,46.2,0.64
+Claude 3 Opus,Anthropic,204800,35,30.00,28.0,1.19
+Claude 3.5 Haiku,Anthropic,204800,35,1.60,67.0,1.45
+Gemini 2.0 Flash Thinking exp. (Dec '24),Google,2097152,35,0.00,,
+Gemma 3 12B,Google,131072,34,0.06,26.0,0.69
+Gemini 1.5 Pro (May),Google,2097152,34,2.19,,
+Gemma 3 1B,Google,32768,33,0.00,,
+Gemini 1.5 Flash-8B,Google,1048576,31,0.07,289.5,0.18
+Gemini 1.5 Flash (May),Google,1048576,28,0.13,,
+Claude 3 Sonnet,Anthropic,204800,28,6.00,61.0,0.75
+Gemini 1.0 Ultra,Google,33792,27,0.00,,
+Gemma 2 27B,Google,8192,26,0.80,,
+Gemma 3 4B,Google,131072,24,0.03,84.9,0.24
+Claude 2.1,Anthropic,204800,24,12.00,13.8,0.96
+Claude 3 Haiku,Anthropic,204800,24,0.50,139.1,0.56
+Claude 2.0,Anthropic,102400,23,12.00,31.1,0.93
+Gemma 2 9B,Google,8192,22,0.12,,
+PALM-2,Google,8192,21,0.00,,
+Gemini 1.0 Pro,Google,33792,21,0.75,,
+Claude Instant,Anthropic,102400,14,1.20,59.5,0.58

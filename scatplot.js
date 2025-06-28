@@ -8,7 +8,7 @@ const G = {}; // global variables
 // https://community.plot.ly/t/disable-x-axis-hover-text/28970
 const rndsfx = () => `?${Math.floor(Math.random() * 1000)}`;
 
-const cn2val = (text, dict) => {
+function cn2val(text, dict) {
   // substitute column names in a text string with dict values
   const keys = Object.keys(dict).sort((a, b) => b.length - a.length);
   // start substitution from longer strings ... (see u8varMathEval)
@@ -18,9 +18,9 @@ const cn2val = (text, dict) => {
     result = result.replace(re, dict[cn]);
   }
   return result;
-};
+}
 
-const u8varMathEval = (expr, dict, u2adict) => {
+function u8varMathEval(expr, dict, u2adict) {
   let anexpr = expr;
   const anDict = {};
   const keys = Object.keys(u2adict).sort((a, b) => b.length - a.length);
@@ -42,10 +42,10 @@ const u8varMathEval = (expr, dict, u2adict) => {
     console.log(dict, anDict);
     return NaN;
   }
-};
+}
 
 // 出處： https://stackoverflow.com/questions/41440945/handling-dynamic-arguments-from-when-in-jquery 超重要！
-$.whenAll = (promises) => {
+$.whenAll = function(promises) {
   const d = $.Deferred();
   const results = [];
   let counter = promises.length;
@@ -62,9 +62,9 @@ $.whenAll = (promises) => {
     });
   });
   return d.promise();
-};
+}
 
-const parseCSV = (str, textcols) => {
+function parseCSV(str, textcols) {
   // it's amazing how difficult it is to find
   // a suitable csv lib that also runs on an android phone
   const table = [];
@@ -108,16 +108,16 @@ const parseCSV = (str, textcols) => {
     ret.push(krow);
   }
   return ret;
-};
+}
 
-const redraw = () => {
+function redraw() {
   // aliases for global variables
   let keptEntries;
   let filteredData;
   const pltMainTrace = G.plotly.maintrace;
 
   $.fn.dataTable.ext.search = [
-    (settings, row, index) => {
+    function(settings, row, index) {
       // https://stackoverflow.com/questions/21407017/jquery-val-not-working-for-input-fields
       const keepExpr = $('#keep_expr').val();
       const u8dict = {};
@@ -247,9 +247,9 @@ const redraw = () => {
     'config': G.plotly.config, 
     'frames': frames
   });
-};
+}
 
-const saveHistory = (csvRows) => {
+function saveHistory(csvRows) {
   const exRow = csvRows[0];
   const timeCN = G.plotly.maintrace.timeaxis.colname;
   if (!(timeCN && timeCN in exRow)) { 
@@ -268,9 +268,9 @@ const saveHistory = (csvRows) => {
     }
     G.table.history[row[timeCN]][row[G.source.pkey]] = row;
   }
-};
+}
 
-const toDictJoin = (csvRows, index = -1) => {
+function toDictJoin(csvRows, index = -1) {
   // convert csvRows array into a dict, then join it into G.table.asDict
   const dict2 = {};
   const mainDict = G.table.asDict;
@@ -302,9 +302,9 @@ const toDictJoin = (csvRows, index = -1) => {
       }
     }
   }
-};
+}
 
-const init = (lotab) => {
+function init(lotab) {
   // lotab: list of csv tables
   const Ntab = lotab.length;
 
@@ -393,7 +393,7 @@ const init = (lotab) => {
   // G.table.invd: internal numerical variable dictionary
   // for mapping utf8 strings to alphanumeric names for math evaluation
   let invdIndex = 1000;
-  G.table.colnames.forEach((cn) => {
+  G.table.colnames.forEach(function(cn) {
     if (!G.source.textcols.includes(cn)) {
       G.table.invd[cn] = `inv4me${invdIndex.toString().substr(1)}`;
       ++invdIndex;
@@ -509,10 +509,10 @@ const init = (lotab) => {
   // $('#Z_expr').val( G.plotly.maintrace.zaxis.expr );
   $('#Size_expr').val(G.plotly.maintrace.size.expr);
   redraw();
-};
+}
 
 // setAttr(G, k, G.urlConfig[k]);
-const ucExtend = (urlConfig) => {
+function ucExtend(urlConfig) {
   // { 's.csv[0]':'abc.csv' } => G.source.csv[0] = 'abc.csv'
   for (const attname in urlConfig) {
     const match = attname.match(/(\w+)(.+)/);
@@ -554,17 +554,17 @@ const ucExtend = (urlConfig) => {
     }
     obj[rest[rest.length - 1]] = urlConfig[attname];
   }
-};
+}
 
 ////////////////////////////////////////////////////////////
 
 console.log('global variables: ', G);
 
-$.getJSON(`default.json${rndsfx()}`, (defG) => {
+$.getJSON(`default.json${rndsfx()}`, function(defG) {
   $.extend(true, G, defG);
   const urlConfig = new URI(location.href).search(true);
   
-  $.getJSON(urlConfig.c || `config.json${rndsfx()}`, (cfgdata) => {
+  $.getJSON(urlConfig.c || `config.json${rndsfx()}`, function(cfgdata) {
     // set up config
     $.extend(true, G, cfgdata);
     ucExtend(urlConfig);
