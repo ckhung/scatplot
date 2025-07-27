@@ -1,0 +1,58 @@
+{
+  "source": {
+    "csv": "ba25/ba25.csv",
+    "textcols": ["選區", "立委"],
+    "pkey": "立委",
+    "keep": true
+  },
+  "plotly": {
+    "layout": {
+      "title": {
+	"text": "2025年大罷免結果"
+      },
+      "font": {
+        "size": 18
+      },
+      "shapes": [
+	{
+	  "type": "line",
+	  "x0": 20,
+	  "y0": 25,
+	  "x1": 25,
+	  "y1": 25,
+          "line": {
+            "color": "#800000",
+            "width": 2,
+            "dash": "dash"
+          }
+	},
+	{
+	  "type": "line",
+	  "x0": 25,
+	  "y0": 25,
+	  "x1": 30,
+	  "y1": 30,
+          "line": {
+            "color": "#800000",
+            "width": 2,
+            "dash": "dash"
+          }
+	}
+      ]
+    },
+    "maintrace": {
+      "font": {
+        "size": 32,
+        "color": "#ff0000"
+      },
+      "xaxis": { "expr": "不同意/人數*100" },
+      "yaxis": { "expr": "同意/人數*100" },
+      "size": { "expr": "sqrt(人數)*0.05" },
+      "color": {
+        "default": "#008"
+      },
+      "maintext": "立委",
+      "hovertext": "選區"
+    }
+  }
+}
