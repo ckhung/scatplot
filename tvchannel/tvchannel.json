@@ -1,0 +1,19 @@
+{
+  "source": {
+    "csv": "tvchannel/tvchannel.csv",
+    "textcols": ["頻道"],
+    "pkey": "頻道"
+  },
+  "plotly": {
+    "layout": {
+      "title": "新聞頻道轉台運動\nhttps://taronews.tw/2019/04/03/299431/"
+    },
+    "maintrace": {
+      "xaxis": { "expr": "總數" },
+      "yaxis": { "expr": "不允許轉台數" },
+      "size": { "expr": "5" },
+      "maintext": "頻道",
+      "hovertext": "頻道"
+    }
+  }
+}
