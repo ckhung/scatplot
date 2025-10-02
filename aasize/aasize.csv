@@ -1,47 +1,77 @@
-         App,         Data,        Cache, Name        , FullName
-    16228352,        94208,        32768, voicerecorder, com.simplemobiletools.voicerecorder
-    35106816,       106496,        32768, keychain    , com.android.keychain
-    35106816,       106496,        32768, mtp         , com.android.mtp
-    35102720,       114688,        32768, downloads   , com.android.providers.downloads
-    35102720,       122880,        32768, blockednumber, com.android.providers.blockednumber
-    35110912,       131072,        32768, networkstack, com.android.networkstack
-   286605312,       147456,        32768, partnersetup, com.google.android.partnersetup
-    35106816,       147456,        32768, lineagesettings, org.lineageos.lineagesettings
-    12791808,       151552,        32768, webview     , com.android.webview
-    20508672,       208896,        32768, davdroid    , at.bitfire.davdroid
-    15142912,       311296,       204800, primftpd    , org.primftpd
-    39387136,       339968,       229376, klik        , com.essential.klik
-    13414400,       430080,       249856, barcodescanner, com.example.barcodescanner
-    11165696,       454656,       364544, binaryeye   , de.markusfisch.android.binaryeye
-    15818752,       491520,       409600, etar        , ws.xsoh.etar
-    35106816,       548864,        32768, gsf         , com.google.android.gsf
-    35110912,       573440,       491520, phone       , com.android.phone
-     5586944,       745472,       438272, mather      , org.icasdri.mather
-    35110912,       778240,       274432, lineageparts, org.lineageos.lineageparts
-    35127296,       909312,       720896, settings    , com.android.settings
-    33632256,      1052672,       458752, v1          , com.nhiApp.v1
-    35102720,      2105344,       286720, media       , com.android.providers.media
-    97189888,      2158592,       688128, rnbeta      , com.mattermost.rnbeta
-    96903168,      2646016,       622592, vlc         , org.videolan.vlc
-    34234368,      3063808,        32768, wellbeing   , com.google.android.apps.wellbeing
-    35102720,      3403776,        32768, telephony   , com.android.providers.telephony
-    13070336,      4194304,      4120576, pro         , com.simplemobiletools.filemanager.pro
-    35102720,      5111808,        32768, contacts    , com.android.providers.contacts
-    28725248,      6098944,       253952, alarm       , org.blokada.alarm
-    38899712,      6148096,       593920, zhuyin      , com.google.android.apps.inputmethod.zhuyin
-    46358528,     15806464,     15446016, act         , tw.edu.cyut.act
-    91009024,     21655552,       585728, meet        , org.jitsi.meet
-    23752704,     39018496,       356352, viewer      , org.sufficientlysecure.viewer
-    40804352,     52502528,     48676864, bustaiwan   , nexti.android.bustaiwan
-    79355904,     52641792,     45060096, vending     , com.android.vending
-     7651328,     55250944,     54374400, jumpgo      , com.jtechme.jumpgo
-    90443776,     76779520,      3403776, sheets      , com.google.android.apps.docs.editors.sheets
-   355024896,     89653248,     76046336, googlequicksearchbox, com.google.android.googlequicksearchbox
-    33038336,    110620672,    109883392, pro         , com.simplemobiletools.gallery.pro
-   425824256,    150663168,      8601600, gms         , com.google.android.gms
-    49782784,    164503552,        32768, tts         , com.google.android.tts
-    20373504,    350638080,    333344768, fdroid      , org.fdroid.fdroid
-     7987200,    405770240,       507904, quickdic    , de.reimardoeffinger.quickdic
-   131416064,    659558400,       806912, plus        , net.osmand.plus
-   136790016,    668602368,    634273792, icecat      , org.gnu.icecat
-   250060800,    748380160,    262569984, line     , jp.naver.line.android
+App,Data,Cache,Name,FullName
+2297856,1523712,1519616,managedprovisioning,com.android.managedprovisioning
+2306048,1019904,843776,intelligence,com.android.settings.intelligence
+2633728,2256896,114688,services,com.google.android.ext.services
+2772992,3117056,860160,gos,com.samsung.android.game.gos
+3022848,1040384,1040384,peoplestripe,com.samsung.android.service.peoplestripe
+3448320,2269696,369664,app,com.samsung.android.rubin.app
+3596288,1208320,561152,gamehome,com.samsung.android.game.gamehome
+3796992,2519040,1146880,cocktailbarservice,com.samsung.android.app.cocktailbarservice
+3858432,4968448,1974272,galaxyfinder,com.samsung.android.app.galaxyfinder
+4538368,2940928,573440,service,com.samsung.android.aware.service
+4608000,1167360,1163264,traceur,com.android.traceur
+4751360,2236416,1425408,dynamiclock,com.samsung.android.dynamiclock
+4758016,1449984,278528,push,com.sec.spp.push
+4907008,11640832,684032,config,com.samsung.android.sdm.config
+5265920,18407424,13897728,mattermost,com.mattermost.mattermost
+5270016,2351104,225280,partnersetup,com.google.android.partnersetup
+5431296,1167360,1073152,contacts,com.samsung.android.app.contacts
+5618176,4825088,421888,mather,org.icasdri.mather
+6119424,10702848,1269760,scs,com.samsung.android.scs
+6348800,1142784,540672,calendar,com.google.android.syncadapters.calendar
+6361088,2752512,0,messaging,com.samsung.android.messaging
+7415296,47013888,27553792,jumpgo,com.jtechme.jumpgo
+8613888,3088384,2179072,easysetup,com.samsung.android.easysetup
+8654848,1331200,823296,appsedge,com.samsung.android.app.appsedge
+8798208,1986560,1961984,quickboard,com.samsung.android.mdx.quickboard
+8930816,52461568,37310464,lightning,acr.browser.lightning
+9694720,1331200,0,authenticator2,com.google.android.apps.authenticator2
+9972224,1064960,647168,secscanqr,de.t_dankworth.secscanqr
+11931648,6938624,4046848,launcher,com.sec.android.app.launcher
+11947520,4616192,0,markor,net.gsantner.markor
+13872640,409628672,0,quickdic,de.reimardoeffinger.quickdic
+14149120,1146880,262144,turbo,com.google.android.apps.turbo
+14622208,4419584,0,standard,com.stoutner.privacybrowser.standard
+14708736,20529152,217088,module,com.google.android.providers.media.module
+15327232,3932160,2883584,spage,com.samsung.android.app.spage
+21948928,8445952,2318336,android,org.midorinext.android
+22151168,1863680,1236992,clockpackage,com.sec.android.app.clockpackage
+23429120,5746688,3616768,mobileservice,com.samsung.android.mobileservice
+26316288,6321152,3400704,sharelive,com.samsung.android.app.sharelive
+27149824,5812224,512000,alarm,org.blokada.alarm
+28374016,90746880,72486912,chrome,com.android.chrome
+30361088,2347008,1032192,davdroid,at.bitfire.davdroid
+31162368,5173248,3371008,daemonapp,com.sec.android.daemonapp
+31634944,1155072,118784,kidshome,com.sec.android.app.kidshome
+34048512,4485120,2551808,restore,com.google.android.apps.restore
+35894784,97796096,16699392,pro,com.simplemobiletools.gallery.pro
+40351232,450908160,99930112,fdroid,org.fdroid.fdroid
+44136960,8167424,0,bustaiwan,nexti.android.bustaiwan
+45848064,1966080,1949696,pro,com.simplemobiletools.filemanager.pro
+46735360,1560576,1077248,calendar,com.samsung.android.calendar
+54390784,52944896,0,honeyboard,com.samsung.android.honeyboard
+64931328,30932992,1945600,docs,com.google.android.apps.docs
+68749824,2433024,0,meetings,com.google.android.apps.meetings
+82543104,2052096,2015232,webview,com.google.android.webview
+86696960,18309120,4173824,samsungapps,com.sec.android.app.samsungapps
+97069568,4173824,0,vlc,org.videolan.vlc
+99649024,2625536,1003520,mediaclient,com.netflix.mediaclient
+109999616,197898240,2928640,sheets,com.google.android.apps.docs.editors.sheets
+111179264,23826432,17752064,client,com.nextcloud.client
+118182400,54784000,37814272,vending,com.android.vending
+130827776,437256192,958464,tts,com.google.android.tts
+145868288,34156544,26210304,tachyon,com.google.android.apps.tachyon
+147260928,2099851264,5148672,termux,com.termux
+159798784,222306304,41345024,latin,com.google.android.inputmethod.latin
+160916992,37732352,24395776,maps,com.google.android.apps.maps
+176822784,11132928,2859008,skydrive,com.microsoft.skydrive
+187065856,33779712,18681856,messaging,com.google.android.apps.messaging
+195778048,177831936,161861632,youtube,com.google.android.youtube
+213731840,616448000,0,osmand,net.osmand.plus
+219301376,10330112,3780608,sbrowser,com.sec.android.app.sbrowser
+220030464,33443840,7802880,gm,com.google.android.gm
+282019328,276074496,238215168,eats,com.ubercab.eats
+285214208,8654864384,224735232,line,jp.naver.line.android
+300023808,459641141,52019200,gms,com.google.android.gms
+345473536,315803957,147431424,googlequicksearchbox,com.google.android.googlequicksearchbox
+360031744,2662400,1048576,SimpleX,chat.simplex.app

@@ -1,0 +1,3324 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="main-svg"
+   width="975.84"
+   height="720"
+   style=""
+   viewBox="0 0 813.2 600"
+   version="1.1"
+   id="svg746"
+   sodipodi:docname="aasize.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:export-filename="aasize.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview748"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.1722222"
+     inkscape:cx="423.55451"
+     inkscape:cy="360.00001"
+     inkscape:window-width="1920"
+     inkscape:window-height="1035"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg746" />
+  <defs
+     id="defs-87b255">
+    <g
+       class="clips"
+       id="g16">
+      <clipPath
+         class="axesclip"
+         id="clip87b255x">
+        <rect
+           x="80"
+           y="0"
+           width="653"
+           height="600"
+           id="rect7" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip87b255y">
+        <rect
+           x="0"
+           y="100"
+           width="813.2"
+           height="420"
+           id="rect10" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip87b255xy">
+        <rect
+           x="80"
+           y="100"
+           width="653"
+           height="420"
+           id="rect13" />
+      </clipPath>
+    </g>
+    <g
+       class="gradients"
+       id="g18" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3187">
+      <g
+         id="g3197">
+        <g
+           id="g3195">
+          <g
+             id="g3193">
+            <g
+               id="g3191">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3189"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3199">
+      <g
+         id="g3209">
+        <g
+           id="g3207">
+          <g
+             id="g3205">
+            <g
+               id="g3203">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3201"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3211">
+      <g
+         id="g3221">
+        <g
+           id="g3219">
+          <g
+             id="g3217">
+            <g
+               id="g3215">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3213"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3223">
+      <g
+         id="g3233">
+        <g
+           id="g3231">
+          <g
+             id="g3229">
+            <g
+               id="g3227">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3225"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3235">
+      <g
+         id="g3245">
+        <g
+           id="g3243">
+          <g
+             id="g3241">
+            <g
+               id="g3239">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3237"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3247">
+      <g
+         id="g3257">
+        <g
+           id="g3255">
+          <g
+             id="g3253">
+            <g
+               id="g3251">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3249"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3259">
+      <g
+         id="g3269">
+        <g
+           id="g3267">
+          <g
+             id="g3265">
+            <g
+               id="g3263">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3261"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3271">
+      <g
+         id="g3281">
+        <g
+           id="g3279">
+          <g
+             id="g3277">
+            <g
+               id="g3275">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3273"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3283">
+      <g
+         id="g3293">
+        <g
+           id="g3291">
+          <g
+             id="g3289">
+            <g
+               id="g3287">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3285"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3295">
+      <g
+         id="g3305">
+        <g
+           id="g3303">
+          <g
+             id="g3301">
+            <g
+               id="g3299">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3297"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3307">
+      <g
+         id="g3317">
+        <g
+           id="g3315">
+          <g
+             id="g3313">
+            <g
+               id="g3311">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3309"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3319">
+      <g
+         id="g3329">
+        <g
+           id="g3327">
+          <g
+             id="g3325">
+            <g
+               id="g3323">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3321"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3331">
+      <g
+         id="g3341">
+        <g
+           id="g3339">
+          <g
+             id="g3337">
+            <g
+               id="g3335">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3333"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3343">
+      <g
+         id="g3353">
+        <g
+           id="g3351">
+          <g
+             id="g3349">
+            <g
+               id="g3347">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3345"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3355">
+      <g
+         id="g3365">
+        <g
+           id="g3363">
+          <g
+             id="g3361">
+            <g
+               id="g3359">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3357"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3367">
+      <g
+         id="g3377">
+        <g
+           id="g3375">
+          <g
+             id="g3373">
+            <g
+               id="g3371">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3369"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3379">
+      <g
+         id="g3389">
+        <g
+           id="g3387">
+          <g
+             id="g3385">
+            <g
+               id="g3383">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3381"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3391">
+      <g
+         id="g3401">
+        <g
+           id="g3399">
+          <g
+             id="g3397">
+            <g
+               id="g3395">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3393"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3403">
+      <g
+         id="g3413">
+        <g
+           id="g3411">
+          <g
+             id="g3409">
+            <g
+               id="g3407">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3405"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3415">
+      <g
+         id="g3425">
+        <g
+           id="g3423">
+          <g
+             id="g3421">
+            <g
+               id="g3419">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3417"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3427">
+      <g
+         id="g3437">
+        <g
+           id="g3435">
+          <g
+             id="g3433">
+            <g
+               id="g3431">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3429"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3439">
+      <g
+         id="g3449">
+        <g
+           id="g3447">
+          <g
+             id="g3445">
+            <g
+               id="g3443">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3441"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3451">
+      <g
+         id="g3461">
+        <g
+           id="g3459">
+          <g
+             id="g3457">
+            <g
+               id="g3455">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3453"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3463">
+      <g
+         id="g3473">
+        <g
+           id="g3471">
+          <g
+             id="g3469">
+            <g
+               id="g3467">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3465"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3475">
+      <g
+         id="g3485">
+        <g
+           id="g3483">
+          <g
+             id="g3481">
+            <g
+               id="g3479">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3477"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3487">
+      <g
+         id="g3497">
+        <g
+           id="g3495">
+          <g
+             id="g3493">
+            <g
+               id="g3491">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3489"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3499">
+      <g
+         id="g3509">
+        <g
+           id="g3507">
+          <g
+             id="g3505">
+            <g
+               id="g3503">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3501"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3511">
+      <g
+         id="g3521">
+        <g
+           id="g3519">
+          <g
+             id="g3517">
+            <g
+               id="g3515">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3513"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3523">
+      <g
+         id="g3533">
+        <g
+           id="g3531">
+          <g
+             id="g3529">
+            <g
+               id="g3527">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3525"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3535">
+      <g
+         id="g3545">
+        <g
+           id="g3543">
+          <g
+             id="g3541">
+            <g
+               id="g3539">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3537"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3547">
+      <g
+         id="g3557">
+        <g
+           id="g3555">
+          <g
+             id="g3553">
+            <g
+               id="g3551">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3549"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3559">
+      <g
+         id="g3569">
+        <g
+           id="g3567">
+          <g
+             id="g3565">
+            <g
+               id="g3563">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3561"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3571">
+      <g
+         id="g3581">
+        <g
+           id="g3579">
+          <g
+             id="g3577">
+            <g
+               id="g3575">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3573"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3583">
+      <g
+         id="g3593">
+        <g
+           id="g3591">
+          <g
+             id="g3589">
+            <g
+               id="g3587">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3585"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3595">
+      <g
+         id="g3605">
+        <g
+           id="g3603">
+          <g
+             id="g3601">
+            <g
+               id="g3599">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3597"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3607">
+      <g
+         id="g3617">
+        <g
+           id="g3615">
+          <g
+             id="g3613">
+            <g
+               id="g3611">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3609"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3619">
+      <g
+         id="g3629">
+        <g
+           id="g3627">
+          <g
+             id="g3625">
+            <g
+               id="g3623">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3621"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3631">
+      <g
+         id="g3641">
+        <g
+           id="g3639">
+          <g
+             id="g3637">
+            <g
+               id="g3635">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3633"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3643">
+      <g
+         id="g3653">
+        <g
+           id="g3651">
+          <g
+             id="g3649">
+            <g
+               id="g3647">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3645"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3655">
+      <g
+         id="g3665">
+        <g
+           id="g3663">
+          <g
+             id="g3661">
+            <g
+               id="g3659">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3657"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3667">
+      <g
+         id="g3677">
+        <g
+           id="g3675">
+          <g
+             id="g3673">
+            <g
+               id="g3671">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3669"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3679">
+      <g
+         id="g3689">
+        <g
+           id="g3687">
+          <g
+             id="g3685">
+            <g
+               id="g3683">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3681"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3691">
+      <g
+         id="g3701">
+        <g
+           id="g3699">
+          <g
+             id="g3697">
+            <g
+               id="g3695">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3693"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3703">
+      <g
+         id="g3713">
+        <g
+           id="g3711">
+          <g
+             id="g3709">
+            <g
+               id="g3707">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3705"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3715">
+      <g
+         id="g3725">
+        <g
+           id="g3723">
+          <g
+             id="g3721">
+            <g
+               id="g3719">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3717"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3727">
+      <g
+         id="g3737">
+        <g
+           id="g3735">
+          <g
+             id="g3733">
+            <g
+               id="g3731">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3729"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3739">
+      <g
+         id="g3749">
+        <g
+           id="g3747">
+          <g
+             id="g3745">
+            <g
+               id="g3743">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3741"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3751">
+      <g
+         id="g3761">
+        <g
+           id="g3759">
+          <g
+             id="g3757">
+            <g
+               id="g3755">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3753"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3763">
+      <g
+         id="g3773">
+        <g
+           id="g3771">
+          <g
+             id="g3769">
+            <g
+               id="g3767">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3765"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3775">
+      <g
+         id="g3785">
+        <g
+           id="g3783">
+          <g
+             id="g3781">
+            <g
+               id="g3779">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3777"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3787">
+      <g
+         id="g3797">
+        <g
+           id="g3795">
+          <g
+             id="g3793">
+            <g
+               id="g3791">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3789"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3799">
+      <g
+         id="g3809">
+        <g
+           id="g3807">
+          <g
+             id="g3805">
+            <g
+               id="g3803">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3801"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3811">
+      <g
+         id="g3821">
+        <g
+           id="g3819">
+          <g
+             id="g3817">
+            <g
+               id="g3815">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3813"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3823">
+      <g
+         id="g3833">
+        <g
+           id="g3831">
+          <g
+             id="g3829">
+            <g
+               id="g3827">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3825"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3835">
+      <g
+         id="g3845">
+        <g
+           id="g3843">
+          <g
+             id="g3841">
+            <g
+               id="g3839">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3837"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3847">
+      <g
+         id="g3857">
+        <g
+           id="g3855">
+          <g
+             id="g3853">
+            <g
+               id="g3851">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3849"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3859">
+      <g
+         id="g3869">
+        <g
+           id="g3867">
+          <g
+             id="g3865">
+            <g
+               id="g3863">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3861"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3871">
+      <g
+         id="g3881">
+        <g
+           id="g3879">
+          <g
+             id="g3877">
+            <g
+               id="g3875">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3873"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3883">
+      <g
+         id="g3893">
+        <g
+           id="g3891">
+          <g
+             id="g3889">
+            <g
+               id="g3887">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3885"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3895">
+      <g
+         id="g3905">
+        <g
+           id="g3903">
+          <g
+             id="g3901">
+            <g
+               id="g3899">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3897"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3907">
+      <g
+         id="g3917">
+        <g
+           id="g3915">
+          <g
+             id="g3913">
+            <g
+               id="g3911">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3909"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3919">
+      <g
+         id="g3929">
+        <g
+           id="g3927">
+          <g
+             id="g3925">
+            <g
+               id="g3923">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3921"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3931">
+      <g
+         id="g3941">
+        <g
+           id="g3939">
+          <g
+             id="g3937">
+            <g
+               id="g3935">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3933"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3943">
+      <g
+         id="g3953">
+        <g
+           id="g3951">
+          <g
+             id="g3949">
+            <g
+               id="g3947">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3945"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3955">
+      <g
+         id="g3965">
+        <g
+           id="g3963">
+          <g
+             id="g3961">
+            <g
+               id="g3959">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3957"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3967">
+      <g
+         id="g3977">
+        <g
+           id="g3975">
+          <g
+             id="g3973">
+            <g
+               id="g3971">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3969"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3979">
+      <g
+         id="g3989">
+        <g
+           id="g3987">
+          <g
+             id="g3985">
+            <g
+               id="g3983">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3981"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3991">
+      <g
+         id="g4001">
+        <g
+           id="g3999">
+          <g
+             id="g3997">
+            <g
+               id="g3995">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect3993"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4003">
+      <g
+         id="g4013">
+        <g
+           id="g4011">
+          <g
+             id="g4009">
+            <g
+               id="g4007">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect4005"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4015">
+      <g
+         id="g4025">
+        <g
+           id="g4023">
+          <g
+             id="g4021">
+            <g
+               id="g4019">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect4017"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4027">
+      <g
+         id="g4037">
+        <g
+           id="g4035">
+          <g
+             id="g4033">
+            <g
+               id="g4031">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect4029"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4039">
+      <g
+         id="g4049">
+        <g
+           id="g4047">
+          <g
+             id="g4045">
+            <g
+               id="g4043">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect4041"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4051">
+      <g
+         id="g4061">
+        <g
+           id="g4059">
+          <g
+             id="g4057">
+            <g
+               id="g4055">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect4053"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4063">
+      <g
+         id="g4073">
+        <g
+           id="g4071">
+          <g
+             id="g4069">
+            <g
+               id="g4067">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect4065"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4075">
+      <g
+         id="g4085">
+        <g
+           id="g4083">
+          <g
+             id="g4081">
+            <g
+               id="g4079">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect4077"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4087">
+      <g
+         id="g4097">
+        <g
+           id="g4095">
+          <g
+             id="g4093">
+            <g
+               id="g4091">
+              <rect
+                 width="653"
+                 height="420"
+                 id="rect4089"
+                 x="80"
+                 y="100" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </clipPath>
+  </defs>
+  <g
+     class="bglayer"
+     id="g21" />
+  <g
+     class="layer-below"
+     id="g27">
+    <g
+       class="imagelayer"
+       id="g23" />
+    <g
+       class="shapelayer"
+       id="g25" />
+  </g>
+  <g
+     class="layer-subplot"
+     id="g33">
+    <g
+       class="shapelayer"
+       id="g29" />
+    <g
+       class="imagelayer"
+       id="g31" />
+  </g>
+  <g
+     class="gridlayer"
+     id="g93">
+    <g
+       class="x"
+       id="g61">
+      <path
+         class="xgrid crisp"
+         transform="translate(139.31)"
+         d="M 0,100 V 520"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path35" />
+      <path
+         class="xgrid crisp"
+         transform="translate(212.19)"
+         d="M 0,100 V 520"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path37" />
+      <path
+         class="xgrid crisp"
+         transform="translate(263.9)"
+         d="M 0,100 V 520"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path39" />
+      <path
+         class="xgrid crisp"
+         transform="translate(304.01)"
+         d="M 0,100 V 520"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path41" />
+      <path
+         class="xgrid crisp"
+         transform="translate(336.78)"
+         d="M 0,100 V 520"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path43" />
+      <path
+         class="xgrid crisp"
+         transform="translate(364.49)"
+         d="M 0,100 V 520"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path45" />
+      <path
+         class="xgrid crisp"
+         transform="translate(388.49)"
+         d="M 0,100 V 520"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path47" />
+      <path
+         class="xgrid crisp"
+         transform="translate(409.66)"
+         d="M 0,100 V 520"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path49" />
+      <path
+         class="xgrid crisp"
+         transform="translate(428.6)"
+         d="M 0,100 V 520"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path51" />
+      <path
+         class="xgrid crisp"
+         transform="translate(553.19)"
+         d="M 0,100 V 520"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path53" />
+      <path
+         class="xgrid crisp"
+         transform="translate(626.07)"
+         d="M 0,100 V 520"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path55" />
+      <path
+         class="xgrid crisp"
+         transform="translate(677.78)"
+         d="M 0,100 V 520"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path57" />
+      <path
+         class="xgrid crisp"
+         transform="translate(717.89)"
+         d="M 0,100 V 520"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path59" />
+    </g>
+    <g
+       class="y"
+       id="g91">
+      <path
+         class="ygrid crisp"
+         transform="translate(0,508.79)"
+         d="M 80,0 H 733"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path63" />
+      <path
+         class="ygrid crisp"
+         transform="translate(0,480.68)"
+         d="M 80,0 H 733"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path65" />
+      <path
+         class="ygrid crisp"
+         transform="translate(0,443.51)"
+         d="M 80,0 H 733"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path67" />
+      <path
+         class="ygrid crisp"
+         transform="translate(0,415.39)"
+         d="M 80,0 H 733"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path69" />
+      <path
+         class="ygrid crisp"
+         transform="translate(0,387.27)"
+         d="M 80,0 H 733"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path71" />
+      <path
+         class="ygrid crisp"
+         transform="translate(0,350.1)"
+         d="M 80,0 H 733"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path73" />
+      <path
+         class="ygrid crisp"
+         transform="translate(0,321.98)"
+         d="M 80,0 H 733"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path75" />
+      <path
+         class="ygrid crisp"
+         transform="translate(0,293.87)"
+         d="M 80,0 H 733"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path77" />
+      <path
+         class="ygrid crisp"
+         transform="translate(0,256.7)"
+         d="M 80,0 H 733"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path79" />
+      <path
+         class="ygrid crisp"
+         transform="translate(0,228.58)"
+         d="M 80,0 H 733"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path81" />
+      <path
+         class="ygrid crisp"
+         transform="translate(0,200.46)"
+         d="M 80,0 H 733"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path83" />
+      <path
+         class="ygrid crisp"
+         transform="translate(0,163.29)"
+         d="M 80,0 H 733"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path85" />
+      <path
+         class="ygrid crisp"
+         transform="translate(0,135.17)"
+         d="M 80,0 H 733"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path87" />
+      <path
+         class="ygrid crisp"
+         transform="translate(0,107.05)"
+         d="M 80,0 H 733"
+         style="stroke:#eeeeee;stroke-width:1px;stroke-opacity:1"
+         id="path89" />
+    </g>
+  </g>
+  <g
+     class="zerolinelayer"
+     id="g95" />
+  <path
+     class="xlines-below"
+     id="path97"
+     d="" />
+  <path
+     class="ylines-below"
+     id="path99"
+     d="" />
+  <g
+     class="overlines-below"
+     id="g101" />
+  <g
+     class="xaxislayer-below"
+     id="g103" />
+  <g
+     class="yaxislayer-below"
+     id="g105" />
+  <g
+     class="overaxes-below"
+     id="g107" />
+  <g
+     class="fills"
+     id="g109"
+     transform="translate(80,100)"
+     style="stroke-miterlimit:2" />
+  <g
+     class="errorbars"
+     id="g111"
+     transform="translate(80,100)"
+     style="stroke-miterlimit:2" />
+  <g
+     class="lines"
+     id="g113"
+     transform="translate(80,100)"
+     style="stroke-miterlimit:2" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -240.84,491.71 a 8.78,8.78 0 1 1 -8.78,-8.78 8.78,8.78 0 0 1 8.78,8.78 z"
+     id="path115"
+     clip-path="url(#clipPath4087)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -241.4,507.99 a 7.58,7.58 0 1 1 -7.58,-7.58 7.58,7.58 0 0 1 7.58,7.58 z"
+     id="path117"
+     clip-path="url(#clipPath4075)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -220.5,475.77 a 4.6,4.6 0 1 1 -4.6,-4.6 4.6,4.6 0 0 1 4.6,4.6 z"
+     id="path119"
+     clip-path="url(#clipPath4063)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -208.23,462.68 a 7.61,7.61 0 1 1 -7.61,-7.61 7.61,7.61 0 0 1 7.61,7.61 z"
+     id="path121"
+     clip-path="url(#clipPath4051)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -192.35,507.19 a 7.98,7.98 0 1 1 -7.98,-7.98 7.98,7.98 0 0 1 7.98,7.98 z"
+     id="path123"
+     clip-path="url(#clipPath4039)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -170.5,475.55 a 6.16,6.16 0 1 1 -6.16,-6.16 6.16,6.16 0 0 1 6.16,6.16 z"
+     id="path125"
+     clip-path="url(#clipPath4027)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -162.27,501.12 a 6.84,6.84 0 1 1 -6.84,-6.84 6.84,6.84 0 0 1 6.84,6.84 z"
+     id="path127"
+     clip-path="url(#clipPath4015)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -151.17,471.32 a 8.18,8.18 0 1 1 -8.18,-8.18 8.18,8.18 0 0 1 8.18,8.18 z"
+     id="path129"
+     clip-path="url(#clipPath4003)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -147.09,443.76 a 9.37,9.37 0 1 1 -9.37,-9.37 9.37,9.37 0 0 1 9.37,9.37 z"
+     id="path131"
+     clip-path="url(#clipPath3991)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -120.41,465.04 a 6.88,6.88 0 1 1 -6.88,-6.88 6.88,6.88 0 0 1 6.88,6.88 z"
+     id="path133"
+     clip-path="url(#clipPath3979)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -116.34,502.52 a 8.21,8.21 0 1 1 -8.21,-8.21 8.21,8.21 0 0 1 8.21,8.21 z"
+     id="path135"
+     clip-path="url(#clipPath3967)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -110.4,476.14 a 8.64,8.64 0 1 1 -8.64,-8.64 8.64,8.64 0 0 1 8.64,8.64 z"
+     id="path137"
+     clip-path="url(#clipPath3955)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -113.05,493.72 a 5.74,5.74 0 1 1 -5.74,-5.74 5.74,5.74 0 0 1 5.74,5.74 z"
+     id="path139"
+     clip-path="url(#clipPath3943)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -106.06,409.23 a 7.19,7.19 0 1 1 -7.19,-7.19 7.19,7.19 0 0 1 7.19,7.19 z"
+     id="path141"
+     clip-path="url(#clipPath3931)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -85.3,390.64 a 15.26,15.26 0 1 1 -15.26,-15.26 15.26,15.26 0 0 1 15.26,15.26 z"
+     id="path143"
+     clip-path="url(#clipPath3919)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -94.97,474.12 a 5.45,5.45 0 1 1 -5.45,-5.45 5.45,5.45 0 0 1 5.45,5.45 z"
+     id="path145"
+     clip-path="url(#clipPath3907)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -86.95,502.52 a 8.05,8.05 0 1 1 -8.05,-8.05 8.05,8.05 0 0 1 8.05,8.05 z"
+     id="path147"
+     clip-path="url(#clipPath3895)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -82.55,444.95 a 6.37,6.37 0 1 1 -6.37,-6.37 6.37,6.37 0 0 1 6.37,6.37 z"
+     id="path149"
+     clip-path="url(#clipPath3883)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -65.17,412.63 a 8.39,8.39 0 1 1 -8.39,-8.39 8.39,8.39 0 0 1 8.39,8.39 z"
+     id="path151"
+     clip-path="url(#clipPath3871)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -60.17,503.38 a 6.78,6.78 0 1 1 -6.78,-6.78 6.78,6.78 0 0 1 6.78,6.78 z"
+     id="path153"
+     clip-path="url(#clipPath3859)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="M -66.6,467.72 Z"
+     id="path155"
+     clip-path="url(#clipPath3847)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -20.92,352.6 a 18.11,18.11 0 1 1 -18.11,-18.11 18.11,18.11 0 0 1 18.11,18.11 z"
+     id="path157"
+     clip-path="url(#clipPath3835)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -2.49,463.05 a 9.61,9.61 0 1 1 -9.61,-9.61 9.61,9.61 0 0 1 9.61,9.61 z"
+     id="path159"
+     clip-path="url(#clipPath3823)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m -3.72,497.19 a 7.53,7.53 0 1 1 -7.53,-7.53 7.53,7.53 0 0 1 7.53,7.53 z"
+     id="path161"
+     clip-path="url(#clipPath3811)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 1.06,480.95 a 9.36,9.36 0 1 1 -9.36,-9.36 9.36,9.36 0 0 1 9.36,9.36 z"
+     id="path163"
+     clip-path="url(#clipPath3799)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="M 13.93,348.15 A 19.54,19.54 0 1 1 -5.61,328.61 19.54,19.54 0 0 1 13.93,348.15 Z"
+     id="path165"
+     clip-path="url(#clipPath3787)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="M 9.14,497.19 Z"
+     id="path167"
+     clip-path="url(#clipPath3775)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 21.31,506.24 a 7.09,7.09 0 1 1 -7.09,-7.09 7.09,7.09 0 0 1 7.09,7.09 z"
+     id="path169"
+     clip-path="url(#clipPath3763)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="M 57.67,430.21 A 11.21,11.21 0 1 1 46.46,419 11.21,11.21 0 0 1 57.67,430.21 Z"
+     id="path171"
+     clip-path="url(#clipPath3751)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="M 46.7,446.75 Z"
+     id="path173"
+     clip-path="url(#clipPath3739)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="M 73.55,264.78 Z"
+     id="path175"
+     clip-path="url(#clipPath3727)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 165.78,422.24 a 9.76,9.76 0 1 1 -9.76,-9.76 9.76,9.76 0 0 1 9.76,9.76 z"
+     id="path185"
+     clip-path="url(#clipPath3667)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 166.01,483.54 a 8.34,8.34 0 1 1 -8.34,-8.34 8.34,8.34 0 0 1 8.34,8.34 z"
+     id="path187"
+     clip-path="url(#clipPath3655)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 178.65,437.86 a 10.9,10.9 0 1 1 -10.9,-10.9 10.9,10.9 0 0 1 10.9,10.9 z"
+     id="path189"
+     clip-path="url(#clipPath3643)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="M 199.38,434 A 10.74,10.74 0 1 1 188.64,423.26 10.74,10.74 0 0 1 199.38,434 Z"
+     id="path191"
+     clip-path="url(#clipPath3631)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 200.94,437.4 a 6.69,6.69 0 1 1 -6.69,-6.69 6.69,6.69 0 0 1 6.69,6.69 z"
+     id="path193"
+     clip-path="url(#clipPath3619)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 225.24,325.92 a 23.07,23.07 0 1 1 -23.07,-23.07 23.07,23.07 0 0 1 23.07,23.07 z"
+     id="path195"
+     clip-path="url(#clipPath3607)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 222.31,474.19 a 7.97,7.97 0 1 1 -7.97,-7.97 7.97,7.97 0 0 1 7.97,7.97 z"
+     id="path197"
+     clip-path="url(#clipPath3595)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 229.73,442.12 a 10.71,10.71 0 1 1 -10.71,-10.71 10.71,10.71 0 0 1 10.71,10.71 z"
+     id="path199"
+     clip-path="url(#clipPath3583)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 226.37,502.95 a 4.64,4.64 0 1 1 -4.64,-4.64 4.64,4.64 0 0 1 4.64,4.64 z"
+     id="path201"
+     clip-path="url(#clipPath3571)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 244.93,447.92 a 9.99,9.99 0 1 1 -9.99,-9.99 9.99,9.99 0 0 1 9.99,9.99 z"
+     id="path203"
+     clip-path="url(#clipPath3559)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 260.42,322.89 a 15.98,15.98 0 1 1 -15.98,-15.98 15.98,15.98 0 0 1 15.98,15.98 z"
+     id="path205"
+     clip-path="url(#clipPath3547)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 290.47,260.89 a 25,25 0 1 1 -25,-25 25,25 0 0 1 25,25 z"
+     id="path207"
+     clip-path="url(#clipPath3535)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="M 281.59,423.6 Z"
+     id="path209"
+     clip-path="url(#clipPath3523)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 297.77,481.37 a 9.34,9.34 0 1 1 -9.34,-9.34 9.34,9.34 0 0 1 9.34,9.34 z"
+     id="path211"
+     clip-path="url(#clipPath3511)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 299.92,490.74 a 8.05,8.05 0 1 1 -8.05,-8.05 8.05,8.05 0 0 1 8.05,8.05 z"
+     id="path213"
+     clip-path="url(#clipPath3499)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="M 319.14,347.78 Z"
+     id="path215"
+     clip-path="url(#clipPath3487)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 360.32,369.58 a 9.34,9.34 0 1 1 -9.34,-9.34 9.34,9.34 0 0 1 9.34,9.34 z"
+     id="path217"
+     clip-path="url(#clipPath3475)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="M 361.25,472.73 Z"
+     id="path219"
+     clip-path="url(#clipPath3463)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 403.54,479.63 a 9.42,9.42 0 1 1 -9.42,-9.42 9.42,9.42 0 0 1 9.42,9.42 z"
+     id="path221"
+     clip-path="url(#clipPath3451)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 414.24,390.85 a 11.3,11.3 0 1 1 -11.3,-11.3 11.3,11.3 0 0 1 11.3,11.3 z"
+     id="path223"
+     clip-path="url(#clipPath3439)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="M 423.25,450.83 Z"
+     id="path225"
+     clip-path="url(#clipPath3427)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 435.88,469.64 a 7.91,7.91 0 1 1 -7.91,-7.91 7.91,7.91 0 0 1 7.91,7.91 z"
+     id="path227"
+     clip-path="url(#clipPath3415)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 456.07,294.29 a 10.34,10.34 0 1 1 -10.34,-10.34 10.34,10.34 0 0 1 10.34,10.34 z"
+     id="path229"
+     clip-path="url(#clipPath3403)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 463.88,380.17 a 16.23,16.23 0 1 1 -16.23,-16.23 16.23,16.23 0 0 1 16.23,16.23 z"
+     id="path231"
+     clip-path="url(#clipPath3391)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 478.23,346.39 a 19.6,19.6 0 1 1 -19.6,-19.6 19.6,19.6 0 0 1 19.6,19.6 z"
+     id="path233"
+     clip-path="url(#clipPath3379)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 484.72,262.13 a 7.82,7.82 0 1 1 -7.82,-7.82 7.82,7.82 0 0 1 7.82,7.82 z"
+     id="path235"
+     clip-path="url(#clipPath3367)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 514.35,365.56 a 17.89,17.89 0 1 1 -17.89,-17.89 17.89,17.89 0 0 1 17.89,17.89 z"
+     id="path237"
+     clip-path="url(#clipPath3355)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 510.08,198.48 a 11.91,11.91 0 1 1 -11.91,-11.91 11.91,11.91 0 0 1 11.91,11.91 z"
+     id="path239"
+     clip-path="url(#clipPath3343)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 532.91,289.58 a 20.05,20.05 0 1 1 -20.05,-20.05 20.05,20.05 0 0 1 20.05,20.05 z"
+     id="path241"
+     clip-path="url(#clipPath3331)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 531.68,361.52 a 17.57,17.57 0 1 1 -17.57,-17.57 17.57,17.57 0 0 1 17.57,17.57 z"
+     id="path243"
+     clip-path="url(#clipPath3319)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 541.33,411.04 a 10.28,10.28 0 1 1 -10.28,-10.28 10.28,10.28 0 0 1 10.28,10.28 z"
+     id="path245"
+     clip-path="url(#clipPath3307)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 557.61,366.01 a 16.44,16.44 0 1 1 -16.44,-16.44 16.44,16.44 0 0 1 16.44,16.44 z"
+     id="path247"
+     clip-path="url(#clipPath3295)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 577.56,298.63 a 28.2,28.2 0 1 1 -28.2,-28.2 28.2,28.2 0 0 1 28.2,28.2 z"
+     id="path249"
+     clip-path="url(#clipPath3283)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="M 565.13,248.2 Z"
+     id="path251"
+     clip-path="url(#clipPath3271)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 580.77,414.07 a 11.02,11.02 0 1 1 -11.02,-11.02 11.02,11.02 0 0 1 11.02,11.02 z"
+     id="path253"
+     clip-path="url(#clipPath3259)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#0000ff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 583.56,366.41 a 13.21,13.21 0 1 1 -13.21,-13.21 13.21,13.21 0 0 1 13.21,13.21 z"
+     id="path255"
+     clip-path="url(#clipPath3247)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 646.02,280.79 a 31.06,31.06 0 1 1 -31.06,-31.06 31.06,31.06 0 0 1 31.06,31.06 z"
+     id="path257"
+     clip-path="url(#clipPath3235)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#0000ff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 647.6,141.03 a 30.61,30.61 0 1 1 -30.61,-30.61 30.61,30.61 0 0 1 30.61,30.61 z"
+     id="path259"
+     clip-path="url(#clipPath3223)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 647.32,260.11 a 21.23,21.23 0 1 1 -21.23,-21.23 21.23,21.23 0 0 1 21.23,21.23 z"
+     id="path261"
+     clip-path="url(#clipPath3211)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#ffffff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 678.99,275.33 a 27.55,27.55 0 1 1 -27.55,-27.55 27.55,27.55 0 0 1 27.55,27.55 z"
+     id="path263"
+     clip-path="url(#clipPath3199)" />
+  <path
+     class="point"
+     style="opacity:0.7;fill:#0000ff;fill-opacity:0.3;stroke:#000000;stroke-width:1px;stroke-miterlimit:2;stroke-opacity:1"
+     d="m 666.86,469.07 a 8,8 0 1 1 -8,-8 8,8 0 0 1 8,8 z"
+     id="path265"
+     clip-path="url(#clipPath3187)" />
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g391"
+     style="stroke-miterlimit:2">
+    <text
+       x="-6.4499998"
+       y="164.78"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text389">quickdic</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g411"
+     style="stroke-miterlimit:2">
+    <text
+       x="76.019997"
+       y="322.23999"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text409">android</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g415"
+     style="stroke-miterlimit:2">
+    <text
+       x="77.669998"
+       y="383.54001"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text413">clockpackage</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g419"
+     style="stroke-miterlimit:2">
+    <text
+       x="87.75"
+       y="337.85999"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text417">mobileservice</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g423"
+     style="stroke-miterlimit:2">
+    <text
+       x="108.64"
+       y="334"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text421">sharelive</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g427"
+     style="stroke-miterlimit:2">
+    <text
+       x="114.25"
+       y="337.39999"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text425">alarm</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g431"
+     style="stroke-miterlimit:2">
+    <text
+       x="122.17"
+       y="225.92"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text429">chrome</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g435"
+     style="stroke-miterlimit:2">
+    <text
+       x="134.34"
+       y="374.19"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text433">davdroid</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g439"
+     style="stroke-miterlimit:2">
+    <text
+       x="139.02"
+       y="342.12"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text437">daemonapp</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g443"
+     style="stroke-miterlimit:2">
+    <text
+       x="141.73"
+       y="402.95001"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text441">kidshome</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g447"
+     style="stroke-miterlimit:2">
+    <text
+       x="154.94"
+       y="347.92001"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text445">restore</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g451"
+     style="stroke-miterlimit:2">
+    <text
+       x="164.44"
+       y="222.89"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text449">pro</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g455"
+     style="stroke-miterlimit:2">
+    <text
+       x="185.47"
+       y="160.89"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text453">fdroid</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g459"
+     style="stroke-miterlimit:2">
+    <text
+       x="201.59"
+       y="323.60001"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text457">bustaiwan</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g463"
+     style="stroke-miterlimit:2">
+    <text
+       x="208.42999"
+       y="381.37"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text461">pro</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g467"
+     style="stroke-miterlimit:2">
+    <text
+       x="211.87"
+       y="390.73999"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text465">calendar</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g471"
+     style="stroke-miterlimit:2">
+    <text
+       x="239.14"
+       y="247.78"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text469">honeyboard</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g475"
+     style="stroke-miterlimit:2">
+    <text
+       x="270.98001"
+       y="269.57999"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text473">docs</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g479"
+     style="stroke-miterlimit:2">
+    <text
+       x="281.25"
+       y="372.73001"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text477">meetings</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g483"
+     style="stroke-miterlimit:2">
+    <text
+       x="314.12"
+       y="379.63"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text481">webview</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g487"
+     style="stroke-miterlimit:2">
+    <text
+       x="322.94"
+       y="290.85001"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text485">samsungapps</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g491"
+     style="stroke-miterlimit:2">
+    <text
+       x="343.25"
+       y="350.82999"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text489">vlc</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g495"
+     style="stroke-miterlimit:2">
+    <text
+       x="347.97"
+       y="369.64001"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text493">mediaclient</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g499"
+     style="stroke-miterlimit:2">
+    <text
+       x="365.73001"
+       y="194.28999"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text497">sheets</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g503"
+     style="stroke-miterlimit:2">
+    <text
+       x="367.64999"
+       y="280.17001"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text501">client</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g507"
+     style="stroke-miterlimit:2">
+    <text
+       x="378.63"
+       y="246.39"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text505">vending</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g511"
+     style="stroke-miterlimit:2">
+    <text
+       x="396.89999"
+       y="162.13"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text509">tts</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g515"
+     style="stroke-miterlimit:2">
+    <text
+       x="416.45999"
+       y="265.56"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text513">tachyon</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g519"
+     style="stroke-miterlimit:2">
+    <text
+       x="418.17001"
+       y="98.480003"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text517">termux</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g523"
+     style="stroke-miterlimit:2">
+    <text
+       x="432.85999"
+       y="189.58"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text521">latin</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g527"
+     style="stroke-miterlimit:2">
+    <text
+       x="434.10999"
+       y="261.51999"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text525">maps</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g531"
+     style="stroke-miterlimit:2">
+    <text
+       x="451.04999"
+       y="311.04001"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text529">skydrive</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g535"
+     style="stroke-miterlimit:2">
+    <text
+       x="461.17001"
+       y="266.01001"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text533">messaging</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g539"
+     style="stroke-miterlimit:2">
+    <text
+       x="469.35999"
+       y="198.63"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text537">youtube</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g543"
+     style="stroke-miterlimit:2;fill:#008000">
+    <text
+       x="485.13"
+       y="148.2"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#008000;fill-opacity:1"
+       text-anchor="middle"
+       id="text541">osmand</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g547"
+     style="stroke-miterlimit:2">
+    <text
+       x="489.75"
+       y="314.07001"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text545">sbrowser</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g551"
+     style="stroke-miterlimit:2;fill:#0000ff">
+    <text
+       x="490.35001"
+       y="266.41"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#0000ff;fill-opacity:1"
+       text-anchor="middle"
+       id="text549">gm</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g555"
+     style="stroke-miterlimit:2">
+    <text
+       x="534.96002"
+       y="180.78999"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text553">eats</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g559"
+     style="stroke-miterlimit:2;fill:#0000ff">
+    <text
+       x="536.98999"
+       y="41.029999"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#0000ff;fill-opacity:1"
+       text-anchor="middle"
+       id="text557">line</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g563"
+     style="stroke-miterlimit:2">
+    <text
+       x="546.09003"
+       y="160.11"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text561">gms</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g567"
+     style="stroke-miterlimit:2">
+    <text
+       x="571.44"
+       y="175.33"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+       text-anchor="middle"
+       id="text565">googlequicksearchbox</text>
+  </g>
+  <g
+     class="textpoint"
+     transform="translate(80,103)"
+     id="g571"
+     style="stroke-miterlimit:2;fill:#0000ff">
+    <text
+       x="578.85999"
+       y="369.07001"
+       style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#0000ff;fill-opacity:1"
+       text-anchor="middle"
+       id="text569">SimpleX</text>
+  </g>
+  <g
+     class="overplot"
+     id="g581" />
+  <path
+     class="xlines-above crisp"
+     style="fill:none"
+     d="M 0,0"
+     id="path583" />
+  <path
+     class="ylines-above crisp"
+     style="fill:none"
+     d="M 0,0"
+     id="path585" />
+  <g
+     class="overlines-above"
+     id="g587" />
+  <g
+     class="xaxislayer-above"
+     id="g641">
+    <g
+       class="xtick"
+       id="g591">
+      <text
+         text-anchor="middle"
+         x="0"
+         y="530"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(139.31)"
+         id="text589">2</text>
+    </g>
+    <g
+       class="xtick"
+       id="g595">
+      <text
+         text-anchor="middle"
+         x="0"
+         y="530"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(212.19)"
+         id="text593">3</text>
+    </g>
+    <g
+       class="xtick"
+       id="g599">
+      <text
+         text-anchor="middle"
+         x="0"
+         y="530"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(263.9)"
+         id="text597">4</text>
+    </g>
+    <g
+       class="xtick"
+       id="g603">
+      <text
+         text-anchor="middle"
+         x="0"
+         y="530"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(304.01)"
+         id="text601">5</text>
+    </g>
+    <g
+       class="xtick"
+       id="g607">
+      <text
+         text-anchor="middle"
+         x="0"
+         y="530"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(336.78)"
+         id="text605">6</text>
+    </g>
+    <g
+       class="xtick"
+       id="g611">
+      <text
+         text-anchor="middle"
+         x="0"
+         y="530"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(364.49)"
+         id="text609">7</text>
+    </g>
+    <g
+       class="xtick"
+       id="g615">
+      <text
+         text-anchor="middle"
+         x="0"
+         y="530"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(388.49)"
+         id="text613">8</text>
+    </g>
+    <g
+       class="xtick"
+       id="g619">
+      <text
+         text-anchor="middle"
+         x="0"
+         y="530"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(409.66)"
+         id="text617">9</text>
+    </g>
+    <g
+       class="xtick"
+       id="g623">
+      <text
+         text-anchor="middle"
+         x="3"
+         y="539"
+         style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(428.6)"
+         id="text621">100M</text>
+    </g>
+    <g
+       class="xtick"
+       id="g627">
+      <text
+         text-anchor="middle"
+         x="0"
+         y="530"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(553.19)"
+         id="text625">2</text>
+    </g>
+    <g
+       class="xtick"
+       id="g631">
+      <text
+         text-anchor="middle"
+         x="0"
+         y="530"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(626.07)"
+         id="text629">3</text>
+    </g>
+    <g
+       class="xtick"
+       id="g635">
+      <text
+         text-anchor="middle"
+         x="0"
+         y="530"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(677.78)"
+         id="text633">4</text>
+    </g>
+    <g
+       class="xtick"
+       id="g639">
+      <text
+         text-anchor="middle"
+         x="0"
+         y="530"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(717.89)"
+         id="text637">5</text>
+    </g>
+  </g>
+  <g
+     class="yaxislayer-above"
+     id="g699">
+    <g
+       class="ytick"
+       id="g645">
+      <text
+         text-anchor="end"
+         x="79"
+         y="4.1999998"
+         style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(0,508.79)"
+         id="text643">1M</text>
+    </g>
+    <g
+       class="ytick"
+       id="g649">
+      <text
+         text-anchor="end"
+         x="79"
+         y="3.1500001"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(0,480.68)"
+         id="text647">2</text>
+    </g>
+    <g
+       class="ytick"
+       id="g653">
+      <text
+         text-anchor="end"
+         x="79"
+         y="3.1500001"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(0,443.51)"
+         id="text651">5</text>
+    </g>
+    <g
+       class="ytick"
+       id="g657">
+      <text
+         text-anchor="end"
+         x="79"
+         y="4.1999998"
+         style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(0,415.39)"
+         id="text655">10M</text>
+    </g>
+    <g
+       class="ytick"
+       id="g661">
+      <text
+         text-anchor="end"
+         x="79"
+         y="3.1500001"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(0,387.27)"
+         id="text659">2</text>
+    </g>
+    <g
+       class="ytick"
+       id="g665">
+      <text
+         text-anchor="end"
+         x="79"
+         y="3.1500001"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(0,350.1)"
+         id="text663">5</text>
+    </g>
+    <g
+       class="ytick"
+       id="g669">
+      <text
+         text-anchor="end"
+         x="79"
+         y="4.1999998"
+         style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(0,321.98)"
+         id="text667">100M</text>
+    </g>
+    <g
+       class="ytick"
+       id="g673">
+      <text
+         text-anchor="end"
+         x="79"
+         y="3.1500001"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(0,293.87)"
+         id="text671">2</text>
+    </g>
+    <g
+       class="ytick"
+       id="g677">
+      <text
+         text-anchor="end"
+         x="79"
+         y="3.1500001"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(0,256.7)"
+         id="text675">5</text>
+    </g>
+    <g
+       class="ytick"
+       id="g681">
+      <text
+         text-anchor="end"
+         x="79"
+         y="4.1999998"
+         style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(0,228.58)"
+         id="text679">1B</text>
+    </g>
+    <g
+       class="ytick"
+       id="g685">
+      <text
+         text-anchor="end"
+         x="79"
+         y="3.1500001"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(0,200.46)"
+         id="text683">2</text>
+    </g>
+    <g
+       class="ytick"
+       id="g689">
+      <text
+         text-anchor="end"
+         x="79"
+         y="3.1500001"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(0,163.29)"
+         id="text687">5</text>
+    </g>
+    <g
+       class="ytick"
+       id="g693">
+      <text
+         text-anchor="end"
+         x="79"
+         y="4.1999998"
+         style="font-size:12px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(0,135.17)"
+         id="text691">10B</text>
+    </g>
+    <g
+       class="ytick"
+       id="g697">
+      <text
+         text-anchor="end"
+         x="79"
+         y="3.1500001"
+         style="font-size:9px;font-family:'TOBESTRIPPEDOpen SansTOBESTRIPPED', verdana, arial, sans-serif;white-space:pre;fill:#444444;fill-opacity:1"
+         transform="translate(0,107.05)"
+         id="text695">2</text>
+    </g>
+  </g>
+  <g
+     class="overaxes-above"
+     id="g701" />
+  <g
+     class="polarlayer"
+     id="g707" />
+  <g
+     class="ternarylayer"
+     id="g709" />
+  <g
+     class="geolayer"
+     id="g711" />
+  <g
+     class="funnelarealayer"
+     id="g713" />
+  <g
+     class="pielayer"
+     id="g715" />
+  <g
+     class="treemaplayer"
+     id="g717" />
+  <g
+     class="sunburstlayer"
+     id="g719" />
+  <g
+     class="glimages"
+     id="g721" />
+  <defs
+     id="topdefs-87b255">
+    <g
+       class="clips"
+       id="g723" />
+  </defs>
+  <g
+     class="layer-above"
+     id="g730">
+    <g
+       class="imagelayer"
+       id="g726" />
+    <g
+       class="shapelayer"
+       id="g728" />
+  </g>
+  <g
+     class="infolayer"
+     id="g744">
+    <g
+       class="g-gtitle"
+       id="g734">
+      <text
+         class="gtitle"
+         style="font-family: TOBESTRIPPEDOpen SansTOBESTRIPPED, verdana, arial, sans-serif; font-size: 17px; fill: rgb(68, 68, 68); opacity: 1; font-weight: normal; white-space: pre;"
+         x="406.6"
+         y="50"
+         text-anchor="middle"
+         dy="0em"
+         id="text732">sizes of android apps</text>
+    </g>
+    <g
+       class="g-xtitle"
+       id="g738">
+      <text
+         class="xtitle"
+         style="font-family: TOBESTRIPPEDOpen SansTOBESTRIPPED, verdana, arial, sans-serif; font-size: 14px; fill: rgb(68, 68, 68); opacity: 1; font-weight: normal; white-space: pre;"
+         x="406.5"
+         y="572"
+         text-anchor="middle"
+         id="text736">App</text>
+    </g>
+    <g
+       class="g-ytitle"
+       id="g742">
+      <text
+         class="ytitle"
+         transform="rotate(-90,42,310)"
+         style="font-family: TOBESTRIPPEDOpen SansTOBESTRIPPED, verdana, arial, sans-serif; font-size: 14px; fill: rgb(68, 68, 68); opacity: 1; font-weight: normal; white-space: pre;"
+         x="42"
+         y="310"
+         text-anchor="middle"
+         id="text740">Data</text>
+    </g>
+  </g>
+</svg>
