@@ -168,7 +168,8 @@ function redraw() {
     'marker': {
       'symbol': 'circle',
       'size': [],
-      'color': 'rgba(255,255,255,0.3)',
+      'opacity': 0.3,
+      'color': [],
       'line': { 'color': [] },
     },
     // https://plot.ly/python/hover-text-and-formatting/
@@ -207,12 +208,12 @@ function redraw() {
     const pal = pltMainTrace.color.palette;
     if (typeof(pal) === 'object') {
       const k = pltMainTrace.color.colname;
-      mt.marker.line.color[idx] = row[k] in pal ?
+      mt.marker.color[idx] = row[k] in pal ?
         pal[row[k]] : pltMainTrace.color.default;
     } else {
-      mt.marker.line.color[idx] = pltMainTrace.color.default;
+      mt.marker.color[idx] = pltMainTrace.color.default;
       if ('negative' in pltMainTrace.color && mt.marker.size[idx] < 0) {
-        mt.marker.line.color[idx] = pltMainTrace.color.negative;
+        mt.marker.color[idx] = pltMainTrace.color.negative;
         mt.marker.size[idx] = -mt.marker.size[idx];
         // bug! what about marker.size in frAsDict?
       }

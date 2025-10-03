@@ -1,7 +1,7 @@
 {
   "source": {
     "csv": "aasize/aasize.csv",
-    "textcols": ["Name", "FullName"],
+    "textcols": ["Name", "FullName", "Type"],
     "pkey": "FullName"
   },
   "plotly": {
@@ -15,7 +15,15 @@
       "yaxis": { "expr": "Data" },
       "size": { "expr": "sqrt(sqrt(Cache))/2" },
       "maintext": "Name",
-      "hovertext": "FullName"
+      "hovertext": "FullName",
+      "color": {
+        "default": "#fff",
+        "colname": "Type",
+        "palette": {
+	  "fs": "#8f8",
+	  "msg": "#a8f"
+        }
+      }
     }
   }
 }

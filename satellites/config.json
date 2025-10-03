@@ -18,13 +18,13 @@
       "maintext": "name",
       "hovertext": "name 繞 planet",
       "color": {
-        "default": "#000",
+        "default": "#888",
         "colname": "planet",
         "palette": {
-  	"Jupiter": "#4c0",
-  	"Saturn": "#f00",
-  	"Uranus": "#40f",
-  	"Neptune": "#04f"
+  	  "Jupiter": "#4c0",
+  	  "Saturn": "#f00",
+  	  "Uranus": "#40f",
+  	  "Neptune": "#04f"
         }
       }
     }
