@@ -18,7 +18,7 @@
       "maintext": "name",
       "hovertext": "name 繞 planet",
       "color": {
-        "default": "#888",
+        "default": "#ccc",
         "colname": "planet",
         "palette": {
   	  "Jupiter": "#4c0",
