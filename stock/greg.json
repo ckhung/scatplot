@@ -3,7 +3,7 @@
     "csv": [
       "stock/greg.csv",
       "stock/divhist.csv",
-      "https://v.im.cyut.edu.tw/~ckhung/saas/stock/price.csv"
+      "https://frdm.cyut.edu.tw/~ckhung/saas/stock/price.csv"
     ],
     "textcols": [
       "代號",
