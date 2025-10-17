@@ -6,14 +6,30 @@
   },
   "plotly": {
     "layout": {
-      "title": "希臘式優格"
+      "title": "希臘式優格",
+      "shapes": [
+	{
+	  "type": "circle",
+	  "x0": -0.5,
+	  "y0": -0.5,
+	  "x1": 0.5,
+	  "y1": 0.5,
+          "line": {
+            "color": "#000080",
+            "width": 2
+          }
+	}
+      ]
     },
     "maintrace": {
       "xaxis": { "expr": "脂肪" },
       "yaxis": { "expr": "糖" },
       "size": { "expr": "蛋白質*10" },
       "maintext": "品名",
-      "hovertext": "${品名}<br />${菌種}<br />${添加物}"
+      "hovertext": "${品名}<br />${菌種}<br />${添加物}",
+      "color": {
+        "default": "#ffe"
+      }
     }
   }
 }
