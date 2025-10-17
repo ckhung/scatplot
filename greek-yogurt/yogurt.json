@@ -6,16 +6,13 @@
   },
   "plotly": {
     "layout": {
-      "title": "希臘式優格",
+      "title": "希臘式優格<br />https://saving-coupon.com/greek-yogurt-sugar-free/",
       "shapes": [
 	{
-	  "type": "circle",
-	  "x0": -0.5,
-	  "y0": -0.5,
-	  "x1": 0.5,
-	  "y1": 0.5,
+	  "type": "shape",
+	  "path": "M 0 0 L 1 0 L 0 1 Z",
           "line": {
-            "color": "#000080",
+            "color": "#c00000",
             "width": 2
           }
 	}

@@ -6,7 +6,17 @@
   },
   "plotly": {
     "layout": {
-      "title": "LLM 比較 (資料取自 Artificial Analysis)"
+      "title": "LLM 比較 (資料取自 Artificial Analysis)",
+      "shapes": [
+	{
+	  "type": "shape",
+	  "path": "M -4 70 L -3 70 L -4 60 Z",
+          "line": {
+            "color": "#c00000",
+            "width": 2
+          }
+	}
+      ]
     },
     "maintrace": {
       "xaxis": { "expr": "log(Price)" },

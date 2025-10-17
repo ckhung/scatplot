@@ -6,7 +6,17 @@
   },
   "plotly": {
     "layout": {
-      "title": "電價 vs 收入中位數"
+      "title": "電價 vs 收入中位數",
+      "shapes": [
+	{
+	  "type": "shape",
+	  "path": "M 30000 0 L 30000 0.1 L 26000 0 Z",
+          "line": {
+            "color": "#c00000",
+            "width": 2
+          }
+	}
+      ]
     },
     "maintrace": {
       "xaxis": { "expr": "medianIncome" },

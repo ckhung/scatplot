@@ -90,7 +90,10 @@
         "expr": "sqrt(density)"
       },
       "maintext": "code3",
-      "hovertext": "name"
+      "hovertext": "name",
+      "color": {
+        "default": "#00f"
+      }
     }
   }
 }
