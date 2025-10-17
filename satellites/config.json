@@ -16,7 +16,7 @@
       "yaxis": { "expr": "rev_cycle" },
       "size": { "expr": "sqrt(radius)" },
       "maintext": "name",
-      "hovertext": "name 繞 planet",
+      "hovertext": "${name} 繞 ${planet}",
       "color": {
         "default": "#ccc",
         "colname": "planet",

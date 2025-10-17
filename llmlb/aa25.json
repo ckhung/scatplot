@@ -13,7 +13,7 @@
       "yaxis": { "expr": "Intelligence" },
       "size": { "expr": "log(ContextWin)*2" },
       "maintext": "Model",
-      "hovertext": "Model\nCreator",
+      "hovertext": "${Model}<br />${Creator}",
       "color": {
         "default": "#000",
         "colname": "Creator",

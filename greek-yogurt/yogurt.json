@@ -1,0 +1,19 @@
+{
+  "source": {
+    "csv": "greek-yogurt/yogurt.csv",
+    "textcols": ["品名","菌種","添加物"],
+    "pkey": "品名"
+  },
+  "plotly": {
+    "layout": {
+      "title": "希臘式優格"
+    },
+    "maintrace": {
+      "xaxis": { "expr": "脂肪" },
+      "yaxis": { "expr": "糖" },
+      "size": { "expr": "蛋白質*10" },
+      "maintext": "品名",
+      "hovertext": "${品名}<br />${菌種}<br />${添加物}"
+    }
+  }
+}

@@ -8,13 +8,50 @@ const G = {}; // global variables
 // https://community.plot.ly/t/disable-x-axis-hover-text/28970
 const rndsfx = () => `?${Math.floor(Math.random() * 1000)}`;
 
+function escapeHTML(str) {
+  if (typeof str !== 'string') return str;
+  // protection against XSS attack
+  return str.replace(/[&<>"']/g, function(m) {
+      return {
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          '"': '&quot;',
+          "'": '&#39;' // or &apos;
+      }[m];
+  })
+}
+
+function deepEscHTML(obj) {
+    // return obj;
+    if (typeof obj !== 'object' || obj === null) return obj;
+    if (Array.isArray(obj)) {
+        for (let i = 0; i < obj.length; i++)
+            obj[i] = deepEscHTML(obj[i]);
+        return obj;
+    }
+    for (const key in obj) {
+        if (Object.prototype.hasOwnProperty.call(obj, key)) {
+            const value = obj[key];
+
+            if (typeof value === 'string') {
+		obj[key] = escapeHTML(value);
+            } else if (typeof value === 'object') {
+                obj[key] = deepEscHTML(value);
+            }
+        }
+    }
+    return obj;
+}
+
 function cn2val(text, dict) {
   // substitute column names in a text string with dict values
   const keys = Object.keys(dict).sort((a, b) => b.length - a.length);
   // start substitution from longer strings ... (see u8varMathEval)
-  let result = text;
+  let result = text.trim();
+  if (keys.includes(result)) result = `\$\{${result}\}`;
   for (const cn of keys) {
-    const re = new RegExp(cn, 'g');
+    const re = new RegExp(`\\$\\{${cn}\\}`, 'g');
     result = result.replace(re, dict[cn]);
   }
   return result;
@@ -103,7 +140,7 @@ function parseCSV(str, textcols) {
     for (let i = 0; i < keys.length; ++i) {
       // parse all cols into numbers except
       // those explicitly specified in textcols
-      krow[keys[i]] = textcols.includes(keys[i]) ? row[i] : parseFloat(row[i]);
+      krow[keys[i]] = textcols.includes(keys[i]) ? escapeHTML(row[i]) : parseFloat(row[i]);
     }
     ret.push(krow);
   }
@@ -157,7 +194,8 @@ function redraw() {
     'type': 'scatter',
     'x': [],
     'y': [],
-    'name': `${pltMainTrace.xaxis.expr} / ${pltMainTrace.yaxis.expr}`,
+    // 'name': `${pltMainTrace.xaxis.expr} / ${pltMainTrace.yaxis.expr}`,
+    'name': '',
     'text': [],
     'ids': [],
     'textfont': pltMainTrace.textfont,
@@ -569,6 +607,9 @@ $.getJSON(`default.json${rndsfx()}`, function(defG) {
     // set up config
     $.extend(true, G, cfgdata);
     ucExtend(urlConfig);
+    // G.source = deepEscHTML(G.source);
+    // Doing the above would cause the following config to fail:
+    // source.keep = "radius > 100"
     
     if (!Array.isArray(G.source.csv)) { 
       G.source.csv = [G.source.csv]; 
