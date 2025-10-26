@@ -509,6 +509,7 @@ function init(lotab) {
     // https://stackoverflow.com/questions/38748445/uncaught-typeerror-object-values-is-not-a-function-javascript
   };
   G.table.dtobj = $('#summary_table').DataTable(dtConfig);
+  $('#table_title').html(G.plotly.layout.title);
 
   ////////////////////////////////////////////////////////////
   // build scatplot-specific UI

@@ -6,7 +6,7 @@
   },
   "plotly": {
     "layout": {
-      "title": "希臘式優格<br />https://saving-coupon.com/greek-yogurt-sugar-free/",
+      "title": "希臘式優格比較： 脂肪、糖、蛋白質 (<a href='https://saving-coupon.com/greek-yogurt-sugar-free/'>資料來源</a>)",
       "shapes": [
 	{
 	  "type": "shape",
@@ -21,7 +21,7 @@
     "maintrace": {
       "xaxis": { "expr": "脂肪" },
       "yaxis": { "expr": "糖" },
-      "size": { "expr": "蛋白質*10" },
+      "size": { "expr": "sqrt(蛋白質)*30" },
       "maintext": "品名",
       "hovertext": "${品名}<br />${菌種}<br />${添加物}",
       "color": {
