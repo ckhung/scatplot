@@ -6,7 +6,7 @@
   },
   "plotly": {
     "layout": {
-      "title": "新聞頻道轉台運動<br />https://taronews.tw/2019/04/03/299431/"
+      "title": "2019 新聞頻道轉台運動 (<a href='https://taronews.tw/2019/04/03/299431/'>資料來源</a>)"
     },
     "maintrace": {
       "xaxis": { "expr": "總數" },
