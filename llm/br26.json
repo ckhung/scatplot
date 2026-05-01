@@ -1,0 +1,43 @@
+{
+  "source": {
+    "csv": "llm/br26.csv",
+    "textcols": ["Model","Provider"],
+    "pkey": "Model"
+  },
+  "plotly": {
+    "layout": {
+      "title": "AWS Bedrock 模型比較",
+      "shapes": [
+	{
+	  "type": "shape",
+	  "path": "M 2.8 8 L 2.8 10 L 3.2 10 Z",
+          "line": {
+            "color": "#c00000",
+            "width": 2
+          }
+	}
+      ]
+    },
+    "maintrace": {
+      "xaxis": { "expr": "log(Price)" },
+      "yaxis": { "expr": "Suitability" },
+      "size": { "expr": "20" },
+      "maintext": "Model",
+      "hovertext": "${Model}<br />${Provider}",
+      "color": {
+        "default": "#000",
+        "colname": "Provider",
+        "palette": {
+  	  "Mistral": "#00f",
+  	  "Qwen": "#f00",
+	  "Amazon": "#0f0",
+	  "OpenAI": "#8f0",
+	  "Nvidia": "#80f",
+	  "Minimax AI": "#08f",
+	  "Google": "#0f8",
+	  "DeepSeek": "#f80"
+        }
+      }
+    }
+  }
+}

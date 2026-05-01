@@ -1,6 +1,6 @@
 {
   "source": {
-    "csv": "llmlb/aa25.csv",
+    "csv": "llm/aa25.csv",
     "textcols": ["Model","Creator"],
     "pkey": "Model"
   },
