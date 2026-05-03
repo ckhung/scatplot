@@ -1,34 +1,44 @@
-Provider,Model,Price,Suitability
-Google,Gemma 3 4B,20.00,3.5
-Mistral,Voxtral Mini 1.0,20.00,2.5
-Nvidia,Nemotron Nano 2,30.00,2.0
-Nvidia,Nemotron Nano 3 30B,30.00,6.5
-OpenAI,gpt-oss-20b,35.00,6.2
-Z AI,GLM 4.7 Flash,35.00,4.5
-Amazon,Nova 2.0 Lite,45.00,6.5
-Google,Gemma 3 12B,50.00,6.8
-Mistral,Ministral 3B 3.0,50.00,3.0
-Mistral,Voxtral Small 1.0,50.00,4.0
-Mistral,Ministral 8B 3.0,70.00,5.5
-OpenAI,GPT OSS Safeguard 120B,70.00,8.5
-Qwen,Qwen3 Next 80B A3B,70.00,7.5
-Nvidia,Nemotron 3 Super 120B,75.00,8.6
-OpenAI,gpt-oss-120b,75.00,8.7
-Qwen,Qwen3 32B,75.00,7.0
-Mistral,Ministral 14B 3.0,100.00,6.5
-Qwen,Qwen3 235B A22B,110.00,8.5
-Amazon,Nova Pro (V1),118.00,8.2
-Google,Gemma 3 27B,120.00,7.8
-Minimax AI,Minimax M2,150.00,7.0
-Minimax AI,MiniMax M2.5,155.00,7.2
-Minimax AI,Minimax M2.1,155.00,7.1
-Amazon,Nova 2.0 Omni,200.00,7.5
-Mistral,Devstral,205.00,7.8
-Qwen,Qwen3 Coder 480B,225.00,8.8
-Mistral,Magistral Small 1.2,250.00,7.5
-Mistral,Mistral Large 3,250.00,9.0
-DeepSeek,DeepSeek V3.1,290.00,8.5
-Kimi AI,Kimi K2 Thinking,300.00,9.1
-Moonshot AI,Kimi K2.5,310.00,9.3
-Amazon,Nova Premier,312.00,9.5
-DeepSeek,DeepSeek v3.2,320.00,9.2
+Provider,Model,Price,count,Suitability
+Amazon,Nova 2.0 Lite,1360,39,78
+Amazon,Nova 2.0 Omni,1400,66,74
+Amazon,Nova 2.0 Pro,5420,31,92
+Amazon,Nova Premier,6250,3,84
+Amazon,Nova Pro,1680,24,88
+DeepSeek,DeepSeek V3.1,840,20,93
+DeepSeek,DeepSeek v3.2,955,26,94
+Google,Gemma 3 12B,150,22,79
+Google,Gemma 3 27B,190,22,88
+Google,Gemma 3 4B,40,22,55
+Kimi AI,Kimi K2 Thinking,1250,6,92
+Minimax AI,MiniMax M2.5,620,26,76
+Minimax AI,Minimax M2,600,22,73
+Minimax AI,Minimax M2.1,620,26,75
+Mistral,Magistral Small 1.2,750,22,78
+Mistral,Ministral 14B 3.0,100,22,76
+Mistral,Ministral 3B 3.0,50,22,48
+Mistral,Ministral 8B 3.0,70,22,68
+Mistral,Mistral Large 3,750,19,92
+Mistral,Voxtral Mini 1.0,20,22,42
+Mistral,Voxtral Small 1.0,150,22,45
+Mistral AI,Devstral,1030,26,60
+Moonshot AI,Kimi K2 Thinking,1287,13,94
+Moonshot AI,Kimi K2.5,1545,26,95
+Nvidia,NVIDIA Nemotron 3 Super 120B A12B,335,26,89
+Nvidia,NVIDIA Nemotron Nano 2,120,22,45
+Nvidia,NVIDIA Nemotron Nano 2 VL,300,22,50
+Nvidia,Nemotron Nano 3 30B,120,22,81
+OpenAI,GPT OSS Safeguard 120B,300,22,91
+OpenAI,GPT OSS Safeguard 20B,100,22,82
+OpenAI,gpt-oss-120b,300,25,93
+OpenAI,gpt-oss-20b,150,25,83
+Qwen,Qwen3 235B A22B 2507,440,22,96
+Qwen,Qwen3 32B,300,25,90
+Qwen,Qwen3 Coder 30B A3B,300,25,78
+Qwen,Qwen3 Coder 480B A35B,900,20,86
+Qwen,Qwen3 Coder Next,620,26,82
+Qwen,Qwen3 Next 80B A3B,600,22,91
+Qwen,Qwen3 VL 235B A22B,1330,22,88
+Writer,Writer Palmyra Vision 7B,310,26,58
+Z AI,GLM 4.7,1135,26,87
+Z AI,GLM 4.7 Flash,205,26,74
+Z AI,GLM 5,1650,26,95

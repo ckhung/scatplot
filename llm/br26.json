@@ -10,7 +10,7 @@
       "shapes": [
 	{
 	  "type": "shape",
-	  "path": "M 2.8 8 L 2.8 10 L 3.2 10 Z",
+	  "path": "M 3 80 L 3 100 L 4.5 100 Z",
           "line": {
             "color": "#c00000",
             "width": 2
@@ -21,7 +21,7 @@
     "maintrace": {
       "xaxis": { "expr": "log(Price)" },
       "yaxis": { "expr": "Suitability" },
-      "size": { "expr": "20" },
+      "size": { "expr": "count" },
       "maintext": "Model",
       "hovertext": "${Model}<br />${Provider}",
       "color": {
