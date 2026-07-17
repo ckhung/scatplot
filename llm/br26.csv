@@ -1,75 +1,76 @@
 Provider,Model,Price,Count,Quality
-DeepSeek,DeepSeek V3.1,840,27,8.9
-AWS,Nova 2.0 Omni,2000,131,6.8
-Google,Gemma 3 4B,48,31,3.5
-Nvidia,NVIDIA Nemotron 3 Super 120B A12B,390,45,7.7
-AWS,Nova Pro,1900,45,7.5
-Mistral,Mistral Large,13000,9,8.7
-OpenAI,gpt-oss-20b,155,43,4.8
-Z AI,GLM 5,1920,39,8.5
-AWS,Nova Micro,140,19,2.5
-Z AI,GLM 4.7 Flash,240,39,5.2
-OpenAI,gpt-oss-120b,310,43,6.5
-Mistral,Ministral 3B 3.0,60,31,2.8
-Nvidia,NVIDIA Nemotron Nano 2,138,37,2.2
-AWS,Nova 2.0 Pro,5863,62,7.8
-Nvidia,NVIDIA Nemotron Nano 2 VL,350,37,2.2
-Qwen,qwen3-next-80b-a3b,710,2,8.2
-Writer,Writer Palmyra Vision 7B,360,39,4.5
-Qwen,Qwen3 Coder 30B A3B,310,37,7.6
-Nvidia,Nemotron Nano 3 30B,140,37,5.2
-Mistral,Magistral Small 1.2,880,31,4.8
-Meta,Llama 3.2 1B,100,6,2.0
-Moonshot AI,Kimi K2 Thinking,1288,25,8.5
-Google,Gemma 3 27B,220,31,8.0
-Meta,Llama 3.2 3B,150,6,3.0
-Qwen,Qwen3 Coder Next,720,39,7.0
-Z AI,GLM 4.7,1320,39,7.5
-Mistral,Voxtral Small 1.0,170,31,3.0
-AWS,Nova Lite,252,24,4.5
-AWS,Nova 2.0 Lite,1496,79,6.2
-OpenAI,GPT OSS Safeguard 20B,120,31,4.8
-Minimax AI,Minimax M2,710,31,6.5
-Mistral AI,Devstral,1200,39,6.0
-Mistral,Ministral 14B 3.0,120,31,6.5
-DeepSeek,DeepSeek v3.2,1110,39,8.9
-Minimax AI,MiniMax M2.5,720,39,6.5
-AWS,xai.grok-4.3,1250000,4,9.5
-Qwen,Qwen3 235B A22B 2507,453,31,8.8
-Mistral,Mistral Large 3,772,25,9.0
-Qwen,Qwen3 32B,310,37,7.6
-OpenAI,GPT OSS Safeguard 120B,350,31,6.5
+DeepSeek,DeepSeek V3.1,840,27,9.5
+,Nova 2.0 Omni,2000,131,9.3
+Google,Gemma 3 4B,48,31,6.8
+Nvidia,NVIDIA Nemotron 3 Super 120B A12B,390,45,8.2
+,Nova Pro,1900,45,9.1
+Mistral,Mistral Large,13000,9,9.5
+OpenAI,gpt-oss-20b,155,43,7.8
+Z AI,GLM 5,1920,39,9.2
+,Nova Micro,140,19,6.8
+Z AI,GLM 4.7 Flash,240,39,8.2
+OpenAI,gpt-oss-120b,310,43,8.9
+Mistral,Ministral 3B 3.0,60,31,5.8
+Nvidia,NVIDIA Nemotron Nano 2,138,37,6.5
+,Nova 2.0 Pro,5863,62,9.6
+Nvidia,NVIDIA Nemotron Nano 2 VL,350,37,6.5
+Qwen,qwen3-next-80b-a3b,710,2,9.2
+Writer,Writer Palmyra Vision 7B,360,39,6.7
+Qwen,Qwen3 Coder 30B A3B,310,37,8.2
+Nvidia,Nemotron Nano 3 30B,140,37,7.4
+Mistral,Magistral Small 1.2,880,31,8.6
+Meta,Llama 3.2 1B,100,6,4.5
+Moonshot AI,Kimi K2 Thinking,1288,25,9.5
+Google,Gemma 3 27B,220,31,8.8
+Meta,Llama 3.2 3B,150,6,5.8
+Qwen,Qwen3 Coder Next,720,39,9.0
+Z AI,GLM 4.7,1320,39,8.9
+Mistral,Voxtral Small 1.0,170,31,7.0
+,Nova Lite,252,24,7.8
+,Nova 2.0 Lite,1496,79,8.8
+OpenAI,GPT OSS Safeguard 20B,120,31,6.5
+Minimax AI,Minimax M2,710,31,8.9
+Mistral AI,Devstral,1200,39,8.2
+Mistral,Ministral 14B 3.0,120,31,7.6
+DeepSeek,DeepSeek v3.2,1110,39,9.6
+Minimax AI,MiniMax M2.5,720,39,9.2
+,xai.grok-4.3,1250000,4,9.8
+Qwen,Qwen3 235B A22B 2507,453,31,9.3
+Mistral,Mistral Large 3,772,25,9.3
+Qwen,Qwen3 32B,310,37,8.8
+OpenAI,GPT OSS Safeguard 120B,350,31,7.5
 Meta,Llama 3 70B,3500,7,8.8
-Mistral,Mixtral 8x7B,760,9,6.2
-Google,Gemma 3 12B,170,31,6.8
-Mistral,Ministral 8B 3.0,90,31,5.8
-Minimax AI,Minimax M2.1,720,39,6.5
-Qwen,Qwen3 Coder 480B A35B,900,27,8.9
-Mistral,Voxtral Mini 1.0,24,31,3.0
-Qwen,Qwen3 Next 80B A3B,600,22,8.2
-Meta,Llama 4 Maverick 17B,970,4,5.0
-Moonshot AI,Kimi K2.5,1800,39,8.5
+Mistral,Mixtral 8x7B,760,9,8.2
+Google,Gemma 3 12B,170,31,8.0
+Mistral,Ministral 8B 3.0,90,31,6.8
+Minimax AI,Minimax M2.1,720,39,9.0
+Qwen,Qwen3 Coder 480B A35B,900,27,9.5
+Mistral,Voxtral Mini 1.0,24,31,5.0
+Qwen,Qwen3 Next 80B A3B,600,22,9.1
+Meta,Llama 4 Maverick 17B,970,4,9.0
+Moonshot AI,Kimi K2.5,1800,39,9.7
 Meta,Llama 3.1 70B Latency Optimized,900,3,8.8
-Meta,Llama 4 Scout 17B,660,4,5.0
-Meta,Llama 3.3 70B,720,3,9.0
-AWS,Nova Premier,6250,6,7.8
-Google,google.gemma-4-e2b,40,4,8.2
-Mistral,Mistral 7B,220,9,4.5
-Meta,Llama 3 8B,600,7,5.5
-Meta,Llama 3.1 8B,220,3,5.5
-Qwen,Qwen3 VL 235B A22B,1560,31,8.8
-AWS,Nova Sonic 2.0,2750,8,6.8
-Google,google.gemma-4-31b,200,4,9.2
-AWS,Nova Pro Latency Optimized,4000,3,7.5
-Mistral,Pixtral Large 25.02,6000,7,8.8
-AWS,Nova Sonic,260,6,5.0
-Meta,Llama 3.1 405B,2400,2,9.5
-Meta,Llama 3.2 90B,720,3,8.5
-DeepSeek,R1,5400,3,9.8
-Meta,Llama 3.2 11B,160,3,6.0
-Google,google.gemma-4-26b-a4b,200,4,9.2
+Meta,Llama 4 Scout 17B,660,4,8.7
+Meta,Llama 3.3 70B,720,3,9.1
+,Nova Premier,6250,6,9.7
+Google,google.gemma-4-e2b,40,4,6.0
+Mistral,Mistral 7B,220,9,7.0
+Meta,Llama 3 8B,600,7,7.2
+Meta,Llama 3.1 8B,220,3,7.8
+Qwen,Qwen3 VL 235B A22B,1560,31,9.3
+,Nova Sonic 2.0,2750,8,8.8
+Google,google.gemma-4-31b,200,4,9.0
+,Nova Pro Latency Optimized,4000,3,9.2
+Mistral,Pixtral Large 25.02,6000,7,9.3
+,Nova Sonic,260,6,8.2
+Meta,Llama 3.1 405B,2400,2,9.4
+Meta,Llama 3.2 90B,720,3,8.9
+DeepSeek,R1,5400,3,9.5
+Meta,Llama 3.2 11B,160,3,7.8
+Google,google.gemma-4-26b-a4b,200,4,8.9
 Meta,Llama 3.1 70B,720,3,8.8
-Mistral,Mistral Large 2407,6000,1,8.7
-Meta,Llama 3.3 70B Custom,720,1,9.0
-Meta,Llama 3.1 405B Latency Optimized,3000,1,9.5
-Mistral,Mistral Small,3000,1,7.0
+Mistral,Mistral Large 2407,6000,1,9.3
+Meta,Llama 3.3 70B Custom,720,1,9.1
+Meta,Llama 3.1 405B Latency Optimized,3000,1,9.4
+Mistral,Mistral Small,3000,1,8.7
+
