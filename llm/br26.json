@@ -1,6 +1,6 @@
 {
   "source": {
-    "csv": "llm/br26.csv",
+    "csv": "llm/di-c.csv",
     "textcols": ["Model","Provider"],
     "pkey": "Model"
   },
@@ -21,22 +21,12 @@
     "maintrace": {
       "xaxis": { "expr": "log(Price)" },
       "yaxis": { "expr": "Quality" },
-      "size": { "expr": "Count" },
+      "size": { "expr": 20 },
       "maintext": "Model",
       "hovertext": "${Model}<br />${Provider}",
       "color": {
-        "default": "#000",
-        "colname": "Provider",
-        "palette": {
-  	  "Mistral": "#00f",
-  	  "Qwen": "#f00",
-	  "Amazon": "#0f0",
-	  "OpenAI": "#8f0",
-	  "Nvidia": "#80f",
-	  "Minimax AI": "#08f",
-	  "Google": "#0f8",
-	  "DeepSeek": "#f80"
-        }
+        "default": "#0cc",
+        "colname": "Provider"
       }
     }
   }
