@@ -1,0 +1,44 @@
+{
+  "source": {
+    "csv": "llm/di-c.csv",
+    "textcols": ["Model","Provider"],
+    "pkey": "Model"
+  },
+  "plotly": {
+    "layout": {
+      "title": "Deepinfra 模型比較",
+      "shapes": [
+	{
+	  "type": "shape",
+	  "path": "M 3 8 L 3 10 L 4.5 10 Z",
+          "line": {
+            "color": "#c00000",
+            "width": 2
+          }
+	}
+      ]
+    },
+    "maintrace": {
+      "xaxis": { "expr": "log(Price)" },
+      "yaxis": { "expr": "Quality" },
+      "size": { "expr": 20 },
+      "maintext": "Model",
+      "hovertext": "${Model}<br />${Provider}",
+      "color": {
+        "default": "#0cc",
+        "colname": "Provider",
+	"palette": {
+	    "Qwen": "#f00",
+	    "google": "#0f8",
+	    "deepseek-ai": "#f80",
+	    "zai-org": "#808",
+	    "anthropic": "#0f0",
+	    "meta-llama": "#00f",
+	    "ByteDance": "#08f",
+	    "openai": "#8f0",
+	    "nvidia": "#80f"
+	}
+      }
+    }
+  }
+}

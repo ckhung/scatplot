@@ -26,7 +26,17 @@
       "hovertext": "${Model}<br />${Provider}",
       "color": {
         "default": "#0cc",
-        "colname": "Provider"
+        "colname": "Provider",
+	"palette": {
+	    "Mistral": "#00f",
+	    "Qwen": "#f00",
+	    "Amazon": "#0f0",
+	    "OpenAI": "#8f0",
+	    "Nvidia": "#80f",
+	    "Minimax AI": "#08f",
+	    "Google": "#0f8",
+	    "DeepSeek": "#f80"
+	}
       }
     }
   }
