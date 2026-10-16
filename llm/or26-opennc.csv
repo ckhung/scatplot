@@ -6,19 +6,13 @@ thinkingmachines,inkling,text+image+audio->text,1,4.05,0.17,25,52.1,22.5
 nvidia,nemotron-3-ultra-550b-a55b,text->text,0.6,2.4,0.12,22.9,49.3,20.1
 google,gemma-4-26b-a4b-it,text+image+video->text,0.08,0.26,0.04,16.7,39.3,2.9
 google,gemma-4-31b-it,text+image+video->text,0.2,0.4,0,14.7,43.4,4.2
-mistralai,mistral-medium-3-5:batch,text+image+file->text,0.75,3.75,0,14.2,46.9,7
 mistralai,mistral-medium-3-5,text+image+file->text,1.5,7.5,0,14.2,46.9,7
 nvidia,nemotron-3.5-lightning,text->text,0.07,0.2,0.04,12.9,26.8,3.5
 nvidia,nemotron-3-super-120b-a12b,text->text,0.08,0.45,0,12.8,37.7,1.7
-openai,gpt-oss-120b:batch,text->text,0.03,0.14,0,11.6,30.4,3.7
 openai,gpt-oss-120b,text->text,0.15,0.6,0.08,11.6,30.4,3.7
-mistralai,mistral-small-2603:batch,text+image->text,0.08,0.3,0.01,11.3,26.6,0.8
 mistralai,mistral-small-2603,text+image->text,0.15,0.6,0.02,11.3,26.6,0.8
-openai,gpt-oss-20b:batch,text->text,0.02,0.11,0,10,,
 openai,gpt-oss-20b,text->text,0.02,0.09,0.01,10,,
-mistralai,mistral-large-2512:batch,text+image+file->text,0.25,0.75,0.03,9.3,20.1,1
 mistralai,mistral-large-2512,text+image+file->text,0.5,1.5,0.05,9.3,20.1,1
-mistralai,mistral-medium-3.1:batch,text+image+file->text,0.2,1,0.02,9.2,20.5,1.9
 mistralai,mistral-medium-3.1,text+image+file->text,0.4,2,0.04,9.2,20.5,1.9
 mistralai,mistral-medium-3,text+image+file->text,0.4,2,0.04,9,,
 nvidia,nemotron-3-nano-30b-a3b,text->text,0.06,0.24,0,8.9,14.4,1
@@ -29,7 +23,6 @@ mistralai,mistral-saba,text+file->text,0.2,0.6,0.02,6.5,,
 mistralai,ministral-14b-2512,text+image->text,0.2,0.2,0.02,6,14.4,1.1
 mistralai,mistral-large,text+file->text,2,6,0.2,5.8,,
 mistralai,mixtral-8x22b-instruct,text+file->text,2,6,0.2,5.7,,
-mistralai,ministral-8b-2512:batch,text+image->text,0.08,0.08,0.01,5.5,9.7,0.6
 mistralai,ministral-8b-2512,text+image->text,0.15,0.15,0.02,5.5,9.7,0.6
 google,gemma-3-27b-it,text+image->text,0.08,0.45,0.04,4.9,10.1,0.1
 mistralai,ministral-3b-2512,text+image->text,0.1,0.1,0.01,4.8,4.8,0.8
@@ -39,7 +32,6 @@ google,gemma-2-27b-it,text->text,0.65,0.65,0,,,
 mistralai,mistral-nemo,text->text,0.03,0.03,0,,,
 mistralai,mistral-small-3.1-24b-instruct,text+image->text,0.35,0.55,0,,,
 mistralai,mistral-small-3.2-24b-instruct,text+image->text,0.09,0.25,0,,,
-mistralai,codestral-2508:batch,text+file->text,0.15,0.45,0.02,,,
 mistralai,codestral-2508,text+file->text,0.3,0.9,0.03,,,
 openai,gpt-oss-safeguard-20b,text->text,0.08,0.3,0.04,,,
 mistralai,voxtral-small-24b-2507,text+file+audio->text,0.1,0.3,0.01,,,

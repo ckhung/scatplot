@@ -1,16 +1,16 @@
 {
   "source": {
-    "csv": "llm/or26.csv",
+    "csv": "llm/or26-top.csv",
     "textcols": ["provider", "id","modality"],
     "pkey": "id"
   },
   "plotly": {
     "layout": {
-      "title": "OpenRouter 開放權重非紅模型比較",
+      "title": "OpenRouter 頂尖模型比較",
       "shapes": [
 	{
 	  "type": "shape",
-	  "path": "M 30 28 L 30 30 L 28 30 Z",
+	  "path": "M 55 55 L 55 60 L 50 60 Z",
           "line": {
             "color": "#c00000",
             "width": 2
@@ -21,18 +21,24 @@
     "maintrace": {
       "xaxis": { "expr": "intelligence" },
       "yaxis": { "expr": "agentic" },
-      "size": { "expr": "5/(output+input*0.2)" },
+      "size": { "expr": "40/(output+input*0.2)" },
       "maintext": "id",
       "hovertext": "${id}<br />${provider}<br />code: ${coding}",
       "color": {
         "default": "#444",
         "colname": "provider",
 	"palette": {
+	    "anthropic": "#0f0",
+	    "openai": "#088",
+	    "meta": "#f00",
+	    "qwen": "#cc4",
+	    "z-ai": "#4cc",
+	    "deepseek": "#c44",
+	    "x-ai": "#088",
+	    "minimax": "#4c4",
+	    "moonshotai": "#44c",
 	    "google": "#00f",
-	    "openai": "#f00",
-	    "nvidia": "#0f0",
-	    "mistralai": "#808",
-	    "thinkingmachines": "#088"
+	    "mistralai": "#808"
 	}
       }
     }
