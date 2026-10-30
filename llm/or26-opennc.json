@@ -10,7 +10,7 @@
       "shapes": [
 	{
 	  "type": "shape",
-	  "path": "M 28 23 L 28 25 L 26 25 Z",
+	  "path": "M 55 25 L 55 22 L 50 25 Z",
           "line": {
             "color": "#c00000",
             "width": 2
@@ -19,11 +19,11 @@
       ]
     },
     "maintrace": {
-      "xaxis": { "expr": "intelligence" },
+      "xaxis": { "expr": "coding" },
       "yaxis": { "expr": "agentic" },
       "size": { "expr": "8/(output+input*0.2)" },
       "maintext": "id",
-      "hovertext": "${id}<br />${provider}<br />code: ${coding}",
+      "hovertext": "${id}<br />${provider}<br />price: ${input}, ${output}<br />code: ${coding}",
       "color": {
         "default": "#444",
         "colname": "provider",
