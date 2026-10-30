@@ -19,11 +19,12 @@
       ]
     },
     "maintrace": {
+      "xaxis": { "expr": "coding" },
       "xaxis": { "expr": "intelligence" },
       "yaxis": { "expr": "agentic" },
-      "size": { "expr": "40/(output+input*0.2)" },
+      "size": { "expr": "60/(output+input*0.2)" },
       "maintext": "id",
-      "hovertext": "${id}<br />${provider}<br />code: ${coding}",
+      "hovertext": "${id}<br />${provider}<br />price: ${input}, ${output}<br />code: ${coding}",
       "color": {
         "default": "#444",
         "colname": "provider",
