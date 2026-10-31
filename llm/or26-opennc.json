@@ -28,11 +28,13 @@
         "default": "#444",
         "colname": "provider",
 	"palette": {
+	    "thinkingmachines": "#880",
 	    "google": "#00f",
 	    "openai": "#088",
 	    "nvidia": "#0f0",
 	    "mistralai": "#808",
-	    "thinkingmachines": "#880"
+	    "ibm-granite": "#880",
+	    "meta-llama": "#f00"
 	}
       }
     }

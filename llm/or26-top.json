@@ -29,15 +29,16 @@
         "colname": "provider",
 	"palette": {
 	    "anthropic": "#0f0",
+	    "deepseek": "#c44",
+	    "google": "#00f",
 	    "openai": "#088",
 	    "meta": "#f00",
 	    "qwen": "#cc4",
+	    "x-ai": "#c4c",
 	    "z-ai": "#4cc",
-	    "deepseek": "#c44",
-	    "x-ai": "#088",
 	    "minimax": "#4c4",
 	    "moonshotai": "#44c",
-	    "google": "#00f",
+	    "thinkingmachines": "#880",
 	    "mistralai": "#808"
 	}
       }
