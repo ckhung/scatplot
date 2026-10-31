@@ -21,9 +21,9 @@
     "maintrace": {
       "xaxis": { "expr": "coding" },
       "yaxis": { "expr": "agentic" },
-      "size": { "expr": "8/(output+input*0.2)" },
+      "size": { "expr": "20/sqrt(output+input*0.2)" },
       "maintext": "id",
-      "hovertext": "${id}<br />${provider}<br />price: ${input}, ${output}<br />code: ${coding}",
+      "hovertext": "${id}<br />${provider}<br />price: ${input}, ${output}<br />intel: ${intelligence}",
       "color": {
         "default": "#444",
         "colname": "provider",
