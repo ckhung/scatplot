@@ -1,0 +1,47 @@
+{
+  "source": {
+    "csv": "llm/or26-topnc.csv",
+    "textcols": ["provider", "id","modality"],
+    "pkey": "id"
+  },
+  "plotly": {
+    "layout": {
+      "title": "OpenRouter 頂尖非紅模型比較",
+      "shapes": [
+	{
+	  "type": "shape",
+	  "path": "M 80 60 L 80 55 L 75 60 Z",
+          "line": {
+            "color": "#c00000",
+            "width": 2
+          }
+	}
+      ]
+    },
+    "maintrace": {
+      "xaxis": { "expr": "coding" },
+      "yaxis": { "expr": "agentic" },
+      "size": { "expr": "80/(output+input*0.2)" },
+      "maintext": "id",
+      "hovertext": "${id}<br />${provider}<br />price: ${input}, ${output}<br />intel: ${intelligence}",
+      "color": {
+        "default": "#444",
+        "colname": "provider",
+	"palette": {
+	    "anthropic": "#0f0",
+	    "deepseek": "#c44",
+	    "google": "#00f",
+	    "openai": "#088",
+	    "meta": "#f00",
+	    "qwen": "#cc4",
+	    "x-ai": "#c4c",
+	    "z-ai": "#4cc",
+	    "minimax": "#4c4",
+	    "moonshotai": "#44c",
+	    "thinkingmachines": "#880",
+	    "mistralai": "#808"
+	}
+      }
+    }
+  }
+}
