@@ -23,7 +23,7 @@
       "yaxis": { "expr": "agentic" },
       "size": { "expr": "80/(output+input*0.2)" },
       "maintext": "id",
-      "hovertext": "${id}<br />${provider}<br />price: ${input}, ${output}<br />intel: ${intelligence}",
+      "hovertext": "${id}<br />${provider}<br />price: ${input}, ${output}, ${cached_input}<br />intel: ${intelligence}",
       "color": {
         "default": "#444",
         "colname": "provider",
